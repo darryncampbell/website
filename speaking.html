@@ -12,92 +12,24 @@
     <!-- Font Awesome icons (free version)-->
     <script src="assets/font-awsome-5.15.4/all.js"></script>
     <!-- Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/style-custom.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="generateMenuBar();generateFooter();">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Darryn Campbell</a>
-              <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <b>Menu</b>
-                <i class="fas fa-bars"></i>
-            </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-    
-                  <li class="nav-item dropdown mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      About
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                      <li><a class="dropdown-item" href="index.html#about">Bio</a></li>
-                      <li><a class="dropdown-item" href="index.html#twitter">Twitter</a></li>
-                      <li><a class="dropdown-item" href="index.html#contact">Contact</a></li>
-                    </ul>
-                  </li>
-    
-                  <li class="nav-item dropdown">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownBlogs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Software / Blogging
-                    </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownBlogs">
-                    <a class="dropdown-item" href="technology_index.html"><b>All Blogs & Samples</b></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="https://medium.com/@darryncampbell_83863/"
-                        target="_blank">Blogs on
-                        medium.com (legacy) <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://www.pubnub.com/blog/author/darryn-campbell/" target="_blank">Content on
-                        the PubNub website (legacy)<i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://developer.zebra.com/blogs/jrq768" target="_blank">Content on
-                        the Zebra Dev portal (legacy) <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item"
-                        href="https://play.google.com/store/apps/developer?id=Darryn+Campbell" target="_blank">Google Play Store
-                        <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://github.com/darryncampbell-pubnub" target="_blank"><i
-                            class="fab fa-fw fa-github"></i> GitHub
-                        repos (PubNub) <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://github.com/darryncampbell" target="_blank"><i
-                            class="fab fa-fw fa-github"></i> GitHub
-                        repos (Personal & Zebra) <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://www.npmjs.com/~darryncampbell" target="_blank">NPM
-                        Packages <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                </div>                </li>
-    
-                <li class="nav-item dropdown">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownSpeaking" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Speaking
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownSpeaking">
-                        <a class="dropdown-item" href="speaking.html">Upcoming</a>
-                        <a class="dropdown-item" href="speaking.html#past">Past</a>
-                    </div>
-                </li>
-    
-                <li class="nav-item dropdown">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownPersonal" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Personal
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPersonal">
-                        <a class="dropdown-item" href="athletics.html">Athletics Times</a>
-                        <a class="dropdown-item" href="web_design.html">Web Design</a>
-                    </div>
-                </li>
-              </ul>
-            </div>
-            </div>
-          </nav>
 
-    <header class="pagehead">
-    </header>
+        </nav>
 
+        <header class="pagehead">
+        </header>
 
-    <section class="page-section speaking-upcoming" id="upcoming">
+    <section class="page-section top-section" id="upcoming">
         <div class="container">
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Speaking - Upcoming</h2>
             <!-- Icon Divider-->
@@ -108,29 +40,6 @@
             </div>
 
             <div class="row justify-content-start" id="speaking-upcoming">
-
-            <!--div class="row">
-                <div class="col-lg-12 mx-auto">
-
-                    <div class="card align-items-center border-light mb-3">
-                        <img class="card-img-top" src="./assets/img/speaking/droidcon_berlin_2019.jpg" style="max-width: 42rem" alt="Talk">
-                        <div class="card-body">
-                          <h5 class="card-title">Droidcon Berlin 2019: Google Data Collection on Android</h5>
-                          <p class="card-text">Date: 3rd July (event date 1st – 3rd July) 2019</p>
-                          <p class="card-text">Location: Droidcon Berlin, CityCube, Berlin</p>
-                          <p class="card-text">Talk link: <a href='https://www.de.droidcon.com/speaker/Darryn-Campbell'>https://www.de.droidcon.com/speaker/Darryn-Campbell</a></p>
-                          <p class="text-muted">Brief:
-                            <br>
-                            Exactly what data is your Android device collecting about you?  What does Google know about you?  These are some of the most clickbaity headlines around, so it can be very difficult to find the truth between the sensational headlines and the ameliorating responses from Google.
-                            <br><br>
-                            There have been some academic studies on what Google collects, how often and how much – In this talk I will go through those results as well as present findings from my own original research.  I will describe how you can go about performing your own tests on what data your phone is sending and finally discuss some of the network and on-device solutions to control what data gets sent to Google beyond just adjusting the device settings.</p>
-                            <a href="#" class="btn btn-primary">Slides</a>
-                            <a href="#" class="btn btn-primary">Video (requires free sign-up)</a>
-                        </div>
-                      </div>
-                </div>
-            </div-->
-
             
         </div>
     </section>
@@ -152,45 +61,8 @@
     </section>
 
     <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer About Text-->
-                <div class="col-lg-3 mb-5">
-                    <h4 class="text-uppercase mb-4">Darryn Campbell</h4>
-                    <p class="lead mb-0">
-                        Enterprise Mobile development <br> Software Architecture <br> Speaking
-                    </p>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Social / Contact</h4>
-                    <!--a class="btn btn-light btn-social mx-1" href="mailto:darryn@darryncampbell.co.uk"><i
-                            class="fa fa-fw fa-envelope"></i></a-->
-                    <a class="btn btn-light btn-social mx-1" href="https://twitter.com/darryncampbell"><i
-                            class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-light btn-social mx-1" href="https://medium.com/@darryncampbell_83863/"><i
-                            class="fab fa-fw fa-medium"></i></a>
-                    <a class="btn btn-light btn-social mx-1"
-                        href="https://www.linkedin.com/in/darryn-campbell-1b0127ab/"><i
-                            class="fab fa-fw fa-linkedin"></i></a>
-                    <a class="btn btn-light btn-social mx-1" href="https://github.com/darryncampbell"><i
-                            class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-light btn-social mx-1"
-                        href="https://www.youtube.com/channel/UC5QeEKnIQx7biAqMCmsWFEA"><i
-                            class="fab fa-fw fa-youtube"></i></a>
-                </div>
-                <!-- Footer Location-->
-                <div class="col-lg-3 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-1">Location</h4>
-                    <p class="lead mb-0">
-                        Hampshire<br />
-                        United Kingdom
-                    </p>
-                </div>
+    <footer class="footer text-center" id="page-footer">
 
-            </div>
-        </div>
     </footer>
 
     <!-- Copyright Section-->

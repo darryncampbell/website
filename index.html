@@ -12,74 +12,21 @@
     <!-- Font Awesome icons (free version)-->
     <script src="assets/font-awsome-5.15.4/all.js"></script>
     <!-- Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/style-custom.css" rel="stylesheet" />
+    <script src="./js/demos.js"></script>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="generateMenuBar();loadDemosHomepage();generateFooter();">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html#page-top">Darryn Campbell</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <b>Menu</b>
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item dropdown mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownAbout"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                            <li><a class="dropdown-item" href="index.html#about">Bio</a></li>
-                            <li><a class="dropdown-item" href="index.html#contact">Contact</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownBlogs"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Technical Content
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBlogs">
-                            <a class="dropdown-item" href="technical-writing.html">Technical Writing / Blogs</a>
-                            <a class="dropdown-item" href="demos.html">Software Demos / Libraries</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#"
-                            id="navbarDropdownSpeaking" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Speaking
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownSpeaking">
-                            <a class="dropdown-item" href="speaking.html">Upcoming</a>
-                            <a class="dropdown-item" href="speaking.html#past">Past</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#"
-                            id="navbarDropdownPersonal" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Personal
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPersonal">
-                            <a class="dropdown-item" href="athletics.html">Athletics Times</a>
-                            <a class="dropdown-item" href="web_design.html">Web Design</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </nav>
 
     <!-- Masthead-->
@@ -100,7 +47,7 @@
         </div>
     </header>
     <!-- About Section-->
-    <section class="page-section portfolio" id="about">
+    <section class="page-section top-section portfolio" id="about">
         <div class="container">
             <!-- About Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Bio</h2>
@@ -146,7 +93,7 @@
     <section class="page-section bg-primary text-white mb-0" id="technology">
         <div class="container">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Technical Writing & Blogs</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0"><a href="./technical-writing.html">Technical Writing & Blogs</a></h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -156,13 +103,16 @@
             <!-- Contact Section Form-->
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <p class="lead">Not all content I write has been clearly attributed to me, so this is the easiest way to find specific content, sorted by technology.  The bulk of my writing has been through my work, either blogs, technical user guides or other developer deep-dives</p>
+                    <p class="lead">Not all content I write has been clearly attributed to me, so this is the easiest
+                        way to find specific content, sorted by technology. The bulk of my writing has been through my
+                        work, either blogs, technical user guides or other developer deep-dives</p>
                     <div class="text-center">
-                        <a href="./technical-writing.html"><img class="img-fluid rounded"
+                        <a href="./technical-writing.html"><img class="img-fluid demo-image"
                                 src="./assets/img/front_page/technology.png" alt="" /></a>
                     </div>
                     <br>
-                    <P class="lead">Please see the <a href="./technical-writing.html">technical writing</a> page for the full list</p>
+                    <P class="lead">Please see the <a href="./technical-writing.html">technical writing</a> page for the
+                        full list</p>
 
                 </div>
             </div>
@@ -172,67 +122,21 @@
     <!-- Demos Section-->
     <section class="page-section mb-0" id="portfolio">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary">Demo Apps & Samples</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary"><a href="./demos.html">Demo Apps & Samples</a></h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fab fa-github"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
 
-            <div class="row text-center">
-                <!-- Demo Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-0">
-                    <div class="portfolio-item mx-auto border rounded p-2" style="background-color: #f1f1f1;">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <H3>PubNub Showcase</H3>
-                            </div>
-                            <a href="https://showcase.pub-nub.com/">
-                                <img class="img-fluid rounded" style='max-height: 20rem;'
-                                src="./assets/img/demos/pubnub_showcase.png" alt="PubNub Showcase application" />
-                        </a>
-                        <p class="text-start"><br>Application to show the features of <a href="https://pubnub.com">PubNub</a>
-                                and used as a tool by the sales team<br><br>
-                        <a href="https://github.com/PubNubDevelopers/PubNub-Showcase">Source Code <i class="fab fa-github"></i></a></p>
-                    </div>
-                </div>
-                <!-- Demo Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-0">
-                    <div class="portfolio-item mx-auto border rounded p-2" style="background-color: #f1f1f1;">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <H3>Delivery Demo</H3>
-                        </div>
-                        <a href="https://www.pubnub.com/demos/delivery/?show=demo"><img
-                                class="img-fluid rounded" style='max-height: 20rem;'
-                                src="./assets/img/demos/delivery.png"
-                                alt="" />
-                        </a>
-                        <p class="text-start"><br>Simulated delivery driver application using web workers and Google Maps<br><br>
-                    <a href="https://github.com/PubNubDevelopers/PubNub-Showcase">Source Code <i class="fab fa-github"></i></a></p>
-                </div>
-                </div>
-                <!-- Demo Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-0">
-                    <div class="portfolio-item mx-auto border rounded p-2" style="background-color: #f1f1f1;">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <H3>Flutter Chat Application</H3>
-                        </div>
-                        <a
-                            href="https://www.pubnub.com/demos/flutter-chat/?show=demo"><img
-                                class="img-fluid rounded" style='max-height: 20rem;'
-                                src="./assets/img/demos/group_chat.png"
-                                alt="" />
-                        </a>
-                        <p class="text-start"><br>A cross-platform chat application, written in PubNub using the <a href="https://pubnub.com">PubNub</a> Dart SDK<br><br>
-                    <a href="https://github.com/PubNubDevelopers/GettingStarted-Flutter-SDK-Tutorial">Source Code <i class="fab fa-github"></i></a></p>
-                </div>
-                </div>
-            </div>
+            <div id="demos-homepage"></div>
             <br>
-            <P class="lead">A selection of recently created applications that target the web.  For a more complete list of demos and samples, please see the <b><a href="./demos.html">demos</a></b> page</p>
+            <P class="lead">A selection of recently created applications that target the web. For a more complete list
+                of demos and samples, please see the <span style="font-weight: bold;"><a href="./demos.html">demos</a></span> page</p>
+
+
+
 
         </div>
     </section>
@@ -241,7 +145,7 @@
     <section class="page-section bg-primary text-white mb-0" id="speaking">
         <div class="container-fluid">
             <!-- Speaking Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Speaking</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white"><a href="speaking.html">Speaking</a></h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -256,7 +160,7 @@
                         Developer Groups in London and Poland.</p>
                     <p class="lead">I also frequently present webinars on mobile technologies and development.</p>
 
-                    <a href="./speaking.html"><img class="img-fluid rounded" src="./assets/img/front_page/talks.jpg"
+                    <a href="./speaking.html"><img class="img-fluid demo-image" src="./assets/img/front_page/talks.jpg"
                             alt="" /></a>
 
                     <br /><br />
@@ -271,17 +175,14 @@
     </section>
 
     <!-- Contact Section-->
-    <section class="page-section mb-0" id="twitter">
+    <!--section class="page-section mb-0" id="twitter">
         <div class="container-fluid">
-            <!-- Contact Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Twitter</h2>
-            <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fab fa-twitter"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Contact Section Form-->
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
 
@@ -293,16 +194,16 @@
 
             </div>
         </div>
-    </section>
+    </section-->
 
 
     <!-- Contact Section-->
-    <section class="page-section bg-primary text-white mb-0" id="contact">
+    <section class="page-section mb-0" id="contact">
         <div class="container-fluid">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Me</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
             <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
+            <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-address-card"></i></div>
                 <div class="divider-custom-line"></div>
@@ -317,7 +218,7 @@
                         publicly post questions related to Zebra.</p>
                     <p class="lead"><a href="https://support.pubnub.com/hc/en-us">PubNub support</a> are the best people
                         to contact for specific PubNub questions.</p>
-                    <p class="lead">Please contact via email, Twitter or LinkedIn</p>
+                    <p class="lead" style="font-weight:bold">Please contact via LinkedIn</p>
                     <br />
                     <!--a class="btn btn-dark btn-social mx-1" href="mailto:darryn@darryncampbell.co.uk"><i
                             class="fa fa-fw fa-envelope"></i></a-->
@@ -335,46 +236,8 @@
 
 
     <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer About Text-->
-                <div class="col-lg-3 mb-5">
-                    <h4 class="text-uppercase mb-4">Darryn Campbell</h4>
-                    <p class="lead mb-0">
-                        Real time Communications <br> Enterprise Mobile development <br> Software Architecture <br>
-                        Speaking
-                    </p>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Social / Contact</h4>
-                    <!--a class="btn btn-light btn-social mx-1" href="mailto:darryn@darryncampbell.co.uk"><i
-                            class="fa fa-fw fa-envelope"></i></a-->
-                    <a class="btn btn-light btn-social mx-1" href="https://twitter.com/darryncampbell"><i
-                            class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-light btn-social mx-1" href="https://medium.com/@darryncampbell_83863/"><i
-                            class="fab fa-fw fa-medium"></i></a>
-                    <a class="btn btn-light btn-social mx-1"
-                        href="https://www.linkedin.com/in/darryn-campbell-1b0127ab/"><i
-                            class="fab fa-fw fa-linkedin"></i></a>
-                    <a class="btn btn-light btn-social mx-1" href="https://github.com/darryncampbell"><i
-                            class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-light btn-social mx-1"
-                        href="https://www.youtube.com/channel/UC5QeEKnIQx7biAqMCmsWFEA"><i
-                            class="fab fa-fw fa-youtube"></i></a>
-                </div>
-                <!-- Footer Location-->
-                <div class="col-lg-3 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-1">Location</h4>
-                    <p class="lead mb-0">
-                        Hampshire<br />
-                        United Kingdom
-                    </p>
-                </div>
+    <footer class="footer text-center" id="page-footer">
 
-            </div>
-        </div>
     </footer>
 
     <!-- Copyright Section-->

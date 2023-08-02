@@ -74,6 +74,24 @@ function populateSpeaking(json, outputDiv) {
 
 var speakingEvents = [
     {
+        "date": "July 26, 2023",
+        "imgSrc": "./assets/img/speaking/pubnub_build_chat_app.png",
+        "title": "Marketing Video: Build a Chat App with PubNub",
+        "userDate": "26th July 2023",
+        "location": "Online Video",
+        "otherInfo": [            
+        ],
+        "brief": "Build a chat app like slack or discord in around 6 minutes with PubNub",
+        "linkButtons":
+            [
+                {
+                    "text": "Video",
+                    "link": ""
+                    //"link": "https://www.youtube.com/watch?v=4eZbWu44lUs"
+                },
+            ]
+    },
+    {
         "date": "December 7, 2022",
         "imgSrc": "./assets/img/speaking/pubnub_rncc.png",
         "title": "Product Launch: React Native Chat Components",
