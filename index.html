@@ -12,89 +12,23 @@
     <!-- Font Awesome icons (free version)-->
     <script src="assets/font-awsome-5.15.4/all.js"></script>
     <!-- Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/style-custom.css" rel="stylesheet" />
+    <script src="./js/demos.js"></script>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="generateMenuBar();loadDemosHomepage();generateFooter();">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">Darryn Campbell</a>
-          <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <b>Menu</b>
-            <i class="fas fa-bars"></i>
-        </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
 
-              <li class="nav-item dropdown mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  About
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                  <li><a class="dropdown-item" href="index.html#about">Bio</a></li>
-                  <li><a class="dropdown-item" href="index.html#twitter">Twitter</a></li>
-                  <li><a class="dropdown-item" href="index.html#contact">Contact</a></li>
-                </ul>
-              </li>
+    </nav>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownBlogs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Software / Blogging
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownBlogs">
-                    <a class="dropdown-item" href="technology_index.html"><b>All Blogs & Samples</b></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="https://medium.com/@darryncampbell_83863/"
-                        target="_blank">Blogs on
-                        medium.com (legacy) <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://www.pubnub.com/blog/author/darryn-campbell/" target="_blank">Content on
-                        the PubNub website (legacy)<i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://developer.zebra.com/blogs/jrq768" target="_blank">Content on
-                        the Zebra Dev portal (legacy) <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item"
-                        href="https://play.google.com/store/apps/developer?id=Darryn+Campbell" target="_blank">Google Play Store
-                        <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://github.com/darryncampbell-pubnub" target="_blank"><i
-                            class="fab fa-fw fa-github"></i> GitHub
-                        repos (PubNub) <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://github.com/darryncampbell" target="_blank"><i
-                            class="fab fa-fw fa-github"></i> GitHub
-                        repos (Personal & Zebra) <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                    <a class="dropdown-item" href="https://www.npmjs.com/~darryncampbell" target="_blank">NPM
-                        Packages <i class="fas fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
-                </div>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownSpeaking" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Speaking
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownSpeaking">
-                    <a class="dropdown-item" href="speaking.html">Upcoming</a>
-                    <a class="dropdown-item" href="speaking.html#past">Past</a>
-                </div>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdownPersonal" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Personal
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownPersonal">
-                    <a class="dropdown-item" href="athletics.html">Athletics Times</a>
-                    <a class="dropdown-item" href="web_design.html">Web Design</a>
-                </div>
-            </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
-    
     <!-- Masthead-->
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
@@ -109,11 +43,11 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Software Architect - Speaker - Developer Relations</p>
+            <p class="masthead-subheading font-weight-light mb-0">Developer Relations - Speaker - Software Architect</p>
         </div>
     </header>
     <!-- About Section-->
-    <section class="page-section portfolio" id="about">
+    <section class="page-section top-section portfolio" id="about">
         <div class="container">
             <!-- About Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Bio</h2>
@@ -125,126 +59,106 @@
             </div>
             <!-- About Section Content-->
             <div class="row">
-                <div class="col">                    
+                <div class="col">
                 </div>
                 <div class="col-lg-4 ml-auto">
                     <p class="lead">
-                        Darryn is a software development architect and full-stack developer based out of the UK working as a developer advocate for PubNub.  PubNub provide a scalable, reliable and extensible communications platform for chat applications, IOT devices and virtual experiences.
-                        <!--for the Mobile Computing Business at Zebra Technologies.  Zebra builds rugged enterprise mobile
-                        computers for use in retail, transportation, warehouse and healthcare. -->
-						<br />
+                        Darryn is a developer relations lead with a background in clientside software development and
+                        software architecture based out of the UK.
+                        <br><br>
+                        He works as a developer advocate for PubNub, who provide a scalable, reliable and extensible
+                        communications platform for chat applications, IOT devices and virtual experiences.
+                        <br />
                         <br />
 
                     </p>
                 </div>
                 <div class="col-lg-4 mr-auto">
-                    <p class="lead">Darryn has over 15 years of development experience on mobile platforms ranging from PocketPC to the latest Android devices.  
-					
-					<!--He is the architect for Zebra's developer tools and is an active member of Zebra's developer relations team. -->
-
+                    <p class="lead">Darryn has nearly 20 years of development experience, specializing in mobile
+                        platforms and web development.
                         <br />
                         <br />
-                        In his spare time he manages various websites, maintains some personal software projects, is a keen reader and former athlete.
+                        In his spare time he manages various websites, maintains some personal software projects, is a
+                        keen reader and former athlete.
                     </p>
                 </div>
-                <div class="col">                    
+                <div class="col">
                 </div>
             </div>
         </div>
     </section>
-    <!-- Github Portfolio Section-->
-    <section class="page-section bg-primary text-white mb-0" id="portfolio">
-        <div class="container">
-            <!-- Github Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Github Portfolio</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fab fa-github"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Github Portfolio Grid Items-->
-            <H4>Most starred projects:</H4>
-            <div class="row text-center">
-                <!-- Github Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-0">
-                    <div class="portfolio-item mx-auto">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <p class="lead">Cordova Intent Plugin</p>
-                        </div>
-                        <a href="https://github.com/darryncampbell/darryncampbell-cordova-plugin-intent"><img class="img-fluid rounded" style='max-height: 20rem;'
-                                src="https://raw.githubusercontent.com/darryncampbell/DataWedge-Cordova-Sample/master/screens/application01.png"
-                                alt="" />
-                        </a>
-                        <p><i class='fa fa-star'></i></p>
-                    </div>
-                </div>
-                <!-- Github Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-0">
-                    <div class="portfolio-item mx-auto">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <p class="lead">WiFi-RTT-Trilateration</p>
-                        </div>
-                        <a href="https://github.com/darryncampbell/WiFi-RTT-Trilateration/"><img class="img-fluid rounded" style='max-height: 20rem;'
-                                src="https://raw.githubusercontent.com/darryncampbell/WiFi-RTT-Trilateration/master/screenshots/005.png"
-                                alt="" />
-                        </a>
-                        <p><i class='fa fa-star'></i></p>
-                    </div>
-                </div>
-                <!-- Github Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-0">
-                    <div class="portfolio-item mx-auto">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <p class="lead">WakeLock-WifiLock-Exerciser</p>
-                        </div>
-                        <a href="hhttps://github.com/darryncampbell/WakeLock_WifiLock_Exerciserttps://github.com/darryncampbell/react-native-datawedge-intents"><img class="img-fluid rounded" style='max-height: 20rem;'
-                                src="https://raw.githubusercontent.com/darryncampbell/WakeLock_WifiLock_Exerciser/master/screenshots/application_01.png"
-                                alt="" />
-                        </a>
-                        <p><i class='fa fa-star'></i></p>
-                    </div>
-                </div>
-                <H4>Full portfolio available at <a href="https://github.com/darryncampbell?tab=repositories">GITHUB (Personal & Zebra)</a><br> and <a href="https://github.com/darryncampbell-pubnub?tab=repositories">GITHUB (PubNub)</a></H4>
 
-            </div>
-        </div>
-    </section>
+
     <!-- Technology Blogs Section-->
-    <section class="page-section" id="technology">
-        <div class="container-fluid">
+    <section class="page-section bg-primary text-white mb-0" id="technology">
+        <div class="container">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Index of Blogs & Sample
-                apps, <br />ordered by Technology</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0"><a href="./technical-writing.html">Technical Writing & Blogs</a></h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-pencil-alt"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Contact Section Form-->
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <p class="lead">Full list of all my content published externally, on my medium site, Github & any other applicable sources</p>
-                    <p class="lead">The easiest way to find specific content, sorted by technology</p>
-                    <div class="text-center">
-                        <a href="./technology_index.html"><img class="img-fluid rounded" src="./assets/img/front_page/technology.png"
-                            alt="" /></a>
-                        </div>
-                <h4>The index can be found at the <a href="./technology_index.html">BLOGS AND SAMPLES</a> page</h4>
 
+            <p class="lead">Not all content I write has been clearly attributed to me, so this is the easiest
+                way to find specific content, sorted by technology. The bulk of my writing has been through my
+                work, either blogs, technical user guides or other developer deep-dives</p>
+        
+            <div class='row text-center'>
+                <div class='col-md-6 col-lg-4 mb-0'>
+                    <div class='portfolio-item mx-auto p-2'>
+                        <a href="https://www.pubnub.com/blog/consistent-hashing-implementation/" target="_blank"><img class='img-fluid demo-image' style='max-height: 20rem;' src='./assets/img/front_page/tech-writing1.png' alt='Technical writing diagram' /></a>
+                    </div>
+                </div>
+                <div class='col-md-6 col-lg-4 mb-0'>
+                    <div class='portfolio-item mx-auto p-2'>
+                        <a href="https://medium.com/@darryncampbell_83863/android-traffic-analysis-to-google-servers-methodology-6de1435c5157" target="_blank"><img class='img-fluid demo-image' style='max-height: 20rem;' src='./assets/img/front_page/tech-writing2.png' alt='Technical writing diagram' /></a>
+                    </div>
+                </div>
+                <div class='col-md-6 col-lg-4 mb-0'>
+                    <div class='portfolio-item mx-auto p-2'>
+                        <a href="https://www.pubnub.com/blog/http-long-polling/" target="_blank"><img class='img-fluid demo-image' style='max-height: 20rem;' src='./assets/img/front_page/tech-writing3.png' alt='Technical writing diagram' /></a>
+                    </div>
                 </div>
             </div>
+            <br>
+            <P class="lead">Please see the <span style="font-weight: bold"><a href="./technical-writing.html">technical writing</a></span> page for the
+                full list</p>
+
+
+
+
         </div>
     </section>
+
+    <!-- Demos Section-->
+    <section class="page-section mb-0" id="portfolio">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary"><a href="./demos.html">Demo Apps & Samples</a></h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <div id="demos-homepage"></div>
+            <br>
+            <P class="lead">A selection of recently created applications that target the web. For a more complete list
+                of demos and samples, please see the <span style="font-weight: bold;"><a href="./demos.html">demos</a></span> page</p>
+
+
+
+
+        </div>
+    </section>
+
     <!-- Speaking -->
     <section class="page-section bg-primary text-white mb-0" id="speaking">
         <div class="container-fluid">
             <!-- Speaking Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Speaking</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white"><a href="speaking.html">Speaking</a></h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -259,12 +173,12 @@
                         Developer Groups in London and Poland.</p>
                     <p class="lead">I also frequently present webinars on mobile technologies and development.</p>
 
-                    <a href="./speaking.html"><img class="img-fluid rounded" src="./assets/img/front_page/talks.jpg"
+                    <a href="./speaking.html"><img class="img-fluid demo-image" src="./assets/img/front_page/talks.jpg"
                             alt="" /></a>
 
                     <br /><br />
-                    <h4>All slides & recordings (where available) can be found at the <a
-                            href="./speaking.html">SPEAKING</a> page</h4>
+                    <p class="lead">All slides & recordings (where available) can be found at the <a
+                            href="./speaking.html">Speaking</a> page</p>
 
                 </div>
             </div>
@@ -274,17 +188,14 @@
     </section>
 
     <!-- Contact Section-->
-    <section class="page-section mb-0" id="twitter">
+    <!--section class="page-section mb-0" id="twitter">
         <div class="container-fluid">
-            <!-- Contact Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Twitter</h2>
-            <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fab fa-twitter"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Contact Section Form-->
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
 
@@ -296,16 +207,16 @@
 
             </div>
         </div>
-    </section>
+    </section-->
 
 
     <!-- Contact Section-->
-    <section class="page-section bg-primary text-white mb-0" id="contact">
+    <section class="page-section mb-0" id="contact">
         <div class="container-fluid">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Me</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
             <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
+            <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-address-card"></i></div>
                 <div class="divider-custom-line"></div>
@@ -313,18 +224,21 @@
             <!-- Contact Section Form-->
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-				<!--  Include PubNub here -->
-                    <p class="lead font-weight-bold">Please do not email directly with development questions for PubNub or for Zebra devices.</p>
-                    <p class="lead">The <a href="http://developer.zebra.com">Zebra developer portal</a> is available to publicly post questions related to Zebra.</p>
-					<p class="lead"><a href="https://support.pubnub.com/hc/en-us">PubNub support</a> are the best people to contact for specific PubNub questions.</p>
-                    <p class="lead">Please contact via email, Twitter or LinkedIn</p>
+                    <!--  Include PubNub here -->
+                    <p class="lead font-weight-bold">Please do not email directly with development questions for PubNub
+                        or for Zebra devices.</p>
+                    <p class="lead">The <a href="http://developer.zebra.com">Zebra developer portal</a> is available to
+                        publicly post questions related to Zebra.</p>
+                    <p class="lead"><a href="https://support.pubnub.com/hc/en-us">PubNub support</a> are the best people
+                        to contact for specific PubNub questions.</p>
+                    <p class="lead" style="font-weight:bold">Please contact via LinkedIn</p>
                     <br />
-                    <!--a class="btn btn-dark btn-social mx-1" href="mailto:darryn@darryncampbell.co.uk"><i
-                            class="fa fa-fw fa-envelope"></i></a-->
-                    <a class="btn btn-dark btn-social mx-1" href="https://twitter.com/darryncampbell"><i
+                    <a class="btn btn-dark btn-social mx-1" href="mailto:darryncampbell@hotmail.com"><i
+                            class="fa fa-fw fa-envelope"></i></a>
+                    <a class="btn btn-dark btn-social mx-1" href="https://twitter.com/darryncampbell" target="_blank"><i
                             class="fab fa-fw fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-1"
-                        href="https://www.linkedin.com/in/darryn-campbell-1b0127ab/"><i
+                        href="https://www.linkedin.com/in/darryn-campbell-1b0127ab/" target="_blank"><i
                             class="fab fa-fw fa-linkedin"></i></a>
 
                 </div>
@@ -335,50 +249,13 @@
 
 
     <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer About Text-->
-                <div class="col-lg-3 mb-5">
-                    <h4 class="text-uppercase mb-4">Darryn Campbell</h4>
-                    <p class="lead mb-0">
-                        Real time Communications <br> Enterprise Mobile development <br> Software Architecture <br> Speaking
-                    </p>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Social / Contact</h4>
-                    <!--a class="btn btn-light btn-social mx-1" href="mailto:darryn@darryncampbell.co.uk"><i
-                            class="fa fa-fw fa-envelope"></i></a-->
-                    <a class="btn btn-light btn-social mx-1" href="https://twitter.com/darryncampbell"><i
-                            class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-light btn-social mx-1" href="https://medium.com/@darryncampbell_83863/"><i
-                            class="fab fa-fw fa-medium"></i></a>
-                    <a class="btn btn-light btn-social mx-1"
-                        href="https://www.linkedin.com/in/darryn-campbell-1b0127ab/"><i
-                            class="fab fa-fw fa-linkedin"></i></a>
-                    <a class="btn btn-light btn-social mx-1" href="https://github.com/darryncampbell"><i
-                            class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-light btn-social mx-1"
-                        href="https://www.youtube.com/channel/UC5QeEKnIQx7biAqMCmsWFEA"><i
-                            class="fab fa-fw fa-youtube"></i></a>
-                </div>
-                <!-- Footer Location-->
-                <div class="col-lg-3 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-1">Location</h4>
-                    <p class="lead mb-0">
-                        Hampshire<br />
-                        United Kingdom
-                    </p>
-                </div>
+    <footer class="footer text-center" id="page-footer">
 
-            </div>
-        </div>
     </footer>
 
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright © Darryn Campbell 2022</small></div>
+        <div class="container"><small>Copyright © Darryn Campbell 2023</small></div>
     </div>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed">
@@ -387,10 +264,10 @@
     </div>
 
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    
+
 </body>
 
 </html>

@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto';
+}
+
+.top-section
+{
+    padding: 8rem 0;
+}
+
+.demo-container
+{
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+.demo-image-container
+{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.demo-image
+{
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #a3a3a3;
+    filter: drop-shadow(5px 5px 2px #1e1e1e);
+}
+
+.demo-description
+{
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: medium;
+}
+
+.row
+{
+    margin-top: 20px;
+}
+
+.text-white a
+{
+    color: white;
+}
+
+.technical-writing-table td
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: roboto;
+}
+
+h3
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h4
+{
+    margin-bottom: 10px;
+}
+

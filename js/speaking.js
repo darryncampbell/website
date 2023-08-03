@@ -50,13 +50,13 @@ function populateSpeaking(json, outputDiv) {
         if (json[i].imgSrc != "")
             html += "<img class='card-img-top rounded' src='" + json[i].imgSrc + "' style='max-width:30rem;max-height:30rem' alt='Talk Image'>";
         html += "<div class='card-body'>";
-        html += "<h5 class='card-title'>" + json[i].title + "</h5>";
-        html += "<p class='card-text'>Date: " + json[i].userDate + "</p>";
-        html += "<p class='card-text'>Location: " + json[i].location + "</p>";
+        html += "<h4 class='card-title'>" + json[i].title + "</h4>";
+        html += "<p class='lead'>Date: " + json[i].userDate + "</p>";
+        html += "<p class='lead'>Location: " + json[i].location + "</p>";
         for (var j = 0; j < json[i].otherInfo.length; j++) {
-            html += "<p class='card-text'>" + json[i].otherInfo[j] + "</p>";
+            html += "<p class='lead'>" + json[i].otherInfo[j] + "</p>";
         }
-        html += "<p class='text-muted'>Brief:<br>" + json[i].brief + "</p>";
+        html += "<p class='lead'>" + json[i].brief + "</p>";
         for (var k = 0; k < json[i].linkButtons.length; k++) {
             if (json[i].linkButtons[k].link == "")
                 html += "<button class='btn btn-primary mb-2'>" + json[i].linkButtons[k].text + " (Not yet available)</button> ";
@@ -74,6 +74,45 @@ function populateSpeaking(json, outputDiv) {
 
 var speakingEvents = [
     {
+        "date": "August 21, 2023",
+        "imgSrc": "./assets/img/speaking/devcom_2023.png",
+        "title": "Add real-time interactive features to your online games",
+        "userDate": "21st August 2023",
+        "location": "Cologne, Germany",
+        "otherInfo": [            
+        ],
+        "brief": "Social features such as chat, friend list management, item trading, and real-time leaderboards are great ways to foster a community around your multiplayer game and increase player retention.  Unfortunately, these real-time features aren’t easy to develop and often get left until the tail end of your development cycle, leading to a frustrating experience for both devs and players.<br><br>In this talk, we will show you some of the best practices used by studios and indie devs as they add social features to their apps and demo how you can easily add these live features into your own game.",
+        "linkButtons":
+            [
+                {
+                    "text": "Slides",
+                    "link": ""
+                },
+                {
+                    "text": "Video",
+                    "link": ""
+                },
+            ]
+    },
+    {
+        "date": "July 26, 2023",
+        "imgSrc": "./assets/img/speaking/pubnub_build_chat_app.png",
+        "title": "Marketing Video: Build a Chat App with PubNub",
+        "userDate": "26th July 2023",
+        "location": "Online Video",
+        "otherInfo": [            
+        ],
+        "brief": "Build a chat app like slack or discord in around 6 minutes with PubNub",
+        "linkButtons":
+            [
+                {
+                    "text": "Video",
+                    "link": ""
+                    //"link": "https://www.youtube.com/watch?v=4eZbWu44lUs"
+                },
+            ]
+    },
+    {
         "date": "December 7, 2022",
         "imgSrc": "./assets/img/speaking/pubnub_rncc.png",
         "title": "Product Launch: React Native Chat Components",
@@ -81,7 +120,7 @@ var speakingEvents = [
         "location": "Online Webinar",
         "otherInfo": [            
         ],
-        "brief": "What more would you do if you didn’t have to deal with the headache that comes with setting up real-time infrastructure for chat in your React Native app?  <P>Now’s your chance to find out!<p>Join our Product Marketing Manager, Lukasz Smacki and Developer Advocate, Darryn Campbell on December <b>7th at 9:00 am PST / 12:00 pm EST</b> to hear more about the release of our new React Native Chat Components and learn:<ul><li>When React Native is the perfect choice for a mobile app project<li>How PubNub Chat UI Components make it easy to build and maintain chat without sacrificing flexibility<li>How to add chat to a React Native app in as little as 10 minutes",
+        "brief": "What more would you do if you didn’t have to deal with the headache that comes with setting up real-time infrastructure for chat in your React Native app?  <p class='lead'>Now’s your chance to find out!<p class='lead'>Join our Product Marketing Manager, Lukasz Smacki and Developer Advocate, Darryn Campbell on December <b>7th at 9:00 am PST / 12:00 pm EST</b> to hear more about the release of our new React Native Chat Components and learn:<ul><li>When React Native is the perfect choice for a mobile app project<li>How PubNub Chat UI Components make it easy to build and maintain chat without sacrificing flexibility<li>How to add chat to a React Native app in as little as 10 minutes",
         "linkButtons":
             [
                 {
