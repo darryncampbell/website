@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto';font-size: 14px;
+    font-family: 'Roboto';
 }
 
 .top-section
@@ -10,6 +10,7 @@ body {
 .demo-container
 {
     background-color: #f9f9f9;
+    margin-top: 10px;
 }
 
 .demo-image-container
@@ -46,7 +47,7 @@ body {
 
 .technical-writing-table td
 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     font-family: roboto;
 }

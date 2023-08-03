@@ -126,17 +126,17 @@ function generateFooter()
     <!-- Footer Social Icons-->\
     <div class='col-lg-6 mb-5 mb-lg-0'>\
         <h4 class='text-uppercase mb-4'>Social / Contact</h4>\
-        <!--a class='btn btn-light btn-social mx-1'\
-        href='mailto:darryn@darryncampbell.co.uk'><i\
-            class='fa fa-fw fa-envelope'></i></a-->\
         <a class='btn btn-light btn-social mx-1'\
-        href='https://twitter.com/darryncampbell'><i\
+        href='mailto:darryncampbell@hotmail.com'><i\
+            class='fa fa-fw fa-envelope'></i></a>\
+        <a class='btn btn-light btn-social mx-1'\
+        href='https://twitter.com/darryncampbell' target='_blank'><i\
             class='fab fa-fw fa-twitter'></i></a>\
         <a class='btn btn-light btn-social mx-1'\
-        href='https://www.linkedin.com/in/darryn-campbell-1b0127ab/'><i\
+        href='https://www.linkedin.com/in/darryn-campbell-1b0127ab/' target='_blank'><i\
             class='fab fa-fw fa-linkedin'></i></a>\
         <a class='btn btn-light btn-social mx-1'\
-        href='https://github.com/darryncampbell'><i\
+        href='https://github.com/darryncampbell' target='_blank'><i\
             class='fab fa-fw fa-github'></i></a>\
     </div>\
     <!-- Footer Location-->\
