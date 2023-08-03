@@ -203,7 +203,7 @@ function createDemoPanelContent(title, hostedUrl, githubUrl, imageUrl, imageAlt,
     html += "</a>"
     html += "</div>"
     html += "<p class='demo-description'><br>" + description + "</p>"
-    html += "<p class='text-end'>"
+    html += "<p class='text-end demo-links'>"
     if (isHosted)
         html += "<a href='" + hostedUrl + "' target='_blank'>Hosted app</a> | "
     html += "<a href='" + githubUrl + "'>Source Code <i class='fab fa-github'></i></a>"
