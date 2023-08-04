@@ -138,6 +138,9 @@ function generateFooter()
         <a class='btn btn-light btn-social mx-1'\
         href='https://github.com/darryncampbell' target='_blank'><i\
             class='fab fa-fw fa-github'></i></a>\
+        <a class='btn btn-light btn-social mx-1'\
+        href='https://stackoverflow.com/users/4564002/darryn-campbell' target='_blank'><i\
+            class='fab fa-fw fa-stack-overflow'></i></a>\
     </div>\
     <!-- Footer Location-->\
     <div class='col-lg-3 mb-5 mb-lg-0'>\
