@@ -77,13 +77,17 @@ var speakingEvents = [
         "date": "August 21, 2023",
         "imgSrc": "./assets/img/speaking/devcom_2023.png",
         "title": "Add real-time interactive features to your online games",
-        "userDate": "21st August 2023",
+        "userDate": "21st August 2023 at  1300 local time",
         "location": "Cologne, Germany",
         "otherInfo": [            
         ],
         "brief": "Social features such as chat, friend list management, item trading, and real-time leaderboards are great ways to foster a community around your multiplayer game and increase player retention.  Unfortunately, these real-time features aren’t easy to develop and often get left until the tail end of your development cycle, leading to a frustrating experience for both devs and players.<br><br>In this talk, we will show you some of the best practices used by studios and indie devs as they add social features to their apps and demo how you can easily add these live features into your own game.",
         "linkButtons":
             [
+                {
+                    "text": "Speaker Profile",
+                    "link":"https://bizcommunity.gamescom.global/event/devcom-developer-conference-2023/person/RXZlbnRQZW9wbGVfMjMxOTY5MTM="
+                },
                 {
                     "text": "Slides",
                     "link": ""
