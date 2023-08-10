@@ -110,10 +110,13 @@ var speakingEvents = [
         "linkButtons":
             [
                 {
-                    "text": "Video",
-                    "link": ""
-                    //"link": "https://www.youtube.com/watch?v=4eZbWu44lUs"
+                    "text": "Video (Full)",
+                    "link": "https://www.youtube.com/watch?v=sGusw99l9eI"
                 },
+                {
+                    "text": "Video (Ad)",
+                    "link": "https://www.youtube.com/watch?v=NRdCW2oSII4"
+                }
             ]
     },
     {
