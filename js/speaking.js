@@ -86,21 +86,21 @@ var speakingEvents = [
         "linkButtons":
             [
                 {
-                    "text": "Speaker Profile",
-                    "link":"https://bizcommunity.gamescom.global/event/devcom-developer-conference-2023/person/RXZlbnRQZW9wbGVfMjMxOTY5MTM="
+                    "text": "Conference Page",
+                    "link":"https://bizcommunity.gamescom.global/event/devcom-developer-conference-2023/planning/UGxhbm5pbmdfMTQ3MTM0Nw=="
                 },
                 {
                     "text": "Slides",
                     "link": "./assets/slides/20230821_devcomm_real_time.pdf"
                 },
                 {
-                    "text": "Playlist of Videos used during presentation",
-                    "link": "https://www.youtube.com/watch?v=rwYH7qQA0AI&list=PLdHg3OfLiYCUF31oxW0EHw1bDejNKxI1b&index=1"
+                    "text": "Recording of Talk",
+                    "link": "https://www.youtube.com/watch?v=T4wRC8QAetk"
                 },
                 {
-                    "text": "Video",
-                    "link": ""
-                },
+                    "text": "Playlist of Videos used during presentation",
+                    "link": "https://www.youtube.com/watch?v=rwYH7qQA0AI&list=PLdHg3OfLiYCUF31oxW0EHw1bDejNKxI1b&index=1"
+                }
             ]
     },
     {
