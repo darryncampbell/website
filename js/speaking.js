@@ -74,6 +74,32 @@ function populateSpeaking(json, outputDiv) {
 
 var speakingEvents = [
     {
+        "date": "October 20, 2023",
+        "imgSrc": "./assets/img/speaking/devcom_2023_asia.png",
+        "title": "Add real-time interactive features to your online games",
+        "userDate": "19th - 22nd October 2023.  Exact time & date TBD",
+        "location": "Suntec Convention & Exhibition Centre, Singapore",
+        "otherInfo": [
+            ""        
+        ],
+        "brief": "Social features such as chat, friend list management, item trading, and real-time leaderboards are great ways to foster a community around your multiplayer game and increase player retention.  Unfortunately, these real-time features aren’t easy to develop and often get left until the tail end of your development cycle, leading to a frustrating experience for both devs and players.<br><br>In this talk, we will show you some of the best practices used by studios and indie devs as they add social features to their apps and demo how you can easily add these live features into your own game.",
+        "linkButtons":
+            [
+                {
+                    "text": "Slides",
+                    "link": ""
+                },
+                {
+                    "text": "Recording of Talk",
+                    "link": ""
+                },
+                {
+                    "text": "Playlist of Videos used during presentation",
+                    "link": "https://www.youtube.com/watch?v=rwYH7qQA0AI&list=PLdHg3OfLiYCUF31oxW0EHw1bDejNKxI1b&index=1"
+                }
+            ]
+    },
+    {
         "date": "August 21, 2023",
         "imgSrc": "./assets/img/speaking/devcom_2023_1.jpg",
         "title": "Add real-time interactive features to your online games",
