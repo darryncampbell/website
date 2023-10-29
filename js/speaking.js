@@ -75,7 +75,7 @@ function populateSpeaking(json, outputDiv) {
 var speakingEvents = [
     {
         "date": "October 20, 2023",
-        "imgSrc": "./assets/img/speaking/gamescom_asia_2023.png",
+        "imgSrc": "./assets/img/speaking/gamescom_asia_2023.jpg",
         "title": "Add real-time interactive features to your online games",
         "userDate": "19th October 2023 at 1330 local time",
         "location": "Suntec Convention & Exhibition Centre, Singapore",
