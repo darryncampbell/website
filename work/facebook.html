@@ -1,0 +1,32 @@
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '659590226061557',
+        xfbml            : true,
+        version          : 'v18.0'
+      });
+    };
+  </script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+  <script>
+    function login() {
+        FB.login(function(response) {
+            if (response.authResponse) {
+             console.log('Welcome!  Fetching your information.... ');
+            console.log(response)
+            FB.getAuthResponse(function(response){
+                console.log(response.authResponse.accessToken);
+                });
+             FB.api('/me', function(response) {
+               console.log('Good to see you, ' + response.name + '.');
+             });
+            } else {
+             console.log('User cancelled login or did not fully authorize.');
+            }
+        });
+        }
+
+  </script>
+
+<a href="javascript:login()">Hello</a>
