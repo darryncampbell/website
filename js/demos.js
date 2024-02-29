@@ -115,6 +115,15 @@ var demos = [
         "imageAlt": "Getting Started Kotlin Tutorial",
         "description": "Application made to accompany the Getting Started building a Chat app with the PubNub Kotlin SDK",
         "developedIndependently": true
+    },
+    {
+        "title": "Transport &amp; Logistics Demo",
+        "hostedUrl": "https://www.pubnub.com/demos/transport-logistics/?show=demo",
+        "githubUrl": "https://github.com/PubNubDevelopers/transport-logistics-javascript-demo",
+        "imageUrl": "./assets/img/demos/transport-logistics.png",
+        "imageAlt": "Transport and Logistics Demo",
+        "description": "Simulated enterprise delivery driver application using web workers and Google Maps",
+        "developedIndependently": true
     }
 ]
 
