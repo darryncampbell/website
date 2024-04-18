@@ -124,6 +124,15 @@ var demos = [
         "imageAlt": "Transport and Logistics Demo",
         "description": "Simulated enterprise delivery driver application using web workers and Google Maps",
         "developedIndependently": true
+    },
+    {
+        "title": "PubNub App Context Exerciser",
+        "hostedUrl": "https://pubnubdevelopers.github.io/App-Context-Exerciser/",
+        "githubUrl": "https://github.com/PubNubDevelopers/App-Context-Exerciser",
+        "imageUrl": "./assets/img/demos/app_context_exerciser.png",
+        "imageAlt": "App Context Exerciser",
+        "description": "Simple JavaScript application to demonstrate the PubNub BizOps Workspace features: User Management and Channel Management",
+        "developedIndependently": true
     }
 ]
 
