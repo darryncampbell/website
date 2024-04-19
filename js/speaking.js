@@ -77,7 +77,7 @@ var speakingEvents = [
         "date": "April 30, 2024",
         "imgSrc": "./assets/img/speaking/android_worldwide.jpg",
         "title": "Add Real-Time Features to your Mobile App",
-        "userDate": "30th April 2024",
+        "userDate": "30th April 2024 at 1815 BST (GMT + 1)",
         "location": "Online Conference",
         "otherInfo": [
             ""        
@@ -88,6 +88,10 @@ var speakingEvents = [
                 {
                     "text": "Conference Website",
                     "link": "https://android-worldwide.com/"
+                },
+                {
+                    "text": "Registration",
+                    "link": "https://android-worldwide.com/register/"
                 },
                 {
                     "text": "Slides",
