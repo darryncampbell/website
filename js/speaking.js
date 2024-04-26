@@ -75,7 +75,7 @@ function populateSpeaking(json, outputDiv) {
 var speakingEvents = [
     {
         "date": "April 30, 2024",
-        "imgSrc": "./assets/img/speaking/android_worldwide.jpg",
+        "imgSrc": "./assets/img/speaking/android_worldwide_speaker.png",
         "title": "Add Real-Time Features to your Mobile App",
         "userDate": "30th April 2024 at 1815 BST (GMT + 1)",
         "location": "Online Conference",
