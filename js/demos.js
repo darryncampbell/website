@@ -45,12 +45,21 @@ var demos = [
         "developedIndependently": false
     },
     {
-        "title": "Real-Time Streaming Demo",
+        "title": "Real-Time Streaming Demo (JS)",
         "hostedUrl": "https://www.pubnub.com/demos/real-time-data-streaming/?show=demo",
         "githubUrl": "https://github.com/PubNubDevelopers/Real-Time-Data-Streaming-Demo",
         "imageUrl": "./assets/img/demos/streaming.png",
         "imageAlt": "Live Twitter stream",
         "description": "Displays live real-time data being published through an HTTP Stream.  Highest converting demo on the  <a href='https://pubnub.com'>PubNub</a> website by quite some margin",
+        "developedIndependently": true
+    },
+    {
+        "title": "Real-Time Streaming Demo (Android)",
+        "hostedUrl": "https://play.google.com/store/apps/details?id=com.darryncampbell.devrel.realtimestreaming",
+        "githubUrl": "https://github.com/darryncampbell/Real-Time-Data-Streaming-Demo-Android",
+        "imageUrl": "./assets/img/demos/streaming-android.png",
+        "imageAlt": "Live PubNub Streams",
+        "description": "Android port of the Real-Time Streaming Demo, written in Kotlin and Jetpack Compose to demonstrate the PubNub Kotlin API",
         "developedIndependently": true
     },
     {

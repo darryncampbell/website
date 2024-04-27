@@ -102,7 +102,7 @@ function generateMenuBar()
                 </a>\
                 <div class='dropdown-menu' aria-labelledby='navbarDropdownPersonal'>\
                     <a class='dropdown-item' href='athletics.html'>Athletics Times</a>\
-                    <a class='dropdown-item' href='web_design.html'>Web Design</a>\
+                    <!--a class='dropdown-item' href='web_design.html'>Web Design</a-->\
                 </div>\
             </li>\
         </ul>\
