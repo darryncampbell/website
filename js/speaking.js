@@ -90,16 +90,12 @@ var speakingEvents = [
                     "link": "https://android-worldwide.com/"
                 },
                 {
-                    "text": "Registration",
-                    "link": "https://android-worldwide.com/register/"
-                },
-                {
                     "text": "Slides",
-                    "link": ""
+                    "link": "./assets/slides/20240430_android_worldwide_realtime.pdf"
                 },
                 {
                     "text": "Recording",
-                    "link": ""
+                    "link": "https://youtu.be/BFRYiBc35w8"
                 }
             ]
     },
