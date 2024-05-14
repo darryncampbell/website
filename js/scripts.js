@@ -83,6 +83,7 @@ function generateMenuBar()
                 <div class='dropdown-menu' aria-labelledby='navbarDropdownBlogs'>\
                     <a class='dropdown-item' href='technical-writing.html'>Technical Writing / Blogs</a>\
                     <a class='dropdown-item' href='demos.html'>Demos & Samples</a>\
+                    <a class='dropdown-item' href='videos.html'>Technical Videos</a>\
                 </div>\
             </li>\
             <li class='nav-item dropdown'>\
