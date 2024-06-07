@@ -74,6 +74,32 @@ function populateSpeaking(json, outputDiv) {
 
 var speakingEvents = [
     {
+        "date": "Jnue 25, 2024",
+        "imgSrc": "./assets/img/speaking/real-time-data-summit.png",
+        "title": "Add Real-Time Features to your Mobile App",
+        "userDate": "25th June 2024 at TBD BST (GMT + 1)",
+        "location": "Online Conference",
+        "otherInfo": [
+            ""        
+        ],
+        "brief": "Real-time features will enhance your user experience and improve engagement with your app. However, implementing real-time functionality at scale and cross-platform is not simple, especially when real-time means different things to different apps. <P>You might be tracking a user's location, showing live weather warnings, collaboratively editing a document, or allowing your users to chat with each other. What are the right tools to use? There is no one-size-fits-all, but you don't want to end up with a mashup of storage and transport APIs bloating your app. <P>This talk will discuss the challenges and solutions in maintaining performance and scalability when adding real-time capabilities to your app, whether you are developing the latest hit game or the most useful utility that everyone doesn't yet realise they can't live without.",
+        "linkButtons":
+            [
+                {
+                    "text": "Conference Website",
+                    "link": "https://www.realtimedatasummit.com/"
+                },
+                {
+                    "text": "Slides",
+                    "link": ""
+                },
+                {
+                    "text": "Recording",
+                    "link": ""
+                }
+            ]
+    },
+{
         "date": "April 30, 2024",
         "imgSrc": "./assets/img/speaking/android_worldwide_speaker.png",
         "title": "Add Real-Time Features to your Mobile App",
