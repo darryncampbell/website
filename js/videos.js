@@ -104,15 +104,16 @@ function createVideoPanelContent(title, url, thumbnail, imageAlt, description, s
     html += "</div>"
     html += "<div class='demo-image-container'>"
     html += "<a href='" + url + "' target='_blank'>"
-    html += "<img class='img-fluid demo-image' style='max-height: 20rem;' src='" + thumbnail + "' alt='" + imageAlt + "' />"
+    html += url
+    //html += "<img class='img-fluid demo-image' style='max-height: 20rem;' src='" + thumbnail + "' alt='" + imageAlt + "' />"
     html += "</a>"
     html += "</div>"
     html += "<p class='demo-description'><br>" + description + "</p>"
     html += "<p class='text-end demo-links'>"
-    if (editedIndependantly)
-    {
-        html += "Edited myself | "
-    }
+    //if (editedIndependantly)
+    //{
+    //    html += "Edited myself | "
+    //}
     html += "<a href='" + url + "' target='_blank'>YouTube</a>"
     html += "</p>"
     return html;
