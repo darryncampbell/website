@@ -1,5 +1,14 @@
 var demos = [
     {
+        "title": "Chat Demo",
+        "hostedUrl": "https://chat-sdk-demo-web.netlify.app/",
+        "githubUrl": "https://github.com/PubNubDevelopers/Chat-SDK-Demo-Web",
+        "imageUrl": "./assets/img/demos/chat_sdk_web.png",
+        "imageAlt": "PubNub Chat SDK Web Demo",
+        "description": "Chat Application to showcase the features of the <a href='https://www.pubnub.com/docs/chat/chat-sdk/overview'>PubNub Chat SDK</a> for web",
+        "developedIndependently": true
+    },
+    {
         "title": "PubNub Showcase",
         "hostedUrl": "https://showcase.pub-nub.com/",
         "githubUrl": "https://github.com/PubNubDevelopers/PubNub-Showcase",
