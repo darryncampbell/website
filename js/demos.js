@@ -1,5 +1,14 @@
 var demos = [
     {
+        "title": "Peer to Peer Payment Demo",
+        "hostedUrl": "https://pubnub-fintech-demo.netlify.app",
+        "githubUrl": "https://github.com/PubNubDevelopers/fintech-demo",
+        "imageUrl": "./assets/img/demos/p2p_payment.png",
+        "imageAlt": "PubNub Peer to Peer Payment Demo",
+        "description": "Demo appliction to show how real-time features can enhance user engagement and experience for the Peer to Peer (P2P) payment use case",
+        "developedIndependently": true
+    },
+    {
         "title": "Chat Demo",
         "hostedUrl": "https://chat-sdk-demo-web.netlify.app/",
         "githubUrl": "https://github.com/PubNubDevelopers/Chat-SDK-Demo-Web",
