@@ -1,5 +1,13 @@
 var demos = [
     {
+        "title": "Chat Builder (Sales Tool)",
+        "hostedUrl": "https://pubnub-chat-builder.netlify.app/",
+        "imageUrl": "./assets/img/demos/chat_builder_1.png",
+        "imageAlt": "PubNub Peer to Peer Payment Demo",
+        "description": "Sales tool to create a customized and personalized chat application",
+        "developedIndependently": true
+    },
+    {
         "title": "Peer to Peer Payment Demo",
         "hostedUrl": "https://pubnub-fintech-demo.netlify.app",
         "githubUrl": "https://github.com/PubNubDevelopers/fintech-demo",
