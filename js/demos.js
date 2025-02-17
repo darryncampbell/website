@@ -2,6 +2,7 @@ var demos = [
     {
         "title": "Chat Builder (Sales Tool)",
         "hostedUrl": "https://pubnub-chat-builder.netlify.app/",
+        "githubUrl": "https://github.com/PubNubDevelopers/Customized-Chat-App",
         "imageUrl": "./assets/img/demos/chat_builder_1.png",
         "imageAlt": "PubNub Peer to Peer Payment Demo",
         "description": "Sales tool to create a customized and personalized chat application",
