@@ -1,5 +1,14 @@
 var demos = [
     {
+        "title": "Sports, Media & Entertainment Demo",
+        "hostedUrl": "https://pn-solution-live-events.netlify.app/",
+        "githubUrl": "https://github.com/PubNubDevelopers/pn-solution-live-events",
+        "imageUrl": "./assets/img/demos/sports_media_entertainment.png",
+        "imageAlt": "Sports, Media and Entertainment demo",
+        "description": "PubNub Live events demo for a variety of use cases, e.g. sports, media, entertainment",
+        "developedIndependently": true
+    },
+    {
         "title": "Chat Builder (Sales Tool)",
         "hostedUrl": "https://pubnub-chat-builder.netlify.app/",
         "githubUrl": "https://github.com/PubNubDevelopers/Customized-Chat-App",
