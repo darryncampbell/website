@@ -729,29 +729,7 @@ h4
     color: #495057 !important;
 }
 
-/* Scroll Animation Classes */
-.demo-container,
-.profile-card,
-.section-header {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease;
-}
-
-.demo-container.animate-in,
-.profile-card.animate-in,
-.section-header.animate-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Stagger animation delays */
-.demo-container:nth-child(1) { transition-delay: 0.1s; }
-.demo-container:nth-child(2) { transition-delay: 0.2s; }
-.demo-container:nth-child(3) { transition-delay: 0.3s; }
-.demo-container:nth-child(4) { transition-delay: 0.4s; }
-.demo-container:nth-child(5) { transition-delay: 0.5s; }
-.demo-container:nth-child(6) { transition-delay: 0.6s; }
+/* Scroll Animation Classes - Removed for immediate visibility */
 
 /* Initial state for scroll animations */
 .demos-section {
@@ -765,24 +743,15 @@ html {
 
 /* PubNub Parent Section Styling */
 .pubnub-parent-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-    border-radius: 20px;
-    padding: 60px 40px;
+    background: transparent;
+    border-radius: 0;
+    padding: 20px 0;
     margin: 40px 0;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: none;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
-.pubnub-parent-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #1abc9c, #16a085, #1abc9c);
-}
 
 .pubnub-section-header {
     margin-bottom: 50px;
@@ -824,7 +793,7 @@ html {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .pubnub-parent-section {
-        padding: 40px 20px;
+        padding: 20px 0;
         margin: 20px 0;
     }
     
@@ -837,31 +806,13 @@ html {
     }
 }
 
-/* Enhanced Demo Panel Styles */
+/* Enhanced Demo Panel Styles - Wider Cards Like Technical Writing */
 
-/* Demo Card Header */
-.demo-card-header {
-    padding: 20px 20px 15px;
-    background: #2c3e50;
-    border-bottom: 1px solid #dee2e6;
-    margin-bottom: 0;
-    position: relative;
-}
-
-.demo-card-header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #1abc9c, #16a085);
-}
-
+/* Demo Title in Content Area */
 .demo-title {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    color: white;
+    color: #2d3748;
     margin: 0;
     line-height: 1.3;
 }
@@ -999,11 +950,6 @@ html {
         font-size: 1.2rem;
     }
     
-    .demo-card-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
     
     .demo-status-badge {
         align-self: flex-start;
@@ -1042,7 +988,7 @@ html {
     
     /* Reduce PubNub parent section padding on mobile */
     .pubnub-parent-section {
-        padding: 20px 10px;
+        padding: 20px 0;
         margin: 20px 0;
     }
     

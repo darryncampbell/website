@@ -186,75 +186,8 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     
-    <!-- Modern Demos Page Enhancements -->
+    <!-- Simplified Demos Page Enhancements -->
     <script>
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
-
-        // Wait for demos to load, then observe them
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                // Observe demo containers with enhanced stagger effect
-                const demoContainers = document.querySelectorAll('.demo-container');
-                demoContainers.forEach((container, index) => {
-                    container.style.animationDelay = `${index * 0.15}s`;
-                    observer.observe(container);
-                    
-                    // Add enhanced hover effects for demo panels
-                    const demoImage = container.querySelector('.demo-image');
-                    const demoActions = container.querySelector('.demo-actions');
-                    
-                    if (demoImage && demoActions) {
-                        container.addEventListener('mouseenter', () => {
-                            demoActions.style.transform = 'translateY(-2px)';
-                        });
-                        
-                        container.addEventListener('mouseleave', () => {
-                            demoActions.style.transform = 'translateY(0)';
-                        });
-                    }
-                });
-
-                // Observe profile cards
-                const profileCards = document.querySelectorAll('.profile-card');
-                profileCards.forEach((card, index) => {
-                    card.style.animationDelay = `${index * 0.2}s`;
-                    observer.observe(card);
-                });
-
-                // Add stagger animation to section headers
-                const sectionHeaders = document.querySelectorAll('.section-header');
-                sectionHeaders.forEach((header, index) => {
-                    header.style.animationDelay = `${index * 0.3}s`;
-                    observer.observe(header);
-                });
-
-                // Add click tracking for demo buttons (optional analytics)
-                const demoButtons = document.querySelectorAll('.demo-btn-primary, .demo-btn-secondary');
-                demoButtons.forEach(button => {
-                    button.addEventListener('click', () => {
-                        // Add subtle click animation
-                        button.style.transform = 'scale(0.95)';
-                        setTimeout(() => {
-                            button.style.transform = '';
-                        }, 150);
-                    });
-                });
-                
-            }, 500); // Wait for demos to be rendered
-        });
-
         // Add smooth scroll behavior for internal links
         document.addEventListener('DOMContentLoaded', () => {
             const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');

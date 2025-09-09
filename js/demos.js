@@ -211,11 +211,11 @@ function loadDemosTable(targetTag, developedIndependently)
 
     for (var i = 0; i < demos.length; i++)
     {
-        if (count != 0 && count % 3 == 0)
+        if (count != 0 && count % 2 == 0)
         {
             html += createDemoRowEnd()
         }
-        if (i == 0 || (count > 0 && count % 3 == 0))
+        if (i == 0 || (count > 0 && count % 2 == 0))
         {
             html += createDemoRowStart()
         }
@@ -226,6 +226,11 @@ function loadDemosTable(targetTag, developedIndependently)
             html += createDemoPanelFooter()
             count++;
         }
+    }
+    
+    // Close the last row if we have any demos
+    if (count > 0) {
+        html += createDemoRowEnd()
     }
 
     tag.innerHTML = html;
@@ -245,7 +250,7 @@ function createDemoRowEnd()
 function createDemoPanelHeader()
 {
     var html = "";
-    html += "<div class='col-md-6 col-lg-4 mb-0'>"
+    html += "<div class='col-lg-6 mb-4'>"
     html += "<div class='portfolio-item mx-auto border rounded p-2 demo-container'>"
     return html;
 }
@@ -254,11 +259,6 @@ function createDemoPanelContent(title, hostedUrl, githubUrl, imageUrl, imageAlt,
 {
     var isHosted = (hostedUrl != "")
     var html = "";
-    
-    // Modern card header with title
-    html += "<div class='demo-card-header'>"
-    html += "<h4 class='demo-title'>" + title + "</h4>"
-    html += "</div>"
     
     // Enhanced image container with overlay effects
     html += "<div class='demo-image-container position-relative overflow-hidden'>"
@@ -275,6 +275,7 @@ function createDemoPanelContent(title, hostedUrl, githubUrl, imageUrl, imageAlt,
     
     // Enhanced description with better typography
     html += "<div class='demo-content'>"
+    html += "<h5 class='demo-title mb-3'>" + title + "</h5>"
     html += "<div class='demo-description'>" + description + "</div>"
     html += "</div>"
     
