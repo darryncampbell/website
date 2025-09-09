@@ -44,29 +44,104 @@ function GetSortOrderAsc(prop) {
 
 function populateSpeaking(json, outputDiv) {
     var html = "";
+    
     for (var i = 0; i < json.length; i++) {
-        html += "<div class='col-lg-12 mx-auto'>";
-        html += "<div class='card align-items-center border-dark mb-5'>";
-        if (json[i].imgSrc != "")
-            html += "<img class='card-img-top rounded' src='" + json[i].imgSrc + "' style='max-width:30rem;max-height:30rem' alt='Talk Image'>";
-        html += "<div class='card-body'>";
-        html += "<h4 class='card-title'>" + json[i].title + "</h4>";
-        html += "<p class='lead'>Date: " + json[i].userDate + "</p>";
-        html += "<p class='lead'>Location: " + json[i].location + "</p>";
-        for (var j = 0; j < json[i].otherInfo.length; j++) {
-            html += "<p class='lead'>" + json[i].otherInfo[j] + "</p>";
+        html += "<div class='col-lg-6 mb-4'>";
+        html += "<div class='speaking-card h-100 border rounded-3 shadow-sm overflow-hidden'>";
+        
+        // Modern card header with image and title
+        html += "<div class='speaking-card-header position-relative'>";
+        if (json[i].imgSrc != "") {
+            html += "<div class='speaking-image-container'>";
+            html += "<img class='speaking-image w-100' src='" + json[i].imgSrc + "' alt='Speaking Engagement Image' />";
+            html += "<div class='speaking-image-overlay'></div>";
+            html += "</div>";
         }
-        html += "<p class='lead'>" + json[i].brief + "</p>";
-        for (var k = 0; k < json[i].linkButtons.length; k++) {
-            if (json[i].linkButtons[k].link == "")
-                html += "<button class='btn btn-primary mb-2'>" + json[i].linkButtons[k].text + " (Not yet available)</button> ";
-            else
-                html += "<a href='" + json[i].linkButtons[k].link + "' target='_blank' class='btn btn-primary mb-2'>" + json[i].linkButtons[k].text + "</a> ";
+        html += "<div class='speaking-header-content p-3'>";
+        html += "<h4 class='speaking-title mb-2'>" + json[i].title + "</h4>";
+        html += "<div class='speaking-meta'>";
+        html += "<div class='speaking-date mb-2'>";
+        html += "<i class='fas fa-calendar-alt me-2 text-primary'></i>";
+        html += "<span class='fw-semibold'>" + json[i].userDate + "</span>";
+        html += "</div>";
+        html += "<div class='speaking-location mb-2'>";
+        html += "<i class='fas fa-map-marker-alt me-2 text-primary'></i>";
+        html += "<span>" + json[i].location + "</span>";
+        html += "</div>";
+        html += "</div>";
+        html += "</div>";
+        html += "</div>";
+        
+        // Enhanced content section
+        html += "<div class='speaking-content p-3'>";
+        
+        // Additional info if present
+        if (json[i].otherInfo && json[i].otherInfo.length > 0) {
+            for (var j = 0; j < json[i].otherInfo.length; j++) {
+                if (json[i].otherInfo[j] && json[i].otherInfo[j].trim() !== "") {
+                    html += "<div class='speaking-extra-info mb-2'>";
+                    html += "<i class='fas fa-info-circle me-2 text-info'></i>";
+                    html += "<small class='text-muted'>" + json[i].otherInfo[j] + "</small>";
+                    html += "</div>";
+                }
+            }
         }
+        
+        // Description with better typography
+        html += "<div class='speaking-description mb-3'>";
+        html += "<p class='text-muted mb-0'>" + json[i].brief + "</p>";
         html += "</div>";
         html += "</div>";
-        html += "</div>";
+        
+        // Modern action buttons footer
+        if (json[i].linkButtons && json[i].linkButtons.length > 0) {
+            html += "<div class='speaking-actions p-3'>";
+            html += "<div class='d-flex flex-wrap gap-2'>";
+            
+            for (var k = 0; k < json[i].linkButtons.length; k++) {
+                var buttonText = json[i].linkButtons[k].text;
+                var buttonLink = json[i].linkButtons[k].link;
+                
+                // Determine button style based on content
+                var buttonClass = "speaking-btn-secondary";
+                var iconClass = "fas fa-external-link-alt";
+                
+                if (buttonText.toLowerCase().includes('slide')) {
+                    buttonClass = "speaking-btn-primary";
+                    iconClass = "fas fa-file-powerpoint";
+                } else if (buttonText.toLowerCase().includes('video') || buttonText.toLowerCase().includes('recording')) {
+                    buttonClass = "speaking-btn-primary"; 
+                    iconClass = "fas fa-video";
+                } else if (buttonText.toLowerCase().includes('register')) {
+                    buttonClass = "speaking-btn-success";
+                    iconClass = "fas fa-user-plus";
+                }
+                
+                if (buttonLink == "" || !buttonLink) {
+                    html += "<button class='btn " + buttonClass + " btn-sm disabled' disabled>";
+                    html += "<i class='" + iconClass + " me-2'></i>" + buttonText + " (Not Available)";
+                    html += "</button>";
+                } else {
+                    html += "<a href='" + buttonLink + "' target='_blank' class='btn " + buttonClass + " btn-sm'>";
+                    html += "<i class='" + iconClass + " me-2'></i>" + buttonText;
+                    html += "</a>";
+                }
+            }
+            html += "</div>";
+            html += "</div>";
+        }
+        
+        html += "</div>";  // Close speaking-card
+        html += "</div>";  // Close column
     }
+    
+    // Wrap in row if we have content
+    if (html) {
+        html = "<div class='row'>" + html + "</div>";
+    } else {
+        html = "<div class='row'><div class='col-12 text-center'><p class='text-muted'>No speaking engagements found.</p></div></div>";
+    }
+    
     document.getElementById(outputDiv).innerHTML = html;
 }
 
@@ -74,7 +149,7 @@ function populateSpeaking(json, outputDiv) {
 
 var speakingEvents = [
     {
-        "date": "June 25, 2024",
+        "date": "June 25, 2026",
         "imgSrc": "./assets/img/speaking/real-time-data-summit-2024.png",
         "title": "Add Real-Time Features to your Mobile App",
         "userDate": "25th June 2024 at TBD BST (GMT + 1)",
@@ -91,7 +166,7 @@ var speakingEvents = [
                 },
                 {
                     "text": "Slides",
-                    "link": ""
+                    "link": "./assets/slides/20240625_realtime-data-summit.pdf"
                 },
                 {
                     "text": "Recording",
@@ -100,7 +175,7 @@ var speakingEvents = [
             ]
     },
 {
-        "date": "April 30, 2024",
+        "date": "April 30, 2026",
         "imgSrc": "./assets/img/speaking/android_worldwide_speaker.png",
         "title": "Add Real-Time Features to your Mobile App",
         "userDate": "30th April 2024 at 1815 BST (GMT + 1)",
