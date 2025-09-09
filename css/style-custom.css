@@ -1273,3 +1273,29 @@ html {
     }
 }
 
+/* Compact Copyright Section Styles */
+.copyright .btn-social {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.copyright .btn-social:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .copyright .d-flex {
+        text-align: center;
+    }
+    
+    .copyright .social-links {
+        justify-content: center;
+        display: flex;
+    }
+}
+

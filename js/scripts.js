@@ -113,46 +113,33 @@ function generateMenuBar()
     document.getElementById('mainNav').innerHTML = html;
 }
 
-function generateFooter()
-{
-    var html = "<div class='container'>\
-    <div class='row'>\
-    <!-- Footer About Text-->\
-    <div class='col-lg-3 mb-5'>\
-        <h4 class='text-uppercase mb-4'>Darryn Campbell</h4>\
-        <p class='lead mb-0'>\
-        Enterprise Mobile development <br> Software Architecture <br> Speaking\
-        </p>\
-    </div>\
-    <!-- Footer Social Icons-->\
-    <div class='col-lg-6 mb-5 mb-lg-0'>\
-        <h4 class='text-uppercase mb-4'>Social / Contact</h4>\
-        <a class='btn btn-light btn-social mx-1'\
-        href='mailto:darryncampbell@hotmail.com'><i\
-            class='fa fa-fw fa-envelope'></i></a>\
-        <a class='btn btn-light btn-social mx-1'\
-        href='https://twitter.com/darryncampbell' target='_blank'><i\
-            class='fab fa-fw fa-twitter'></i></a>\
-        <a class='btn btn-light btn-social mx-1'\
-        href='https://www.linkedin.com/in/darryn-campbell-1b0127ab/' target='_blank'><i\
-            class='fab fa-fw fa-linkedin'></i></a>\
-        <a class='btn btn-light btn-social mx-1'\
-        href='https://github.com/darryncampbell' target='_blank'><i\
-            class='fab fa-fw fa-github'></i></a>\
-        <a class='btn btn-light btn-social mx-1'\
-        href='https://stackoverflow.com/users/4564002/darryn-campbell' target='_blank'><i\
-            class='fab fa-fw fa-stack-overflow'></i></a>\
-    </div>\
-    <!-- Footer Location-->\
-    <div class='col-lg-3 mb-5 mb-lg-0'>\
-        <h4 class='text-uppercase mb-1'>Location</h4>\
-        <p class='lead mb-0'>\
-        Hampshire<br />\
-        United Kingdom\
-        </p>\
-    </div>\
-  </div>"
-
-document.getElementById('page-footer').innerHTML = html;
-
-}
+// Initialize copyright section with social links and dynamic year
+document.addEventListener('DOMContentLoaded', function() {
+    // Set current year in copyright
+    var currentYear = new Date().getFullYear();
+    
+    // Add social links to copyright section
+    var copyrightContainer = document.querySelector('.copyright .container');
+    if (copyrightContainer) {
+        copyrightContainer.innerHTML = "<div class='d-flex flex-column flex-md-row align-items-center justify-content-between'>\
+            <div class='social-links mb-2 mb-md-0'>\
+                <a class='btn btn-outline-light btn-social me-1' href='mailto:darryncampbell@hotmail.com' title='Email'>\
+                    <i class='fa fa-fw fa-envelope'></i></a>\
+                <a class='btn btn-outline-light btn-social me-1' href='https://twitter.com/darryncampbell' target='_blank' title='Twitter'>\
+                    <i class='fab fa-fw fa-twitter'></i></a>\
+                <a class='btn btn-outline-light btn-social me-1' href='https://www.linkedin.com/in/darryn-campbell-1b0127ab/' target='_blank' title='LinkedIn'>\
+                    <i class='fab fa-fw fa-linkedin'></i></a>\
+                <a class='btn btn-outline-light btn-social me-1' href='https://github.com/darryncampbell' target='_blank' title='GitHub'>\
+                    <i class='fab fa-fw fa-github'></i></a>\
+                <a class='btn btn-outline-light btn-social' href='https://stackoverflow.com/users/4564002/darryn-campbell' target='_blank' title='Stack Overflow'>\
+                    <i class='fab fa-fw fa-stack-overflow'></i></a>\
+            </div>\
+            <div class='copyright-text'>\
+                <small>Copyright © Darryn Campbell " + currentYear + "</small>\
+            </div>\
+            <div class='location-text'>\
+                <small class='text-white-50'>Hampshire, UK | Developer Relations</small>\
+            </div>\
+        </div>";
+    }
+});
