@@ -743,6 +743,61 @@ h4
     overflow: hidden;
 }
 
+/* Athletics Table Styles */
+.athletics-content .table-responsive {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.athletics-content .table {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.athletics-content .table th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    color: #495057;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.athletics-content .table td {
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .athletics-content .table {
+        font-size: 0.8rem;
+    }
+    
+    .athletics-content .table th,
+    .athletics-content .table td {
+        padding: 0.5rem 0.25rem;
+        white-space: nowrap;
+    }
+    
+    .athletics-content .table-responsive {
+        border: 1px solid #dee2e6;
+    }
+    
+    /* Add scrollbar hint */
+    .athletics-content .table-responsive::after {
+        content: "← Scroll horizontally to see all data →";
+        display: block;
+        text-align: center;
+        font-size: 0.75rem;
+        color: #6c757d;
+        padding: 0.5rem;
+        background-color: #f8f9fa;
+        border-top: 1px solid #dee2e6;
+    }
+}
+
 .videos-section {
     margin-bottom: 4rem;
 }
