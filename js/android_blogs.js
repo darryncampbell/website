@@ -1,4 +1,4 @@
-[
+var android_blogs = [
     {
         "URL": "https://www.devprojournal.com/technology-trends/mobility/four-ways-to-improve-your-mobile-application-security/",
         "LinkText": "DevPro Journal",

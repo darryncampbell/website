@@ -9,21 +9,21 @@ var demos = [
         "developedIndependently": true
     },
     {
-        "title": "Chat Builder (Sales Tool)",
-        "hostedUrl": "https://pubnub-chat-builder.netlify.app/",
-        "githubUrl": "https://github.com/PubNubDevelopers/Customized-Chat-App",
-        "imageUrl": "./assets/img/demos/chat_builder_1.png",
-        "imageAlt": "PubNub Peer to Peer Payment Demo",
-        "description": "Sales tool to create a customized and personalized chat application",
-        "developedIndependently": true
-    },
-    {
         "title": "Peer to Peer Payment Demo",
         "hostedUrl": "https://pubnub-fintech-demo.netlify.app",
         "githubUrl": "https://github.com/PubNubDevelopers/fintech-demo",
         "imageUrl": "./assets/img/demos/p2p_payment.png",
         "imageAlt": "PubNub Peer to Peer Payment Demo",
         "description": "Demo appliction to show how real-time features can enhance user engagement and experience for the Peer to Peer (P2P) payment use case",
+        "developedIndependently": true
+    },
+    {
+        "title": "Chat Builder (Sales Tool)",
+        "hostedUrl": "https://pubnub-chat-builder.netlify.app/",
+        "githubUrl": "https://github.com/PubNubDevelopers/Customized-Chat-App",
+        "imageUrl": "./assets/img/demos/chat_builder_1.png",
+        "imageAlt": "PubNub Peer to Peer Payment Demo",
+        "description": "Sales tool to create a customized and personalized chat application",
         "developedIndependently": true
     },
     {
@@ -187,7 +187,7 @@ function loadDemosHomepage()
     var html = ""
     //  Homepage has the top 3 demos in 1 row
     html += createDemoRowStart()
-    for (var i = 0; i < 3; i++)
+    for (var i = 0; i < 2; i++)
     {
         html += createDemoPanelHeader()
         html += createDemoPanelContent(demos[i].title, demos[i].hostedUrl, demos[i].githubUrl, demos[i].imageUrl, demos[i].imageAlt, demos[i].description)
@@ -211,11 +211,11 @@ function loadDemosTable(targetTag, developedIndependently)
 
     for (var i = 0; i < demos.length; i++)
     {
-        if (count != 0 && count % 3 == 0)
+        if (count != 0 && count % 2 == 0)
         {
             html += createDemoRowEnd()
         }
-        if (i == 0 || (count > 0 && count % 3 == 0))
+        if (i == 0 || (count > 0 && count % 2 == 0))
         {
             html += createDemoRowStart()
         }
@@ -226,6 +226,11 @@ function loadDemosTable(targetTag, developedIndependently)
             html += createDemoPanelFooter()
             count++;
         }
+    }
+    
+    // Close the last row if we have any demos
+    if (count > 0) {
+        html += createDemoRowEnd()
     }
 
     tag.innerHTML = html;
@@ -245,7 +250,7 @@ function createDemoRowEnd()
 function createDemoPanelHeader()
 {
     var html = "";
-    html += "<div class='col-md-6 col-lg-4 mb-0'>"
+    html += "<div class='col-lg-6 mb-4'>"
     html += "<div class='portfolio-item mx-auto border rounded p-2 demo-container'>"
     return html;
 }
@@ -254,23 +259,39 @@ function createDemoPanelContent(title, hostedUrl, githubUrl, imageUrl, imageAlt,
 {
     var isHosted = (hostedUrl != "")
     var html = "";
-    html += "<div class='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>"
-    html += "<H4>" + title + "</H4>"
-    html += "</div>"
-    html += "<div class='demo-image-container'>"
+    
+    // Enhanced image container with overlay effects
+    html += "<div class='demo-image-container position-relative overflow-hidden'>"
+    
+    // Image with link
     if (isHosted)
-        html += "<a href='" + hostedUrl + "' target='_blank'>"
+        html += "<a href='" + hostedUrl + "' target='_blank' class='demo-image-link'>"
     else
-        html += "<a href='" + githubUrl + "' target='_blank'>"    
-    html += "<img class='img-fluid demo-image' style='max-height: 20rem;' src='" + imageUrl + "' alt='" + imageAlt + "' />"
+        html += "<a href='" + githubUrl + "' target='_blank' class='demo-image-link'>"    
+    
+    html += "<img class='img-fluid demo-image' src='" + imageUrl + "' alt='" + imageAlt + "' />"
     html += "</a>"
     html += "</div>"
-    html += "<p class='demo-description'><br>" + description + "</p>"
-    html += "<p class='text-end demo-links'>"
-    if (isHosted)
-        html += "<a href='" + hostedUrl + "' target='_blank'>Hosted app</a> | "
-    html += "<a href='" + githubUrl + "'>Source Code <i class='fab fa-github'></i></a>"
-    html += "</p>"
+    
+    // Enhanced description with better typography
+    html += "<div class='demo-content'>"
+    html += "<h5 class='demo-title mb-3'>" + title + "</h5>"
+    html += "<div class='demo-description'>" + description + "</div>"
+    html += "</div>"
+    
+    // Modern action buttons footer
+    html += "<div class='demo-actions'>"
+    if (isHosted) {
+        html += "<a href='" + hostedUrl + "' target='_blank' class='btn demo-btn-primary'>"
+        html += "<i class='fas fa-external-link-alt me-2'></i>Live Demo</a>"
+        html += "<a href='" + githubUrl + "' target='_blank' class='btn demo-btn-secondary'>"
+        html += "<i class='fab fa-github me-2'></i>Source</a>"
+    } else {
+        html += "<a href='" + githubUrl + "' target='_blank' class='btn demo-btn-primary w-100'>"
+        html += "<i class='fab fa-github me-2'></i>View Source Code</a>"
+    }
+    html += "</div>"
+    
     return html;
 }
 
