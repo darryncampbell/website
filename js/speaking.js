@@ -149,7 +149,7 @@ function populateSpeaking(json, outputDiv) {
 
 var speakingEvents = [
     {
-        "date": "June 25, 2026",
+        "date": "June 25, 2024",
         "imgSrc": "./assets/img/speaking/real-time-data-summit-2024.png",
         "title": "Add Real-Time Features to your Mobile App",
         "userDate": "25th June 2024 at TBD BST (GMT + 1)",
@@ -175,7 +175,7 @@ var speakingEvents = [
             ]
     },
 {
-        "date": "April 30, 2026",
+        "date": "April 30, 2024",
         "imgSrc": "./assets/img/speaking/android_worldwide_speaker.png",
         "title": "Add Real-Time Features to your Mobile App",
         "userDate": "30th April 2024 at 1815 BST (GMT + 1)",
