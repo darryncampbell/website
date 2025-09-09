@@ -736,6 +736,13 @@ h4
     overflow: hidden;
 }
 
+/* Athletics Page Styles */
+.athletics-hero {
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+    position: relative;
+    overflow: hidden;
+}
+
 .videos-section {
     margin-bottom: 4rem;
 }
