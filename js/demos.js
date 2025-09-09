@@ -254,23 +254,43 @@ function createDemoPanelContent(title, hostedUrl, githubUrl, imageUrl, imageAlt,
 {
     var isHosted = (hostedUrl != "")
     var html = "";
-    html += "<div class='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>"
-    html += "<H4>" + title + "</H4>"
+    
+    // Modern card header with title
+    html += "<div class='demo-card-header'>"
+    html += "<h4 class='demo-title'>" + title + "</h4>"
     html += "</div>"
-    html += "<div class='demo-image-container'>"
+    
+    // Enhanced image container with overlay effects
+    html += "<div class='demo-image-container position-relative overflow-hidden'>"
+    
+    // Image with link
     if (isHosted)
-        html += "<a href='" + hostedUrl + "' target='_blank'>"
+        html += "<a href='" + hostedUrl + "' target='_blank' class='demo-image-link'>"
     else
-        html += "<a href='" + githubUrl + "' target='_blank'>"    
-    html += "<img class='img-fluid demo-image' style='max-height: 20rem;' src='" + imageUrl + "' alt='" + imageAlt + "' />"
+        html += "<a href='" + githubUrl + "' target='_blank' class='demo-image-link'>"    
+    
+    html += "<img class='img-fluid demo-image' src='" + imageUrl + "' alt='" + imageAlt + "' />"
     html += "</a>"
     html += "</div>"
-    html += "<p class='demo-description'><br>" + description + "</p>"
-    html += "<p class='text-end demo-links'>"
-    if (isHosted)
-        html += "<a href='" + hostedUrl + "' target='_blank'>Hosted app</a> | "
-    html += "<a href='" + githubUrl + "'>Source Code <i class='fab fa-github'></i></a>"
-    html += "</p>"
+    
+    // Enhanced description with better typography
+    html += "<div class='demo-content'>"
+    html += "<div class='demo-description'>" + description + "</div>"
+    html += "</div>"
+    
+    // Modern action buttons footer
+    html += "<div class='demo-actions'>"
+    if (isHosted) {
+        html += "<a href='" + hostedUrl + "' target='_blank' class='btn demo-btn-primary'>"
+        html += "<i class='fas fa-external-link-alt me-2'></i>Live Demo</a>"
+        html += "<a href='" + githubUrl + "' target='_blank' class='btn demo-btn-secondary'>"
+        html += "<i class='fab fa-github me-2'></i>Source</a>"
+    } else {
+        html += "<a href='" + githubUrl + "' target='_blank' class='btn demo-btn-primary w-100'>"
+        html += "<i class='fab fa-github me-2'></i>View Source Code</a>"
+    }
+    html += "</div>"
+    
     return html;
 }
 

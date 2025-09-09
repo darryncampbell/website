@@ -36,47 +36,132 @@
 
     </nav>
 
-    <header class="pagehead">
-    </header>
-
-    <section class="page-section top-section" id="technology">
+    <!-- Hero Section -->
+    <section class="demos-hero bg-gradient-primary text-white py-5">
         <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Demos & Samples</h2>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
-                            <div class="divider-custom-line"></div>
+            <div class="row align-items-center min-vh-40">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="hero-content fade-in">
+                        <div class="hero-icon mb-4">
+                            <i class="fas fa-laptop-code fa-4x text-white-50"></i>
                         </div>
-            
-            <p class="lead">This page features a selection of demos and sample apps I have written.  For blogs and articles, please see the <span style="font-weight: bold"><a href="./technical-writing.html">technical writing page</a></span></p>
+                        <h1 class="display-4 fw-bold mb-4">Demos & Sample Applications</h1>
+                        <p class="lead fs-4 mb-4">This page features a selection of demos and sample apps I have written</p>
+                        <div class="hero-divider mx-auto mb-4"></div>
+                        <p class="mb-0">For detailed technical articles and blog posts, visit the <a href="./technical-writing.html" class="text-white fw-bold text-decoration-underline">technical writing section</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
 
-            <H3>Developed Independently</H3>
+    <!-- Main Content Section -->
+    <section class="page-section py-5" id="demos-content">
+        <div class="container">
 
-            <div id="demos-demopage-independent"></div>
+            <!-- PubNub Parent Section -->
+            <div class="pubnub-parent-section mb-5">
+                <!-- PubNub Section Header -->
+                <div class="pubnub-section-header text-center mb-5">
+                    <div class="pubnub-logo-container mb-4">
+                        <img src="./assets/img/pubnub.png" alt="PubNub Logo" class="pubnub-logo">
+                    </div>
+                    <h2 class="pubnub-main-title mb-3">PubNub Demos</h2>
+                    <p class="lead text-muted">Real-time demos and applications built during my time at PubNub</p>
+                    <div class="pubnub-divider mx-auto"></div>
+                </div>
 
-            <br>
+                <!-- Section: Developed Independently -->
+                <div class="demos-section mb-5">
+                    <div class="section-header text-center mb-5">
+                        <h3 class="section-title position-relative d-inline-block">
+                            <span class="px-3">Developed Independently</span>
+                        </h3>
+                        <p class="text-muted mt-3">Projects developed entirely from concept to completion</p>
+                    </div>
+                    <div id="demos-demopage-independent" class="demos-grid"></div>
+                </div>
 
-            <H3>Developed with Others</H3>
+                <!-- Section: Collaborative Projects -->
+                <div class="demos-section mb-5">
+                    <div class="section-header text-center mb-5">
+                        <h3 class="section-title position-relative d-inline-block">
+                            <span class="px-3">Collaborative Projects</span>
+                        </h3>
+                        <p class="text-muted mt-3">Projects developed in collaboration with team members</p>
+                    </div>
+                    <div id="demos-demopage-withothers" class="demos-grid"></div>
+                </div>
+            </div>
 
-            <div id="demos-demopage-withothers"></div>
-
-            <h3>GitHub Accounts</h3>
-            <p class="lead"><i class="fab fa-fw fa-github"></i> <a href="https://github.com/darryncampbell-pubnub"
-                    target="_blank">darryncampbell-pubnub</a>. Work account from my employment at PubNub</p>
-            <p class="lead"><i class="fab fa-fw fa-github"></i> <a href="https://github.com/darryncampbell"
-                    target="_blank">darryncampbell</a>. Both my personal account and the account I used when working for
-                Zebra Technologies</p>
-<br>
-            <h3>Other Accounts</h3>
-            <p class="lead"><i class="fab fa-npm"></i> <a href="https://www.npmjs.com/~darryncampbell"
-                    target="_blank">NPM
-                    Packages.</a> Not used in a few years, used to host my old open source packages for Zebra.</p>
-            <p class="lead"><i class="fab fa-google-play"></i> <a
-                    href="https://play.google.com/store/apps/dev?id=6417240421318509032" target="_blank">Google
-                    Play Store.</a> Used exclusively for testing Play Store behaviour, so you will only find test apps
-                here.</p>
+            <!-- Developer Profiles Section -->
+            <div class="developer-profiles-section mt-5 pt-5 border-top">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="profile-card h-100 p-4 bg-light rounded-3 shadow-sm">
+                            <h3 class="h4 mb-4 text-primary">
+                                <i class="fab fa-github me-2"></i>GitHub Profiles
+                            </h3>
+                            <div class="profile-item mb-3">
+                                <a href="https://github.com/darryncampbell-pubnub" target="_blank" class="text-decoration-none d-flex align-items-center">
+                                    <div class="profile-icon me-3">
+                                        <i class="fab fa-github fa-2x text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-dark">darryncampbell-pubnub</h5>
+                                        <small class="text-muted">Professional work account from PubNub employment</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-item">
+                                <a href="https://github.com/darryncampbell" target="_blank" class="text-decoration-none d-flex align-items-center">
+                                    <div class="profile-icon me-3">
+                                        <i class="fab fa-github fa-2x text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-dark">darryncampbell</h5>
+                                        <small class="text-muted">Personal account & Zebra Technologies work</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="profile-card h-100 p-4 bg-light rounded-3 shadow-sm">
+                            <h3 class="h4 mb-4 text-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>Other Platforms
+                            </h3>
+                            <div class="profile-item mb-3">
+                                <a href="https://www.npmjs.com/~darryncampbell" target="_blank" class="text-decoration-none d-flex align-items-center">
+                                    <div class="profile-icon me-3">
+                                        <i class="fab fa-npm fa-2x text-danger"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-dark">NPM Packages</h5>
+                                        <small class="text-muted">Legacy open source packages for Zebra</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-item">
+                                <a href="https://play.google.com/store/apps/dev?id=6417240421318509032" target="_blank" class="text-decoration-none d-flex align-items-center">
+                                    <div class="profile-icon me-3">
+                                        <i class="fab fa-google-play fa-2x text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-dark">Google Play Store</h5>
+                                        <small class="text-muted">Test applications for Play Store behavior testing</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -100,6 +185,94 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    
+    <!-- Modern Demos Page Enhancements -->
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Wait for demos to load, then observe them
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                // Observe demo containers with enhanced stagger effect
+                const demoContainers = document.querySelectorAll('.demo-container');
+                demoContainers.forEach((container, index) => {
+                    container.style.animationDelay = `${index * 0.15}s`;
+                    observer.observe(container);
+                    
+                    // Add enhanced hover effects for demo panels
+                    const demoImage = container.querySelector('.demo-image');
+                    const demoActions = container.querySelector('.demo-actions');
+                    
+                    if (demoImage && demoActions) {
+                        container.addEventListener('mouseenter', () => {
+                            demoActions.style.transform = 'translateY(-2px)';
+                        });
+                        
+                        container.addEventListener('mouseleave', () => {
+                            demoActions.style.transform = 'translateY(0)';
+                        });
+                    }
+                });
+
+                // Observe profile cards
+                const profileCards = document.querySelectorAll('.profile-card');
+                profileCards.forEach((card, index) => {
+                    card.style.animationDelay = `${index * 0.2}s`;
+                    observer.observe(card);
+                });
+
+                // Add stagger animation to section headers
+                const sectionHeaders = document.querySelectorAll('.section-header');
+                sectionHeaders.forEach((header, index) => {
+                    header.style.animationDelay = `${index * 0.3}s`;
+                    observer.observe(header);
+                });
+
+                // Add click tracking for demo buttons (optional analytics)
+                const demoButtons = document.querySelectorAll('.demo-btn-primary, .demo-btn-secondary');
+                demoButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Add subtle click animation
+                        button.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            button.style.transform = '';
+                        }, 150);
+                    });
+                });
+                
+            }, 500); // Wait for demos to be rendered
+        });
+
+        // Add smooth scroll behavior for internal links
+        document.addEventListener('DOMContentLoaded', () => {
+            const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+            smoothScrollLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 

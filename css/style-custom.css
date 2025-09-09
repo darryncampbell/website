@@ -68,3 +68,582 @@ h4
     margin-bottom: 10px;
 }
 
+/* Modern Demos Page Enhancements */
+
+/* Hero Section Styles */
+.demos-hero {
+    background: linear-gradient(135deg, #1abc9c 0%, #2c3e50 100%) !important;
+    position: relative;
+    overflow: hidden;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #1abc9c 0%, #2c3e50 100%) !important;
+}
+
+.min-vh-40 {
+    min-height: 40vh;
+}
+
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-icon {
+    animation: fadeInDown 1s ease-out 0.3s both;
+}
+
+.hero-divider {
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    animation: slideInWidth 1s ease-out 0.6s both;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.hero-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+/* Section Headers */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #1abc9c, transparent);
+    z-index: -1;
+}
+
+.section-title::before {
+    left: -100%;
+    right: 0;
+}
+
+.section-title::after {
+    left: 100%;
+    right: -100%;
+}
+
+.section-title span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Enhanced Demo Grid */
+.demos-grid {
+    padding: 40px;
+}
+
+.demos-grid .row {
+    margin-top: 0;
+}
+
+.demos-grid .col-md-6.col-lg-4 {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+.demos-grid .row {
+    margin-bottom: 1rem;
+}
+
+.demo-container {
+    background: white !important;
+    border: none !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.demo-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+
+.demo-image {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1)) !important;
+    border: none !important;
+}
+
+.demo-container:hover .demo-image {
+    transform: scale(1.02);
+}
+
+/* Profile Cards */
+.profile-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #1abc9c, #2c3e50);
+    transition: left 0.5s ease;
+}
+
+.profile-card:hover::before {
+    left: 100%;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12) !important;
+}
+
+.profile-item {
+    transition: all 0.3s ease;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px !important;
+}
+
+.profile-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.profile-icon {
+    transition: transform 0.3s ease;
+}
+
+.profile-item:hover .profile-icon {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-content .lead {
+        font-size: 1.1rem !important;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .demos-hero {
+        min-height: 35vh;
+    }
+    
+    .profile-item:hover {
+        transform: none;
+    }
+}
+
+/* Enhanced link styles */
+.developer-profiles-section a:hover h5 {
+    color: #1abc9c !important;
+}
+
+.developer-profiles-section .profile-item:hover small {
+    color: #495057 !important;
+}
+
+/* Scroll Animation Classes */
+.demo-container,
+.profile-card,
+.section-header {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.demo-container.animate-in,
+.profile-card.animate-in,
+.section-header.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animation delays */
+.demo-container:nth-child(1) { transition-delay: 0.1s; }
+.demo-container:nth-child(2) { transition-delay: 0.2s; }
+.demo-container:nth-child(3) { transition-delay: 0.3s; }
+.demo-container:nth-child(4) { transition-delay: 0.4s; }
+.demo-container:nth-child(5) { transition-delay: 0.5s; }
+.demo-container:nth-child(6) { transition-delay: 0.6s; }
+
+/* Initial state for scroll animations */
+.demos-section {
+    overflow: hidden;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* PubNub Parent Section Styling */
+.pubnub-parent-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin: 40px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.pubnub-parent-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1abc9c, #16a085, #1abc9c);
+}
+
+.pubnub-section-header {
+    margin-bottom: 50px;
+}
+
+.pubnub-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pubnub-logo {
+    max-height: 80px;
+    width: auto;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.pubnub-main-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.pubnub-divider {
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #1abc9c, #16a085);
+    border-radius: 2px;
+    margin-top: 30px;
+}
+
+/* Adjust subsection titles within PubNub section */
+.pubnub-parent-section .section-title {
+    font-size: 2rem;
+    color: #495057;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pubnub-parent-section {
+        padding: 40px 20px;
+        margin: 20px 0;
+    }
+    
+    .pubnub-main-title {
+        font-size: 2.2rem;
+    }
+    
+    .pubnub-logo {
+        max-height: 60px;
+    }
+}
+
+/* Enhanced Demo Panel Styles */
+
+/* Demo Card Header */
+.demo-card-header {
+    padding: 20px 20px 15px;
+    background: #2c3e50;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.demo-card-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #1abc9c, #16a085);
+}
+
+.demo-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    line-height: 1.3;
+}
+
+
+/* Enhanced Image Container */
+.demo-image-container {
+    margin: 0 !important;
+    background: white;
+    position: relative;
+}
+
+.demo-image-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.demo-image {
+    width: 100%;
+    height: 240px !important;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border: none !important;
+    border-radius: 12px !important;
+    filter: none !important;
+    max-height: none !important;
+}
+
+
+.demo-image-link:hover .demo-image {
+    transform: scale(1.05);
+}
+
+/* Demo Content */
+.demo-content {
+    padding: 20px;
+}
+
+.demo-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #495057;
+    margin: 0;
+    text-align: left !important;
+    padding: 0 !important;
+}
+
+.demo-description a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.demo-description a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Demo Actions */
+.demo-actions {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.demo-btn-primary,
+.demo-btn-secondary {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.demo-btn-primary {
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: white;
+    box-shadow: 0 4px 12px rgba(26, 188, 156, 0.3);
+}
+
+.demo-btn-primary:hover {
+    background: linear-gradient(135deg, #16a085, #138d75);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(26, 188, 156, 0.4);
+    color: white;
+}
+
+.demo-btn-secondary {
+    background: white;
+    color: #2c3e50;
+    border-color: #dee2e6;
+}
+
+.demo-btn-secondary:hover {
+    background: #f8f9fa;
+    border-color: #1abc9c;
+    color: #1abc9c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Container Styling */
+.demo-container {
+    background: white !important;
+    border: 2px solid #e9ecef !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Override existing demo-container styles for the new design */
+.demo-container:hover {
+    transform: translateY(-12px) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+    border-color: #1abc9c !important;
+}
+
+/* Responsive adjustments for demo panels */
+@media (max-width: 768px) {
+    .demo-title {
+        font-size: 1.2rem;
+    }
+    
+    .demo-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .demo-status-badge {
+        align-self: flex-start;
+    }
+    
+    .demo-actions {
+        flex-direction: column;
+    }
+    
+    .demo-actions .demo-btn-primary,
+    .demo-actions .demo-btn-secondary {
+        flex: none;
+    }
+    
+    .demo-image {
+        height: 200px !important;
+    }
+    
+    /* Make demo cards wider on mobile */
+    .demos-grid .col-md-6.col-lg-4 {
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Add vertical spacing between profile sections on mobile */
+    .developer-profiles-section .col-lg-6:first-child {
+        margin-bottom: 2rem;
+    }
+    
+    /* Reduce grid padding on mobile for wider cards */
+    .demos-grid {
+        padding: 10px;
+    }
+    
+    /* Reduce PubNub parent section padding on mobile */
+    .pubnub-parent-section {
+        padding: 20px 10px;
+        margin: 20px 0;
+    }
+    
+    /* Reduce main container padding on mobile */
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Hide hero elements on mobile for cleaner look */
+    .hero-divider {
+        display: none;
+    }
+    
+    .hero-content p:last-child {
+        display: none;
+    }
+}
+
