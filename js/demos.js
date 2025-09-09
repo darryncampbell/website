@@ -9,21 +9,21 @@ var demos = [
         "developedIndependently": true
     },
     {
-        "title": "Chat Builder (Sales Tool)",
-        "hostedUrl": "https://pubnub-chat-builder.netlify.app/",
-        "githubUrl": "https://github.com/PubNubDevelopers/Customized-Chat-App",
-        "imageUrl": "./assets/img/demos/chat_builder_1.png",
-        "imageAlt": "PubNub Peer to Peer Payment Demo",
-        "description": "Sales tool to create a customized and personalized chat application",
-        "developedIndependently": true
-    },
-    {
         "title": "Peer to Peer Payment Demo",
         "hostedUrl": "https://pubnub-fintech-demo.netlify.app",
         "githubUrl": "https://github.com/PubNubDevelopers/fintech-demo",
         "imageUrl": "./assets/img/demos/p2p_payment.png",
         "imageAlt": "PubNub Peer to Peer Payment Demo",
         "description": "Demo appliction to show how real-time features can enhance user engagement and experience for the Peer to Peer (P2P) payment use case",
+        "developedIndependently": true
+    },
+    {
+        "title": "Chat Builder (Sales Tool)",
+        "hostedUrl": "https://pubnub-chat-builder.netlify.app/",
+        "githubUrl": "https://github.com/PubNubDevelopers/Customized-Chat-App",
+        "imageUrl": "./assets/img/demos/chat_builder_1.png",
+        "imageAlt": "PubNub Peer to Peer Payment Demo",
+        "description": "Sales tool to create a customized and personalized chat application",
         "developedIndependently": true
     },
     {
@@ -187,7 +187,7 @@ function loadDemosHomepage()
     var html = ""
     //  Homepage has the top 3 demos in 1 row
     html += createDemoRowStart()
-    for (var i = 0; i < 3; i++)
+    for (var i = 0; i < 2; i++)
     {
         html += createDemoPanelHeader()
         html += createDemoPanelContent(demos[i].title, demos[i].hostedUrl, demos[i].githubUrl, demos[i].imageUrl, demos[i].imageAlt, demos[i].description)

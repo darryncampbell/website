@@ -108,6 +108,33 @@ var blogs = [
     "featureImg": "./assets/blogs/feature_img/how-to-implement-a-distributed-counter-with-1-line-of-code.png"
   },
   {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/smooth-driver-location/",
+    "Title": "How to Smooth Your Location Data & Snap to the Nearest Road",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Smooth%20Your%20Location%20Data%20%26%20Snap%20to%20the%20Nearest%20Road&img=12",
+    "Description": "How to Smooth Your Driver Location Data & Snap to the Nearest Road",
+    "Date": "August 2024",
+    "featureImg": "./assets/blogs/feature_img/how-to-smooth-your-location-data-snap-to-the-nearest-road.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/use-the-ena-api/",
+    "Title": "How to Use the Events & Actions API",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Use%20the%20Events%20%26%20Actions%20API&img=5",
+    "Description": "The Events & Actions API provides programmatic access to send all events in your application's ecosystem to third-party systems",
+    "Date": "July 2024",
+    "featureImg": "./assets/blogs/feature_img/how-to-use-the-events-actions-api.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/use-app-context/",
+    "Title": "How to Use PubNub App Context",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Use%20PubNub%20App%20Context&img=24",
+    "Description": "PubNub App Context is an easy-to-use, serverless storage for user, channel, and membership information",
+    "Date": "July 2024",
+    "featureImg": "./assets/blogs/feature_img/how-to-use-pubnub-app-context.png"
+  },
+    {
     "Type": "Blog",
     "URL": "https://www.pubnub.com/blog/data-streaming-technologies-overview/",
     "Title": "Data Streaming Technologies Overview",
@@ -135,6 +162,24 @@ var blogs = [
     "featureImg": "./assets/blogs/feature_img/chat-moderation-with-openai.png"
   },
   {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/securely-moderate-chat-and-users/",
+    "Title": "Moderate Chat and Users with BizOps Workspace",
+    "OG_URL": "https://www.pubnub.com/og/?text=Moderate%20Chat%20and%20Users%20with%20BizOps%20Workspace&img=17",
+    "Description": "How to use PubNub's Channel Monitor and Access Manager to create a secure and moderated chat application",
+    "Date": "May 2024",
+    "featureImg": "./assets/blogs/feature_img/moderate-chat-and-users-with-bizops-workspace.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/admin-portal-presence",
+    "Title": "How to Enable and Configure PubNub Presence",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Enable%20and%20Configure%20PubNub%20Presence&img=2",
+    "Description": "Follow this step-by-step how-to on getting presence up and running in your PubNub portal",
+    "Date": "May 2024",
+    "featureImg": "./assets/blogs/feature_img/how-to-enable-and-configure-pubnub-presence.png"
+  },
+    {
     "Type": "Blog",
     "URL": "https://www.pubnub.com/blog/updates-to-the-event-engine-and-event-listeners/",
     "Title": "Updates to the Event Engine and Event Listeners",
@@ -142,6 +187,24 @@ var blogs = [
     "Description": "We have made updates to our Event Engine and Event Listener architecture to provide PubNub developers with the best possible experience",
     "Date": "April 2024",
     "featureImg": "./assets/blogs/feature_img/updates-to-the-event-engine-and-event-listeners.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/manage-users-and-channels-with-bizops-workspace/",
+    "Title": "Manage Users and Channels with BizOps Workspace",
+    "OG_URL": "https://www.pubnub.com/og/?text=Manage%20Users%20and%20Channels%20with%20BizOps%20Workspace&img=13",
+    "Description": "User Management and Channel Management allow you to manage the App Context metadata about your Users and Channels",
+    "Date": "April 2024",
+    "featureImg": "./assets/blogs/feature_img/manage-users-and-channels-with-bizops-workspace.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/monitor-and-moderate-conversations-with-bizops-workspace/",
+    "Title": "Monitor and Moderate Conversations with BizOps Workspace",
+    "OG_URL": "https://www.pubnub.com/og/?text=Monitor%20and%20Moderate%20Conversations%20with%20BizOps%20Workspace&img=9",
+    "Description": "The channel monitor allows an administrator to watch live previews of conversations happening in real-time and take action",
+    "Date": "April 2024",
+    "featureImg": "./assets/blogs/feature_img/monitor-and-moderate-conversations-with-bizops-workspace.png"
   },
   {
     "Type": "Blog",
@@ -161,6 +224,15 @@ var blogs = [
     "Date": "March 2024",
     "featureImg": "./assets/blogs/feature_img/connecting-kafka-and-pubnub.png"
   },
+    {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/call-access-manager-from-pubnub-functions/",
+    "Title": "How to Call Access Manager from PubNub Functions",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Call%20Access%20Manager%20from%20PubNub%20Functions&img=22",
+    "Description": "How to: Call Access Manager from PubNub Functions",
+    "Date": "January 2024",
+    "featureImg": "./assets/blogs/feature_img/how-to-call-access-manager-from-pubnub-functions.png"
+  },
   {
     "Type": "Blog",
     "URL": "https://www.pubnub.com/blog/do-i-have-to-store-my-data-with-pubnub/",
@@ -169,6 +241,60 @@ var blogs = [
     "Description": "You do NOT need to store your data with PubNub to create a real-time solution",
     "Date": "December 2023",
     "featureImg": "./assets/blogs/feature_img/do-i-have-to-store-my-data-with-pubnub.png"
+  },
+    {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/upgrade-encryption-to-256-bit-key-length/",
+    "Title": "How to Upgrade your Encryption to 256-bit Key Strength",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Upgrade%20your%20Encryption%20to%20256-bit%20Key%20Strength&img=6",
+    "Description": "How To Upgrade your Message-Level Encryption to 256-bit Key Strength with PubNub",
+    "Date": "December 2023",
+    "featureImg": "./assets/blogs/feature_img/how-to-upgrade-your-encryption-to-256-bit-key-strength.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/throttle-or-aggregate-messages/?d=1",
+    "Title": "How to Throttle or Aggregate Messages with PubNub",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Throttle%20or%20Aggregate%20Messages%20with%20PubNub&img=15",
+    "Description": "How to Throttle or Aggregate messages with PubNub",
+    "Date": "November 2023",
+    "featureImg": "./assets/blogs/feature_img/how-to-throttle-or-aggregate-messages-with-pubnub.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/chat-sdk-mention-users/",
+    "Title": "How to Mention Users and Channels with the PubNub Chat SDK",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Mention%20Users%20and%20Channels%20with%20the%20PubNub%20Chat%20SDK&img=18",
+    "Description": "How to Mention Users and Reference Channels with the PubNub Chat SDK",
+    "Date": "November 2023",
+    "featureImg": "./assets/blogs/feature_img/how-to-mention-users-and-channels-with-the-pubnub-chat-sdk.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/chat-sdk-create-threads-and-quote-messges/",
+    "Title": "How to Create Threads and Quote Messages with the PubNub Chat SDK",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Create%20Threads%20and%20Quote%20Messages%20with%20the%20PubNub%20Chat%20SDK&img=4",
+    "Description": "How to Create Threads and Quote Messages with the PubNub Chat SDK",
+    "Date": "November 2023",
+    "featureImg": "./assets/blogs/feature_img/how-to-create-threads-and-quote-messages-with-the-pubnub-chat-sdk.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/chat-sdk-add-reactions-to-messages/",
+    "Title": "How to Add Reactions and Emoji to Messages with the PubNub Chat SDK",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Add%20Reactions%20and%20Emoji%20to%20Messages%20with%20the%20PubNub%20Chat%20SDK&img=20",
+    "Description": "How to Add Reactions and Emoji to Messages with the PubNub Chat SDK",
+    "Date": "November 2023",
+    "featureImg": "./assets/blogs/feature_img/how-to-add-reactions-and-emoji-to-messages-with-the-pubnub-chat-sdk.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/chat-sdk-manage-user-channel-membership/?ddf=3",
+    "Title": "How to Manage User Channel Membership with the PubNub Chat SDK",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Manage%20User%20Channel%20Membership%20with%20the%20PubNub%20Chat%20SDK&img=10",
+    "Description": "How to Manage User Channel Membership with the PubNub Chat SDK",
+    "Date": "November 2023",
+    "featureImg": "./assets/blogs/feature_img/how-to-manage-user-channel-membership-with-the-pubnub-chat-sdk.png"
   },
   {
     "Type": "Blog",
@@ -214,6 +340,24 @@ var blogs = [
     "Description": "Quickly create immensely powerful real-time solutions with PubNub and OpenAI / ChatGPT to add AI and chat to any online experience",
     "Date": "July 2023",
     "featureImg": "./assets/blogs/feature_img/adding-a-chatbot-powered-by-openai-to-the-pubnub-showcase.png"
+  },
+    {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/understand-your-pubnub-data-better-using-analyze-with-ai",
+    "Title": "Understand your PubNub Data Better using \"Analyze with AI\"",
+    "OG_URL": "https://www.pubnub.com/og/?text=Understand%20your%20PubNub%20Data%20Better%20using%20%22Analyze%20with%20AI%22&img=1",
+    "Description": "Insights is a valuable tool for understanding your data",
+    "Date": "July 2023",
+    "featureImg": "./assets/blogs/feature_img/understand-your-pubnub-data-better-using-analyze-with-ai.png"
+  },
+  {
+    "Type": "How-To",
+    "URL": "https://www.pubnub.com/how-to/make-the-most-of-pubnubs-dashboards/",
+    "Title": "How to make the most of PubNub's Dashboards",
+    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20make%20the%20most%20of%20PubNub%27s%20Dashboards&img=21",
+    "Description": "How to make the most of PubNub's Dashboards",
+    "Date": "May 2023",
+    "featureImg": "./assets/blogs/feature_img/how-to-make-the-most-of-pubnubs-dashboards.png"
   },
   {
     "Type": "Blog",
@@ -279,159 +423,6 @@ var blogs = [
     "featureImg": "./assets/blogs/feature_img/prevent-overuse-of-software-licenses-and-subscriptions.png"
   },
   {
-    "Type": "Blog",
-    "URL": "https://pubnub.com/blog/http-long-polling",
-    "Title": "What is HTTP Long Polling?",
-    "OG_URL": "https://www.pubnub.com/og/?text=What%20is%20HTTP%20Long%20Polling%3F&img=8",
-    "Description": "Long polling: a backend technique that boosts efficiency for real-time web app communication. Ideal for scalable chat and notifications!",
-    "Date": "October 2022",
-    "featureImg": "./assets/blogs/feature_img/what-is-http-long-polling.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/smooth-driver-location/",
-    "Title": "How to Smooth Your Location Data & Snap to the Nearest Road",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Smooth%20Your%20Location%20Data%20%26%20Snap%20to%20the%20Nearest%20Road&img=12",
-    "Description": "How to Smooth Your Driver Location Data & Snap to the Nearest Road",
-    "Date": "August 2024",
-    "featureImg": "./assets/blogs/feature_img/how-to-smooth-your-location-data-snap-to-the-nearest-road.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/use-the-ena-api/",
-    "Title": "How to Use the Events & Actions API",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Use%20the%20Events%20%26%20Actions%20API&img=5",
-    "Description": "The Events & Actions API provides programmatic access to send all events in your application's ecosystem to third-party systems",
-    "Date": "July 2024",
-    "featureImg": "./assets/blogs/feature_img/how-to-use-the-events-actions-api.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/use-app-context/",
-    "Title": "How to Use PubNub App Context",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Use%20PubNub%20App%20Context&img=24",
-    "Description": "PubNub App Context is an easy-to-use, serverless storage for user, channel, and membership information",
-    "Date": "July 2024",
-    "featureImg": "./assets/blogs/feature_img/how-to-use-pubnub-app-context.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/securely-moderate-chat-and-users/",
-    "Title": "Moderate Chat and Users with BizOps Workspace",
-    "OG_URL": "https://www.pubnub.com/og/?text=Moderate%20Chat%20and%20Users%20with%20BizOps%20Workspace&img=17",
-    "Description": "How to use PubNub's Channel Monitor and Access Manager to create a secure and moderated chat application",
-    "Date": "May 2024",
-    "featureImg": "./assets/blogs/feature_img/moderate-chat-and-users-with-bizops-workspace.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/admin-portal-presence",
-    "Title": "How to Enable and Configure PubNub Presence",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Enable%20and%20Configure%20PubNub%20Presence&img=2",
-    "Description": "Follow this step-by-step how-to on getting presence up and running in your PubNub portal",
-    "Date": "May 2024",
-    "featureImg": "./assets/blogs/feature_img/how-to-enable-and-configure-pubnub-presence.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/manage-users-and-channels-with-bizops-workspace/",
-    "Title": "Manage Users and Channels with BizOps Workspace",
-    "OG_URL": "https://www.pubnub.com/og/?text=Manage%20Users%20and%20Channels%20with%20BizOps%20Workspace&img=13",
-    "Description": "User Management and Channel Management allow you to manage the App Context metadata about your Users and Channels",
-    "Date": "April 2024",
-    "featureImg": "./assets/blogs/feature_img/manage-users-and-channels-with-bizops-workspace.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/monitor-and-moderate-conversations-with-bizops-workspace/",
-    "Title": "Monitor and Moderate Conversations with BizOps Workspace",
-    "OG_URL": "https://www.pubnub.com/og/?text=Monitor%20and%20Moderate%20Conversations%20with%20BizOps%20Workspace&img=9",
-    "Description": "The channel monitor allows an administrator to watch live previews of conversations happening in real-time and take action",
-    "Date": "April 2024",
-    "featureImg": "./assets/blogs/feature_img/monitor-and-moderate-conversations-with-bizops-workspace.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/call-access-manager-from-pubnub-functions/",
-    "Title": "How to Call Access Manager from PubNub Functions",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Call%20Access%20Manager%20from%20PubNub%20Functions&img=22",
-    "Description": "How to: Call Access Manager from PubNub Functions",
-    "Date": "January 2024",
-    "featureImg": "./assets/blogs/feature_img/how-to-call-access-manager-from-pubnub-functions.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/upgrade-encryption-to-256-bit-key-length/",
-    "Title": "How to Upgrade your Encryption to 256-bit Key Strength",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Upgrade%20your%20Encryption%20to%20256-bit%20Key%20Strength&img=6",
-    "Description": "How To Upgrade your Message-Level Encryption to 256-bit Key Strength with PubNub",
-    "Date": "December 2023",
-    "featureImg": "./assets/blogs/feature_img/how-to-upgrade-your-encryption-to-256-bit-key-strength.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/throttle-or-aggregate-messages/?d=1",
-    "Title": "How to Throttle or Aggregate Messages with PubNub",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Throttle%20or%20Aggregate%20Messages%20with%20PubNub&img=15",
-    "Description": "How to Throttle or Aggregate messages with PubNub",
-    "Date": "November 2023",
-    "featureImg": "./assets/blogs/feature_img/how-to-throttle-or-aggregate-messages-with-pubnub.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/chat-sdk-mention-users/",
-    "Title": "How to Mention Users and Channels with the PubNub Chat SDK",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Mention%20Users%20and%20Channels%20with%20the%20PubNub%20Chat%20SDK&img=18",
-    "Description": "How to Mention Users and Reference Channels with the PubNub Chat SDK",
-    "Date": "November 2023",
-    "featureImg": "./assets/blogs/feature_img/how-to-mention-users-and-channels-with-the-pubnub-chat-sdk.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/chat-sdk-create-threads-and-quote-messges/",
-    "Title": "How to Create Threads and Quote Messages with the PubNub Chat SDK",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Create%20Threads%20and%20Quote%20Messages%20with%20the%20PubNub%20Chat%20SDK&img=4",
-    "Description": "How to Create Threads and Quote Messages with the PubNub Chat SDK",
-    "Date": "November 2023",
-    "featureImg": "./assets/blogs/feature_img/how-to-create-threads-and-quote-messages-with-the-pubnub-chat-sdk.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/chat-sdk-add-reactions-to-messages/",
-    "Title": "How to Add Reactions and Emoji to Messages with the PubNub Chat SDK",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Add%20Reactions%20and%20Emoji%20to%20Messages%20with%20the%20PubNub%20Chat%20SDK&img=20",
-    "Description": "How to Add Reactions and Emoji to Messages with the PubNub Chat SDK",
-    "Date": "November 2023",
-    "featureImg": "./assets/blogs/feature_img/how-to-add-reactions-and-emoji-to-messages-with-the-pubnub-chat-sdk.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/chat-sdk-manage-user-channel-membership/?ddf=3",
-    "Title": "How to Manage User Channel Membership with the PubNub Chat SDK",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20Manage%20User%20Channel%20Membership%20with%20the%20PubNub%20Chat%20SDK&img=10",
-    "Description": "How to Manage User Channel Membership with the PubNub Chat SDK",
-    "Date": "November 2023",
-    "featureImg": "./assets/blogs/feature_img/how-to-manage-user-channel-membership-with-the-pubnub-chat-sdk.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/understand-your-pubnub-data-better-using-analyze-with-ai",
-    "Title": "Understand your PubNub Data Better using \"Analyze with AI\"",
-    "OG_URL": "https://www.pubnub.com/og/?text=Understand%20your%20PubNub%20Data%20Better%20using%20%22Analyze%20with%20AI%22&img=1",
-    "Description": "Insights is a valuable tool for understanding your data",
-    "Date": "July 2023",
-    "featureImg": "./assets/blogs/feature_img/understand-your-pubnub-data-better-using-analyze-with-ai.png"
-  },
-  {
-    "Type": "How-To",
-    "URL": "https://www.pubnub.com/how-to/make-the-most-of-pubnubs-dashboards/",
-    "Title": "How to make the most of PubNub's Dashboards",
-    "OG_URL": "https://www.pubnub.com/og/?text=How%20to%20make%20the%20most%20of%20PubNub%27s%20Dashboards&img=21",
-    "Description": "How to make the most of PubNub's Dashboards",
-    "Date": "May 2023",
-    "featureImg": "./assets/blogs/feature_img/how-to-make-the-most-of-pubnubs-dashboards.png"
-  },
-  {
     "Type": "How-To",
     "URL": "https://www.pubnub.com/how-to/create-a-real-time-delivery-application/",
     "Title": "How to Create a Real-Time Delivery Application",
@@ -439,6 +430,15 @@ var blogs = [
     "Description": "How to Create a Real-Time Delivery Application",
     "Date": "November 2022",
     "featureImg": "./assets/blogs/feature_img/how-to-create-a-real-time-delivery-application.png"
+  },
+  {
+    "Type": "Blog",
+    "URL": "https://pubnub.com/blog/http-long-polling",
+    "Title": "What is HTTP Long Polling?",
+    "OG_URL": "https://www.pubnub.com/og/?text=What%20is%20HTTP%20Long%20Polling%3F&img=8",
+    "Description": "Long polling: a backend technique that boosts efficiency for real-time web app communication. Ideal for scalable chat and notifications!",
+    "Date": "October 2022",
+    "featureImg": "./assets/blogs/feature_img/what-is-http-long-polling.png"
   },
   {
     "Type": "How-To",
