@@ -30,6 +30,26 @@ var videos = [
         "pubnub": true
     },
     {
+        "title": "PubNub Tutorial: Using the Android Chat SDK",
+        "url": "https://youtu.be/X7l23UKgPMA",
+        "thumbnail": "https://youtu.be/X7l23UKgPMA/0.jpg",
+        "imageAlt": "PubNub Tutorial: Using the Android Chat SDK",
+        "description": "Tutorial showing how to use the PubNub Android Chat SDK with a dedicated sample application",
+        "short": false,
+        "editedIndependantly": true,
+        "pubnub": true
+    },
+    {
+        "title": "PubNub Tutorial: Using the Swift Chat SDK",
+        "url": "https://youtu.be/jX_9P2DcPYU",
+        "thumbnail": "https://youtu.be/jX_9P2DcPYU/0.jpg",
+        "imageAlt": "PubNub Tutorial: Using the Swift Chat SDK",
+        "description": "Tutorial showing how to use the PubNub Swift Chat with a dedicated sample application",
+        "short": false,
+        "editedIndependantly": true,
+        "pubnub": true
+    },
+    {
         "title": "How to Build a Slack-like Chat app in 6 minutes - full video",
         "url": "https://www.youtube.com/watch?v=sGusw99l9eI",
         "thumbnail": "https://img.youtube.com/vi/sGusw99l9eI/0.jpg",
