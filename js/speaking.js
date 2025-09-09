@@ -256,27 +256,27 @@ var speakingEvents = [
                 }
             ]
     },
-    {
-        "date": "July 26, 2023",
-        "imgSrc": "./assets/img/speaking/pubnub_build_chat_app.png",
-        "title": "Marketing Video: Build a Chat App with PubNub",
-        "userDate": "26th July 2023",
-        "location": "Online Video",
-        "otherInfo": [            
-        ],
-        "brief": "Build a chat app like slack or discord in around 6 minutes with PubNub",
-        "linkButtons":
-            [
-                {
-                    "text": "Video (Full)",
-                    "link": "https://www.youtube.com/watch?v=sGusw99l9eI"
-                },
-                {
-                    "text": "Video (Ad)",
-                    "link": "https://www.youtube.com/watch?v=NRdCW2oSII4"
-                }
-            ]
-    },
+//    {
+    //     "date": "July 26, 2023",
+    //     "imgSrc": "./assets/img/speaking/pubnub_build_chat_app.png",
+    //     "title": "Marketing Video: Build a Chat App with PubNub",
+    //     "userDate": "26th July 2023",
+    //     "location": "Online Video",
+    //     "otherInfo": [            
+    //     ],
+    //     "brief": "Build a chat app like slack or discord in around 6 minutes with PubNub",
+    //     "linkButtons":
+    //         [
+    //             {
+    //                 "text": "Video (Full)",
+    //                 "link": "https://www.youtube.com/watch?v=sGusw99l9eI"
+    //             },
+    //             {
+    //                 "text": "Video (Ad)",
+    //                 "link": "https://www.youtube.com/watch?v=NRdCW2oSII4"
+    //             }
+    //         ]
+    // },
     {
         "date": "December 7, 2022",
         "imgSrc": "./assets/img/speaking/pubnub_rncc.png",
