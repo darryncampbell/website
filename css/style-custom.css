@@ -1299,3 +1299,40 @@ html {
     }
 }
 
+
+/* Prevent visited link color changes for section headings */
+.page-section-heading a,
+.page-section-heading a:visited,
+.page-section-heading a:hover,
+.page-section-heading a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Remove hover effects for demo cards on homepage */
+#portfolio .demo-container:hover {
+    transform: none !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+    border-color: transparent !important;
+}
+
+#portfolio .demo-container:hover .demo-image {
+    transform: none !important;
+    border: 1px solid transparent !important;
+}
+
+#portfolio .demo-image {
+    border: 1px solid transparent !important;
+}
+
+/* Override any other hover effects specifically for homepage */
+section#portfolio .demo-container:hover {
+    transform: none !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+    border-color: transparent !important;
+}
+
+section#portfolio .demo-container:hover .demo-image {
+    transform: none !important;
+    border: 1px solid transparent !important;
+}

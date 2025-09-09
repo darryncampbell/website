@@ -142,4 +142,32 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>\
         </div>";
     }
+    
+    // Make homepage sections clickable
+    var technicalWritingSection = document.getElementById('technology');
+    if (technicalWritingSection) {
+        technicalWritingSection.style.cursor = 'pointer';
+        technicalWritingSection.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = './technical-writing.html';
+        });
+    }
+    
+    var demosSection = document.getElementById('portfolio');
+    if (demosSection) {
+        demosSection.style.cursor = 'pointer';
+        demosSection.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = './demos.html';
+        });
+    }
+    
+    var speakingSection = document.getElementById('speaking');
+    if (speakingSection) {
+        speakingSection.style.cursor = 'pointer';
+        speakingSection.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = './speaking.html';
+        });
+    }
 });
