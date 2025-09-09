@@ -19,6 +19,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/style-custom.css" rel="stylesheet" />
+    <script src="./js/blogs.js"></script>
+    <script src="./js/android_blogs.js"></script>
 </head>
 
 <body id="page-top" onload="generateMenuBar();generateFooter();">
@@ -27,475 +29,80 @@
 
     </nav>
 
-    <header class="pagehead">
-    </header>
-
-    <section class="page-section top-section technology_index" id="technology">
-    <div class=" container">
-        <!-- About Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Technical
-        Writing</h2>
-        <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-pencil-alt"></i></div>
-                <div class="divider-custom-line"></div>
+    <!-- Hero Section -->
+    <section class="technical-hero bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-40">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="hero-content fade-in">
+                        <div class="hero-icon mb-4">
+                            <i class="fas fa-pencil-alt fa-4x text-white-50"></i>
+                        </div>
+                        <h1 class="display-4 fw-bold mb-4">Technical Writing & Blogs</h1>
+                        <p class="lead fs-4 mb-4">In-depth technical articles, how-to guides, and developer insights</p>
+                        <div class="hero-divider mx-auto mb-4"></div>
+                        <p class="mb-0">For hands-on code examples and sample applications, visit the <a href="./demos.html" class="text-white fw-bold text-decoration-underline">demos section</a></p>
+                    </div>
+                </div>
             </div>
-
-
-        <br>
-        <p class="lead">Blogs, How-tos and technical articles. Please see the <span
-            style="font-weight: bold"><a href="./demos.html">Demos page</a></span> for a
-        list of demo and sample applications.</p>
-
-        <div class="table-responsive container-fluid">
-
-
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><img src="./assets/img/pubnub.png"
-                class="rounded">
-            </div>
-            <div class="divider-custom-line"></div>
         </div>
-        <H3 class="text-center">PubNub: Developer Experience</H3>
-
-        <table class="table table-striped technical-writing-table">
-            <thead class="thead-light">
-            <tr>
-                <th scope="col">Type</th>
-                <th scope="col">Title, Description & Link</th>
-                <th scope="col">Date Published</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://builder.aws.com/content/2utwi8GDnnJQFwAL9AnZdfRCBtn/building-scalable-interactive-live-streams-with-aws-and-pubnub" target="_blank">Building Scalable, Interactive Live Streams with AWS and PubNub</a></td>
-                    <td>September 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/announcing-pubnubs-postman-collection/" target="_blank">Announcing PubNub's Postman Collection</a></td>
-                    <td>August 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/add-real-time-features-to-your-customer-care-chat/" target="_blank">Add Real-Time Features to your Customer Care Chat</a></td>
-                    <td>July 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/add-presence-to-your-call-center/" target="_blank">Add Customer and Agent Presence to your Call Center Solution</a></td>
-                    <td>July 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/build-a-chat-app-in-go-using-pubnub/" target="_blank">How to Build a Chat app in Go using PubNub</a></td>
-                    <td>June 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/manage-pubnub-guest-users/" target="_blank">How to Manage PubNub Guest Users</a></td>
-                    <td>May 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/key-management-for-pubnub-message-encryption/" target="_blank">Key Management for PubNub Message Encryption</a></td>
-                    <td>May 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/track-doctor-patient-presence-for-efficient-online-consultations/" target="_blank">Track Doctor & Patient Presence for Efficient Online Consultations</a></td>
-                    <td>March 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/deliver-personalized-content-promotions-and-rewards-tailored-to-your-audience/" target="_blank">Deliver Personalized Content to your Stream Audience</a></td>
-                    <td>February 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/two-more-reasons-why-pubnub-functions-are-awesome/" target="_blank">Two More Reasons why PubNub Functions are Awesome</a></td>
-                    <td>January 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/two-reasons-why-pub-nub-functions-are-awesome/" target="_blank">Two Reasons why PubNub Functions are Awesome</a></td>
-                    <td>January 2025</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/how-to-implement-a-distributed-counter-in-1-line-of-code/" target="_blank">How to Implement a Distributed Counter with 1 Line of Code</a></td>
-                    <td>January 2025</td>
-                </tr>
-                <tr>
-                    <td>Tutorial</td>
-                    <td><a href="https://www.pubnub.com/tutorials/chat-sdk-swift/" target="_blank">The PubNub Swift Chat SDK tutorial</a></td>
-                    <td>October 2024</td>
-                </tr>
-                <tr>
-                    <td>Video</td>
-                    <td><a href="https://youtu.be/X7l23UKgPMA" target="_blank">Standalone Video to accompany the PubNub Swift Chat SDK Tutorial</a></td>
-                    <td>October 2024</td>
-                </tr>
-                <tr>
-                    <td>Tutorial</td>
-                    <td><a href="https://www.pubnub.com/tutorials/chat-sdk-kotlin/" target="_blank">The PubNub Kotlin Chat SDK tutorial</a></td>
-                    <td>October 2024</td>
-                </tr>
-                <tr>
-                    <td>Video</td>
-                    <td><a href="https://youtu.be/jX_9P2DcPYU" target="_blank">Standalone Video to accompany the PubNub Kotlin Chat SDK Tutorial</a></td>
-                    <td>October 2024</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/smooth-driver-location/" target="_blank">How to Smooth Your Location Data &amp; Snap to the Nearest Road</a></td>
-                    <td>August 2024</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/use-the-ena-api/" target="_blank">How to Use the Events & Actions API</a></td>
-                    <td>July 2024</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/data-streaming-technologies-overview/" target="_blank">Data Streaming Technologies Overview</a></td>
-                    <td>July 2024</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/use-app-context/" target="_blank">How to Use PubNub App Context</a></td>
-                    <td>July 2024</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/delivering-real-time-interaction-in-adult-entertainment/" target="_blank">Delivering Real-Time Interaction in Adult Entertainment</a></td>
-                    <td>July 2024</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/chat-moderation-with-openai/" target="_blank">Chat Moderation with OpenAI</a></td>
-                    <td>July 2024</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/securely-moderate-chat-and-users/" target="_blank">Moderate Chat and Users with BizOps Workspace</a></td>
-                    <td>May 2024</td>
-                </tr>
-                <tr>
-                    <td>Guide</td>
-                    <td><a href="https://www.pubnub.com/guides/signalr/" target="_blank">What is SignalR</a></td>
-                    <td>May 2024</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/admin-portal-presence" target="_blank">How to Enable and Configure PubNub Presence</a></td>
-                    <td>May 2024</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/updates-to-the-event-engine-and-event-listeners/" target="_blank">Updates to the Event Engine and Event Listeners</a></td>
-                    <td>April 2024</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/manage-users-and-channels-with-bizops-workspace/" target="_blank">Manage Users and Channels with BizOps Workspace</a></td>
-                    <td>April 2024</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/monitor-and-moderate-conversations-with-bizops-workspace/" target="_blank">Monitor and Moderate Conversations with BizOps Workspace</a></td>
-                    <td>April 2024</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com//blog/monitor-engagement-with-the-user-behavior-dashboard/" target="_blank">Monitor Engagement with the User Behaviour Dashboard</a></td>
-                    <td>March 2024</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/connecting-kafka-and-pubnub/" target="_blank">Connecting Kafka and PubNub</a></td>
-                    <td>March 2024</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/call-access-manager-from-pubnub-functions/" target="_blank">How to Call Access Manager from PubNub Functions</a></td>
-                    <td>January 2024</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/do-i-have-to-store-my-data-with-pubnub/" target="_blank">Do I Have to Store My Data with PubNub?</a></td>
-                    <td>December 2023</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/upgrade-encryption-to-256-bit-key-length/" target="_blank">How to Upgrade your Encryption to 256-bit Key Strength</a></td>
-                    <td>December 2023</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/throttle-or-aggregate-messages/?d=1" target="_blank">How to Throttle or Aggregate Messages with PubNub</a></td>
-                    <td>November 2023</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/chat-sdk-mention-users/" target="_blank">How to Mention Users and Channels with the PubNub Chat SDK</a></td>
-                    <td>November 2023</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/chat-sdk-create-threads-and-quote-messges/" target="_blank">How to Create Threads and Quote Messages with the PubNub Chat SDK</a></td>
-                    <td>November 2023</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/chat-sdk-add-reactions-to-messages/" target="_blank">How to Add Reactions and Emoji to Messages with the PubNub Chat SDK</a></td>
-                    <td>November 2023</td>
-                </tr>
-                <tr>
-                    <td>How-To</td>
-                    <td><a href="https://www.pubnub.com/how-to/chat-sdk-manage-user-channel-membership/?ddf=3" target="_blank">How to Manage User Channel Membership with the PubNub Chat SDK</a></td>
-                    <td>November 2023</td>
-                </tr>
-                <tr>
-                    <td>Demo</td>
-                    <td><a href="https://www.pubnub.com/demos/chat-sdk-mobile/" target="_blank">The PubNub Chat SDK for Mobile Demo</a></td>
-                    <td>October 2023</td>
-                </tr>
-                <tr>
-                    <td>Video</td>
-                    <td><a href="https://youtu.be/_iHHCUn4aMU" target="_blank">Standalone Video to accompany the PubNub Chat SDK Tutorial</a></td>
-                    <td>October 2023</td>
-                </tr>
-                <tr>
-                    <td>Tutorial</td>
-                    <td><a href="https://www.pubnub.com/tutorials/chat-sdk/" target="_blank">The PubNub Chat SDK tutorial using React</a></td>
-                    <td>October 2023</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/announcing-the-new-pubnub-chat-sdk/" target="_blank">Announcing the New PubNub Chat SDK</a></td>
-                    <td>September 2023</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/pubnub-at-devcom-and-gamescom-2023/" target="_blank">PubNub at Devcom and Gamescom Europe 2023</a></td>
-                    <td>August 2023</td>
-                </tr>
-                <tr>
-                    <td>Blog</td>
-                    <td><a href="https://www.pubnub.com/blog/add-trading-and-leaderboards-to-your-unity-game-with-pubnub/" target="_blank">Add Trading and Leaderboards to your Unity game with PubNub</a></td>
-                    <td>August 2023</td>
-                </tr>
-                    <tr>
-                <td>Blog</td>
-                <td><a href="https://www.pubnub.com/blog/add-social-features-to-your-unity-game-with-pubnub/" target="_blank">Add Social Features to your Unity game with PubNub</a></td>
-                <td>August 2023</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td><a href="https://www.pubnub.com/blog/build-a-chatbot-with-pubnub-and-chatgpt-openai/" target="_blank">Adding a ChatBot powered by OpenAI to the PubNub Showcase</a></td>
-                <td>July 2023</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://www.pubnub.com/how-to/understand-your-pubnub-data-better-using-analyze-with-ai" target="_blank">Understand your PubNub Data Better using "Analyze with AI"</a></td>
-                <td>July 2023</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://www.pubnub.com/how-to/make-the-most-of-pubnubs-dashboards/" target="_blank">How to make the most of PubNub's Dashboards</a></td>
-                <td>May 2023</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td><a href="https://www.pubnub.com/blog/make-sure-users-love-your-next-big-app-or-feature/" target="_blank">Make Sure Users Love your Next Big App or Feature</a></td>
-                <td>May 2023</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://www.pubnub.com/how-to/make-the-most-of-pubnubs-dashboards/" target="_blank">How to make the most of PubNub's Dashboards</a></td>
-                <td>May 2023</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td><a href="https://www.pubnub.com/blog/consistent-hashing-implementation/" target="_blank">Consistent Hashing: What it is and how to implement it</a></td>
-                <td>April 2023</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td><a href="https://www.pubnub.com/blog/building-a-chat-application-using-flutter/" target="_blank">Building a Chat Application using Flutter</a></td>
-                <td>April 2023</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td><a href="https://www.pubnub.com/blog/events-and-actions-or-pubnub-functions-picking-the-right-tool/" target="_blank">Events & Actions or PubNub Functions: Picking the right tool</a></td>
-                <td>March 2023</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td>Node.JS WebSocket programming examples: <a href="https://www.pubnub.com/blog/nodejs-websocket-programming-examples" target="_blank">PubNub.com </a>, <a href="https://dev.to/pubnub/websocket-programming-examples-with-and-without-nodejs-22nj" target="_blank">Dev.to </a>, <a href="https://pubnub-devrel.hashnode.dev/websocket-programming-examples-with-and-without-nodejs" target="_blank">Hashnode </a></td>                
-                <td>March 2023</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td>Socket Programming in Python with examples: <a href="https://www.pubnub.com/blog/socket-programming-in-python-client-server-p2p/" target="_blank">PubNub.com</a>, <a href="https://dev.to/pubnub/socket-programming-in-python-client-server-and-peer-to-peer-libraries-1fjo" target="_blank">Dev.to</a>, <a href="https://pubnub-devrel.hashnode.dev/socket-programming-in-python-client-server-and-peer-to-peer-libraries" target="_blank">Hashnode</a>, <a href="https://hackernoon.com/an-essential-guide-to-socket-programming-in-python-client-server-and-peer-to-peer-libraries" target="_blank">Hackernoon</a>, <a href="https://dzone.com/articles/socket-programming-in-python-client-server-and-pee" target="_blank">DZone</a></td>
-                <td>March 2023</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td><a href="https://www.pubnub.com/blog/prevent-overuse-of-software-licenses-and-subscriptions/" target="_blank">Prevent Overuse of Software Licenses and Subscriptions</a></td>
-                <td>Jan 2023</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/simple-chat-app-react-native/" target="_blank">Simple Chat App built with Chat Components (React Native) </a></td>
-                <td>Nov 2022</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://www.pubnub.com/how-to/create-a-real-time-delivery-application/" target="_blank">How to Create a Real-Time Delivery Application</a></td>
-                <td>Nov 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/delivery-application/" target="_blank">Tutorial: Create a Delivery Application</a></td>
-                <td>Nov 2022</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://pubnub.com/how-to/develop-an-iot-solution/" target="_blank">How to Develop an IoT Solution with PubNub</a></td>
-                <td>Oct 2022</td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td><a href="https://pubnub.com/blog/http-long-polling" target="_blank">What is HTTP Long Polling?</a></td>
-                <td>Oct 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/real-time-data-streaming/" target="_blank">Create a Real-Time Data Streaming application</a></td>
-                <td>Oct 2022</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://www.pubnub.com/how-to/cross-platform-chat-application/" target="_blank">How to Build Cross-Platform Chat Applications</a></td>
-                <td>Sep 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/cross-platform-chat-application-telehealth-ios/" target="_blank">Cross-Platform Chat Application for Telehealth (iOS) </a><span class="badge bg-danger">Product discontinued</span></td>
-                <td>Sep 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/cross-platform-chat-application-telehealth-android/" target="_blank">Cross-Platform Chat Application for Telehealth (Android) </a><span class="badge bg-danger">Product discontinued</span></td>
-                <td>Sep 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/cross-platform-chat-application-telehealth-react/" target="_blank">Cross-Platform Chat Application for Telehealth (React)</a></td>
-                <td>Sep 2022</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://www.pubnub.com/how-to/real-time-streaming-application/" target="_blank">Develop a real-time streaming application</a></td>
-                <td>Sep 2022</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://www.pubnub.com/how-to/call-pubnub-from-alexa/" target="_blank">How to Call PubNub from Alexa</a></td>
-                <td>Sep 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/getting-started-chat-sdk-flutter/" target="_blank">Get started building a chat app with Flutter using the PubNub Dart SDK</a></td>
-                <td>August 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/getting-started-chat-sdk-react-native/" target="_blank">Get started building a chat app with React Native using the PubNub</a></td>
-                <td>August 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/getting-started-chat-sdk-android/" target="_blank">Get started building a chat app with the PubNub Android (Kotlin) SDK</a></td>
-                <td>July 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorials/getting-started-chat-sdk-ios/" target="_blank">Get started building a chat app with the PubNub iOS (Swift) SDK</a></td>
-                <td>July 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://pubnub.com/tutorial/iot-dashboard/" target="_blank">IoT Dashboard. Build and IoT solution using PubNub</a></td>
-                <td>June 2022</td>
-            </tr>
-            <tr>
-                <td>How-To</td>
-                <td><a href="https://www.pubnub.com/blog/how-to-build-chat-for-virtual-events-with-pubnub/" target="_blank">Build Chat for Virtual Events</a></td>
-                <td>June 2022</td>
-            </tr>
-            <tr>
-                <td>Tutorial</td>
-                <td><a href="https://www.pubnub.com/tutorial/virtual-events-tutorial-react" target="_blank">Create a Virtual Event app with React </a></td>
-                <td>June 2022</td>
-            </tr>
-
-            </tbody>
-        </table>
-
-        <h3>External Sites</h3>
-        <p class="lead"><i class="fas fa-blog"></i> <a
-            href="https://www.pubnub.com/blog/author/darryn-campbell/" target="_blank">PubNub
-            Blogs</a>. Incomplete list of blogs posted on PubNub.com</p>
-        <br>
-
-
-
-        <br>
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><img src="./assets/img/android_robot.png"
-                class="rounded">
-            </div>
-            <div class="divider-custom-line"></div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+            </svg>
         </div>
-        <H3 class="text-center">Android Development</H3>
+    </section>
 
-        <table class="table table-striped technical-writing-table">
-            <thead class="thead-light">
-            <tr>
-                <th scope="col">Type</th>
-                <th scope="col">Title & Description</th>
-                <th scope="col">Link</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Journal article</td>
-                <td>4 ways to improve your mobile app security</td>
-                <td><a href="https://www.devprojournal.com/technology-trends/mobility/four-ways-to-improve-your-mobile-application-security/">DevPro
-                    journal</a></td>
-            </tr>
-            <tr>
-                <td>Journal article</td>
-                <td>4 ways to improve your mobile app security</td>
-                <td><a href="https://www.bitmat.it/blog/news/applicazioni-mobile-4-consigli-per-migliorare-la-sicurezza/">BitMat-
-                    Italian language</a></td>
-            </tr>
-            <tr>
-                <td>Network Traffic Analysis</td>
-                <td>A deep dive into using a MIM setup to intercept traffic
-                coming from Android devices </td>
-                <td><a href="https://medium.com/@darryncampbell_83863/android-traffic-analysis-to-google-servers-methodology-6de1435c5157">Android
-                    traffic analysis</a></td>
-            </tr>
-            </tbody>
-        </table>
-        <br>
+    <!-- Main Content Section -->
+    <section class="page-section py-5" id="technology">
+        <div class="container">
+
+            <!-- PubNub Articles Section -->
+            <div class="writing-section mb-5">
+                <div class="section-header text-center mb-5">
+                    <div class="company-logo-container mb-4">
+                        <img src="./assets/img/pubnub.png" alt="PubNub Logo" class="company-logo">
+                    </div>
+                    <h2 class="section-main-title mb-3">PubNub Technical Blogs</h2>
+                    <p class="lead text-muted">Realtime messaging and data streaming insights</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <!-- PubNub Articles Cards Section -->
+                <div class="mt-5 mb-5">
+                    <div id="pubnub-articles-cards" class="row"></div>
+                <div class="table-responsive">
+                </div>
+
+
+
+
+                <h3>External Sites</h3>
+                <p class="lead"><i class="fas fa-blog"></i> <a
+                    href="https://www.pubnub.com/blog/author/darryn-campbell/" target="_blank">PubNub
+                    Blogs</a>. Incomplete list of blogs posted on PubNub.com</p>
+                </div>
+            </div>
+
+            <!-- Android Articles Section -->
+            <div class="writing-section mb-5">
+                <div class="section-header text-center mb-5">
+                    <div class="company-logo-container mb-4">
+                        <img src="./assets/img/android_robot.png" alt="Android Logo" class="company-logo">
+                    </div>
+                    <h2 class="section-main-title mb-3">Android Articles</h2>
+                    <p class="lead text-muted">Technical content focused on Android development</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <div class="table-responsive">
+
+
+
+                <!-- Android Articles Cards Section -->
+                    <div id="android-articles-cards" class="row"></div>
+                </div>
+            </div>
 
         <div class="container-fluid section-container mb-5">
 
@@ -517,13 +124,16 @@
             </div>
 
             <br />
-            <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><img src="./assets/img/zebra.ico">
-            </div>
-            <div class="divider-custom-line"></div>
-            </div>
-            <H3 class="text-center">ZEBRA: Mobility DNA / Developer Tools</H3>
+            <!-- Zebra Articles Section -->
+            <div class="writing-section mb-5">
+                <div class="section-header text-center mb-5">
+                    <div class="company-logo-container mb-4">
+                        <img src="./assets/img/zebra.ico" alt="Zebra Logo" class="company-logo">
+                    </div>
+                    <h2 class="section-main-title mb-3">Zebra Articles</h2>
+                    <p class="lead text-muted">Technical content for Zebra Mobility DNA and developer tools</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
             <div class="alert alert-warning" role="alert">
             <H4> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 fill="currentColor"
@@ -2246,6 +1856,103 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+        // Function to populate PubNub articles cards
+        function populatePubNubArticlesCards() {
+            const data = blogs;
+            const container = document.getElementById('pubnub-articles-cards');
+            let html = '';
+            
+            // Show all PubNub articles
+            data.forEach(article => {
+                const title = article.Title || 'PubNub Article';
+                const description = article.Description || '';
+                const imageUrl = article.featureImg || './assets/img/pubnub.png';
+                const url = article.URL || '#';
+                const type = article.Type || 'Article';
+                const date = article.Date || '';
+                const linkText = 'Read Article';
+                
+                html += `
+                <div class="col-lg-6 mb-4">
+                    <div class="article-card h-100 border rounded-3 shadow-sm overflow-hidden" onclick="window.open('${url}', '_blank')" style="cursor: pointer;">
+                        <div class="article-image-container position-relative">
+                            <img src="${imageUrl}" class="article-image w-100" alt="${title}" onerror="this.src='./assets/img/pubnub.png'">
+                            <div class="article-type-badge position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-primary">${type}</span>
+                            </div>
+                        </div>
+                        <div class="article-content p-4 d-flex flex-column">
+                            <h5 class="article-title mb-3">${title}</h5>
+                            <p class="article-description text-muted mb-3 flex-grow-1">${description}</p>
+                            <div class="article-footer mt-auto">
+                                ${date ? `<small class="text-muted d-block mb-2"><i class="fas fa-calendar-alt me-2"></i>${date}</small>` : ''}
+                                <div class="article-actions d-flex gap-2">
+                                    <span class="btn btn-primary btn-sm">
+                                        <i class="fas fa-external-link-alt me-2"></i>${linkText}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        // Function to populate Android articles cards
+        function populateAndroidArticlesCards() {
+            // Embedded JSON data to avoid CORS issues
+            const data = android_blogs;
+            
+            // Process the data directly
+                    const container = document.getElementById('android-articles-cards');
+                    let html = '';
+                    
+                    data.forEach(article => {
+                        const title = article.Title || article.LinkText || 'Android Article';
+                        const description = article.Description || '';
+                        const imageUrl = article.featureImg || './assets/img/android_robot.png';
+                        const url = article.URL || '#';
+                        const type = article.Type || 'Article';
+                        const date = article.Date || '';
+                        const linkText = article.LinkText || 'Read Article';
+                        
+                        html += `
+                        <div class="col-lg-6 mb-4">
+                            <div class="article-card h-100 border rounded-3 shadow-sm overflow-hidden" onclick="window.open('${url}', '_blank')" style="cursor: pointer;">
+                                <div class="article-image-container position-relative">
+                                    <img src="${imageUrl}" class="article-image w-100" alt="${title}" onerror="this.src='./assets/img/android_robot.png'">
+                                    <div class="article-type-badge position-absolute top-0 start-0 m-3">
+                                        <span class="badge bg-success">${type}</span>
+                                    </div>
+                                </div>
+                                <div class="article-content p-4 d-flex flex-column">
+                                    <h5 class="article-title mb-3">${title}</h5>
+                                    <p class="article-description text-muted mb-3 flex-grow-1">${description}</p>
+                                    <div class="article-footer mt-auto">
+                                        ${date ? `<small class="text-muted d-block mb-2"><i class="fas fa-calendar-alt me-2"></i>${date}</small>` : ''}
+                                        <div class="article-actions d-flex gap-2">
+                                            <span class="btn btn-primary btn-sm">
+                                                <i class="fas fa-external-link-alt me-2"></i>${linkText}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+                    });
+                    
+                    container.innerHTML = html;
+        }
+
+        // Load cards when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            populatePubNubArticlesCards();
+            populateAndroidArticlesCards();
+        });
+    </script>
 
 </body>
 

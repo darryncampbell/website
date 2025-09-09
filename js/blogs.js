@@ -1,4 +1,4 @@
-[
+var blogs = [
   {
     "Type": "Blog",
     "URL": "https://builder.aws.com/content/2utwi8GDnnJQFwAL9AnZdfRCBtn/building-scalable-interactive-live-streams-with-aws-and-pubnub",
