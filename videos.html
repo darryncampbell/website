@@ -29,35 +29,94 @@
 
     </nav>
 
-    <header class="pagehead">
-    </header>
-
-    <section class="page-section top-section" id="technology">
+    <!-- Hero Section -->
+    <section class="videos-hero bg-gradient-primary text-white py-5">
         <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Videos</h2>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-video"></i></div>
-                            <div class="divider-custom-line"></div>
+            <div class="row align-items-center min-vh-40">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="hero-content fade-in">
+                        <div class="hero-icon mb-4">
+                            <i class="fas fa-video fa-4x text-white-50"></i>
                         </div>
-            
-            <p class="lead">This page features videos I have produced with technical content.  For blogs and articles, please see the <span style="font-weight: bold"><a href="./technical-writing.html">technical writing page</a></span></p>
+                        <h1 class="display-4 fw-bold mb-4">Videos & Technical Content</h1>
+                        <p class="lead fs-4 mb-4">Technical videos and presentations</p>
+                        <div class="hero-divider mx-auto mb-4"></div>
+                        <p class="mb-0">For detailed technical articles and blog posts, visit the <a href="./technical-writing.html" class="text-white fw-bold text-decoration-underline">technical writing section</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
 
-            <H3>Videos for PubNub</H3>
+    <!-- Main Content Section -->
+    <section class="page-section py-5" id="videos-content">
+        <div class="container">
 
-            <div id="videos-videopage-pubnub"></div>
+            <!-- PubNub Videos Section -->
+            <div class="videos-section mb-5">
+                                <div class="section-header text-center mb-5">
+                    <div class="company-logo-container mb-4">
+                        <img src="./assets/img/pubnub.png" alt="PubNub Logo" class="company-logo">
+                    </div>
+                    <h2 class="section-main-title mb-3">Videos for PubNub</h2>
+                    <p class="lead text-muted">Technical videos and presentations created during my time at PubNub</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
 
-            <br>
+                <div id="videos-videopage-pubnub" class="videos-grid"></div>
+            </div>
 
-
-            <h3>YouTube Accounts</h3>
-            <p class="lead"><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/@DarrynCampbell/playlists"
-                    target="_blank">@DarrynCampbell</a>. Personal account, mainly used to backup technical content I have produced for work</p>
-            <p class="lead"><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/@darryncampbell9234/playlists"
-                    target="_blank">Darryn Campbell (PubNub)</a>.  YouTube account associated with my PubNub user account - this is only used for occasional backups and temporary uploads, since my PubNub technical content will typically be published on the main <a href="https://www.youtube.com/@pubnub">@PubNub</a> account</p>
-<br>
+            <!-- YouTube Accounts Section -->
+            <div class="youtube-accounts-section mt-5 pt-5 border-top">
+                <div class="section-header text-center mb-4">
+                    <h3 class="section-title position-relative d-inline-block">
+                        <span class="px-3">YouTube Accounts</span>
+                    </h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="youtube-card h-100 p-4 bg-light rounded-3 shadow-sm">
+                            <h4 class="h5 mb-3 text-primary">
+                                <i class="fab fa-youtube me-2"></i>Personal Account
+                            </h4>
+                            <div class="youtube-item">
+                                <a href="https://www.youtube.com/@DarrynCampbell/playlists" target="_blank" class="text-decoration-none d-flex align-items-center">
+                                    <div class="youtube-icon me-3">
+                                        <i class="fab fa-youtube fa-2x text-danger"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-dark">@DarrynCampbell</h5>
+                                        <small class="text-muted">Personal account, mainly used to backup technical content I have produced for work</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="youtube-card h-100 p-4 bg-light rounded-3 shadow-sm">
+                            <h4 class="h5 mb-3 text-primary">
+                                <i class="fab fa-youtube me-2"></i>PubNub Account
+                            </h4>
+                            <div class="youtube-item">
+                                <a href="https://www.youtube.com/@darryncampbell9234/playlists" target="_blank" class="text-decoration-none d-flex align-items-center">
+                                    <div class="youtube-icon me-3">
+                                        <i class="fab fa-youtube fa-2x text-danger"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-dark">@darryncampbell9234</h5>
+                                        <small class="text-muted">PubNub-associated account used for backups and temporary uploads</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>

@@ -73,27 +73,21 @@ function loadVideosTable(targetTag, forPubNub)
 {
     var tag = document.getElementById(targetTag);
     var html = ""
-    var count = 0;
+
+    // Use CSS Grid instead of Bootstrap rows/columns
+    html += "<div class='videos-grid-container'>"
 
     for (var i = 0; i < videos.length; i++)
     {
-        if (count != 0 && count % 3 == 0)
-        {
-            html += createVideoRowEnd()
-        }
-        if (i == 0 || (count > 0 && count % 3 == 0))
-        {
-            html += createVideoRowStart()
-        }
         if (videos[i].pubnub == forPubNub)
         {
             html += createVideoPanelHeader()
             html += createVideoPanelContent(videos[i].title, videos[i].url, videos[i].thumbnail, videos[i].imageAlt, videos[i].description, videos[i].short, videos[i].editedIndependantly)
             html += createVideoPanelFooter()
-            count++;
         }
     }
-
+    
+    html += "</div>"
     tag.innerHTML = html;
 
 }
@@ -111,38 +105,65 @@ function createVideoRowEnd()
 function createVideoPanelHeader()
 {
     var html = "";
-    html += "<div class='col-md-6 col-lg-4 mb-0'>"
-    html += "<div class='portfolio-item mx-auto border rounded p-2 demo-container'>"
+    html += "<div class='video-card h-100 border rounded-3 shadow-sm overflow-hidden'>"
     return html;
 }
 
 function createVideoPanelContent(title, url, thumbnail, imageAlt, description, short, editedIndependantly)
 {
     var html = "";
-    html += "<div class='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>"
-    html += "<H4>" + title + "</H4>"
+    
+    // Wrap entire card content in a clickable link
+    html += "<a href='" + url + "' target='_blank' class='video-card-link text-decoration-none'>"
+    
+    // Video thumbnail container with overlay
+    html += "<div class='video-image-container position-relative overflow-hidden'>"
+    
+    // Fix thumbnail URLs for YouTube API format
+    var fixedThumbnail = thumbnail;
+    if (thumbnail.includes('youtu.be/') && thumbnail.includes('/0.jpg')) {
+        // Extract video ID from youtu.be format
+        var videoId = thumbnail.split('youtu.be/')[1].split('/')[0];
+        fixedThumbnail = 'https://img.youtube.com/vi/' + videoId + '/0.jpg';
+    }
+    
+    html += "<img class='img-fluid video-image' src='" + fixedThumbnail + "' alt='" + imageAlt + "' />"
+    
+    // Video type badge
+    if (short) {
+        html += "<div class='video-badge position-absolute'>"
+        html += "<span class='badge bg-danger'>Short</span>"
+        html += "</div>"
+    }
+    
+    // Play button overlay
+    html += "<div class='video-play-overlay position-absolute top-50 start-50 translate-middle'>"
+    html += "<i class='fas fa-play-circle fa-4x text-white opacity-75'></i>"
     html += "</div>"
-    html += "<div class='demo-image-container'>"
-    html += "<a href='" + url + "' target='_blank'>"
-    html += url
-    //html += "<img class='img-fluid demo-image' style='max-height: 20rem;' src='" + thumbnail + "' alt='" + imageAlt + "' />"
+    
+    html += "</div>"
+    
+    // Video content
+    html += "<div class='video-content p-4'>"
+    html += "<h5 class='video-title mb-3'>" + title + "</h5>"
+    html += "<p class='video-description text-muted mb-3'>" + description + "</p>"
+    html += "</div>"
+    
+    // Video actions
+    html += "<div class='video-actions p-4 pt-0'>"
+    html += "<div class='btn video-btn-primary w-100'>"
+    html += "<i class='fab fa-youtube me-2'></i>Watch on YouTube</div>"
+    html += "</div>"
+    
+    // Close the card link
     html += "</a>"
-    html += "</div>"
-    html += "<p class='demo-description'><br>" + description + "</p>"
-    html += "<p class='text-end demo-links'>"
-    //if (editedIndependantly)
-    //{
-    //    html += "Edited myself | "
-    //}
-    html += "<a href='" + url + "' target='_blank'>YouTube</a>"
-    html += "</p>"
+    
     return html;
 }
 
 function createVideoPanelFooter()
 {
     var html = "";
-    html += "</div>"
     html += "</div>"
     return html;
 }
