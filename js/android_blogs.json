@@ -1,0 +1,29 @@
+[
+    {
+        "URL": "https://www.devprojournal.com/technology-trends/mobility/four-ways-to-improve-your-mobile-application-security/",
+        "LinkText": "DevPro Journal",
+        "Title": "4 ways to improve your mobile app security",
+        "Type": "Journal Article",
+        "Description": "Customers depend on developers to protect the devices and data used on their front lines.",
+        "featureImg": "https://www.devprojournal.com/wp-content/uploads/2020/05/mobile-application-security.jpg",
+        "Date": "May 11, 2021"
+    },
+    {
+        "URL": "https://www.bitmat.it/blog/news/applicazioni-mobile-4-consigli-per-migliorare-la-sicurezza/",
+        "LinkText": "BitMat - Italian language",
+        "Title": "4 ways to improve your mobile app security",
+        "Type": "Journal Article",
+        "Description": "Applicazioni mobile, lo sviluppatore è il primo tassello nella creazione di app sicure. 4 consigli per migliorare la sicurezza",
+        "featureImg": "https://www.bitmat.it/wp-content/uploads/2021/04/classifica-delle-app.jpeg",
+        "Date": "2021-06-14"
+    },
+    {
+        "URL": "https://medium.com/@darryncampbell_83863/android-traffic-analysis-to-google-servers-methodology-6de1435c5157",
+        "LinkText": "Android traffic analysis",
+        "Title": "",
+        "Type": "Journal Article",
+        "Description": "A deep dive into using a MIM setup to intercept traffic coming from Android devices",
+        "featureImg": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*eOnj86MkdzoO-gjV60VV0Q.png",
+        "Date": "2020-07-17"
+    }
+]

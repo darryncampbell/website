@@ -1,0 +1,151 @@
+[
+  {
+    "URL": "https://www.pubnub.com/tutorials/chat-sdk-swift/",
+    "Title": "The PubNub Swift Chat SDK tutorial",
+    "Date": "October 2024",
+    "description": "PubNub's Swift Chat SDK is the recommended way for iOS developers to create new chat applications or add in-app chat to existing applications",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/78bG1vV4aAqbEJMVH0FtAi/846626468b9770f483a45fd4fd8be8e5/social.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Using the PubNub Swift Chat SDK | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/the-pubnub-swift-chat-sdk-tutorial.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/chat-sdk-kotlin/",
+    "Title": "The PubNub Kotlin Chat SDK tutorial",
+    "Date": "October 2024",
+    "description": "PubNub's Kotlin Chat SDK is the recommended way for Android developers to create new chat applications or add in-app chat to existing applications",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/5fKSBv1tTnrZAfC7iSovOB/1f6888d7eb176cbcb56d10144aa05f42/social.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Using the PubNub Kotlin Chat SDK | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/the-pubnub-kotlin-chat-sdk-tutorial.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/chat-sdk/",
+    "Title": "The PubNub Chat SDK tutorial using React",
+    "Date": "October 2023",
+    "description": "PubNub's Chat SDK is the recommended way for developers to create new chat applications or add in-app chat to existing applications",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Using the PubNub Chat SDK | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/the-pubnub-chat-sdk-tutorial-using-react.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/simple-chat-app-react-native/",
+    "Title": "Simple Chat App built with Chat Components (React Native)",
+    "Date": "Nov 2022",
+    "description": null,
+    "featureImgOrig": null,
+    "orig_title": null,
+    "tags": [
+      "discontinued"
+    ],
+    "isAvailable": false,
+    "featureImg": null
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/delivery-application/",
+    "Title": "Tutorial: Create a Delivery Application",
+    "Date": "Nov 2022",
+    "description": "Build a real-time delivery solution using PubNub",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "PubNub Delivery Tutorial for package delivery, rideshare and food delivery | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/tutorial-create-a-delivery-application.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/real-time-data-streaming/",
+    "Title": "Create a Real-Time Data Streaming application",
+    "Date": "Oct 2022",
+    "description": "Tutorial: PubNub makes it easy to connect and consume real-time streaming data at global scale",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Tutorial: Create a real-time data streaming application | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/create-a-real-time-data-streaming-application.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/cross-platform-chat-application-telehealth-ios/",
+    "Title": "Cross-Platform Chat Application for Telehealth (iOS)",
+    "Date": "Sep 2022",
+    "description": "Follow this tutorial to learn how to build a professional chat app with PubNub for digital health.",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Tutorial - Build a Digital Health Chat Application | PubNub",
+    "tags": [
+      "discontinued"
+    ],
+    "featureImg": "./assets/tutorials/feature_img/cross-platform-chat-application-for-telehealth-ios.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/cross-platform-chat-application-telehealth-android/",
+    "Title": "Cross-Platform Chat Application for Telehealth (Android)",
+    "Date": "Sep 2022",
+    "description": "Follow this tutorial to learn how to build a professional chat app with PubNub for digital health.",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Tutorial - Build a Digital Health Chat Application | PubNub",
+    "tags": [
+      "discontinued"
+    ],
+    "featureImg": "./assets/tutorials/feature_img/cross-platform-chat-application-for-telehealth-android.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/cross-platform-chat-application-telehealth-react/",
+    "Title": "Cross-Platform Chat Application for Telehealth (React)",
+    "Date": "Sep 2022",
+    "description": "Power your healthcare solutions with HIPAA-compliant, real-time tech\u2014secure messaging, AI insights, and seamless patient engagement. Get started for free!",
+    "featureImgOrig": "https://cdn.builder.io/api/v1/image/assets%2F0ee4d50ccdc943eda308d1099e2b1915%2F8b847ce3b36c49a8ab2fc448a0740200",
+    "orig_title": "HIPAA Compliant Digital Healthcare & Telehealth | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/cross-platform-chat-application-for-telehealth-react.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/getting-started-chat-sdk-flutter/",
+    "Title": "Get started building a chat app with Flutter using the PubNub Dart SDK",
+    "Date": "August 2022",
+    "description": "This tutorial shows you how to build a scalable chat app with PubNub using Flutter.",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Tutorial: Build chat apps with PubNub using Flutter | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/get-started-building-a-chat-app-with-flutter-using-the-pubnub-dart-sdk.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/getting-started-chat-sdk-react-native/",
+    "Title": "Get started building a chat app with React Native using the PubNub",
+    "Date": "August 2022",
+    "description": "Build chat apps with PubNub using React Native",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=600&fit=fill&fm=webp",
+    "orig_title": "React Native Cross-Platform Chat App with PubNub SDK | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/get-started-building-a-chat-app-with-react-native-using-the-pubnub.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/getting-started-chat-sdk-android/",
+    "Title": "Get started building a chat app with the PubNub Android (Kotlin) SDK",
+    "Date": "July 2022",
+    "description": "Learn how to build a scalable chat app using the PubNub Android SDK getting started tutorial.",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Tutorial: Build an Android chat app with PubNub | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/get-started-building-a-chat-app-with-the-pubnub-android-kotlin-sdk.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorials/getting-started-chat-sdk-ios/",
+    "Title": "Get started building a chat app with the PubNub iOS (Swift) SDK",
+    "Date": "July 2022",
+    "description": "This tutorial showcases how you can get easily build a scalable chat app for iOS with PubNub.",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Tutorial: Build an iOS chat app with PubNub | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/get-started-building-a-chat-app-with-the-pubnub-ios-swift-sdk.png"
+  },
+  {
+    "URL": "https://pubnub.com/tutorial/iot-dashboard/",
+    "Title": "IoT Dashboard. Build and IoT solution using PubNub",
+    "Date": "June 2022",
+    "description": "This tutorial will walk you through building a scalable IoT dashboard using PubNub with low latency.",
+    "featureImgOrig": "https://www.pubnub.com/cdn/3prze68gbwl1/72YD2Gyq0qFXepHllPal1z/8cee6e2bbfb0119cb58e26fa875690fb/Default-Social-Image.png?w=1200&h=630&fit=fill&fm=webp",
+    "orig_title": "Tutorial: Build an IoT dashboard using PubNub | PubNub",
+    "featureImg": "./assets/tutorials/feature_img/iot-dashboard-build-and-iot-solution-using-pubnub.png"
+  },
+  {
+    "URL": "https://www.pubnub.com/tutorial/virtual-events-tutorial-react",
+    "Title": "Create a Virtual Event app with React",
+    "Date": "June 2022",
+    "description": null,
+    "featureImgOrig": null,
+    "orig_title": null,
+    "tags": [
+      "discontinued"
+    ],
+    "isAvailable": false,
+    "featureImg": null
+  }
+]
