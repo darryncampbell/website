@@ -1,6 +1,14 @@
 var blogs = [
   {
     "Type": "Blog",
+    "URL": "https://www.pubnub.com/blog/vibe-coding-for-developers/",
+    "Title": "Vibe Coding for Developers: The Good, the Bad, and the Surprisingly Useful",
+    "OG_URL": "https://www.pubnub.com/blog/vibe-coding-for-developers/",
+    "Description": "Think of vibe coding (building apps with Generative AI) like having a brilliant but sometimes forgetful coding partner. You know the type: incredibly smart, can solve complex problems, but occasionally needs you to repeat yourself or correct their approach. That's exactly what AI coding assistants are like.",
+    "featureImg": "./assets/blogs/feature_img/vibe-coding-for-developers.jpg"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://builder.aws.com/content/2utwi8GDnnJQFwAL9AnZdfRCBtn/building-scalable-interactive-live-streams-with-aws-and-pubnub",
     "Title": "Building Scalable, Interactive Live Streams with AWS and PubNub",
     "OG_URL": "https://builder.aws.com/content/2utwi8GDnnJQFwAL9AnZdfRCBtn/building-scalable-interactive-live-streams-with-aws-and-pubnub",
