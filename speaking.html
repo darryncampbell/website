@@ -27,16 +27,26 @@
         </nav>
 
     <!-- Hero Section -->
-    <section class="speaking-hero bg-gradient-primary text-white py-5">
-        <div class="container">
-            <div class="row align-items-center min-vh-40">
+    <section class="speaking-hero bg-gradient-primary text-white" style="padding-top: 120px; padding-bottom: 80px;">
+        <style>
+            @media (max-width: 991.98px) {
+                .speaking-hero {
+                    padding-top: 100px !important;
+                    padding-bottom: 40px !important;
+                }
+            }
+        </style>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-30">
                 <div class="col-lg-8 mx-auto text-center">
                     <div class="hero-content fade-in">
-                        <div class="hero-icon mb-4">
-                            <i class="fas fa-microphone-alt fa-4x text-white-50"></i>
-                        </div>
                         <h1 class="display-4 fw-bold mb-4">Speaking Engagements</h1>
-                        <p class="lead fs-4 mb-4">Conference talks, webinars, and presentations</p>
+                        <p class="lead mb-4 d-none d-lg-block">Conference talks, webinars, and presentations</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center position-absolute end-0 top-0 bottom-0">
+                    <div class="hero-icon-large" style="opacity: 0.5;">
+                        <i class="fas fa-microphone-alt fa-8x text-white"></i>
                     </div>
                 </div>
             </div>

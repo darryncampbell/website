@@ -30,18 +30,28 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="technical-hero bg-gradient-primary text-white py-5">
-        <div class="container">
-            <div class="row align-items-center min-vh-40">
+    <section class="technical-hero bg-gradient-primary text-white" style="padding-top: 120px; padding-bottom: 80px;">
+        <style>
+            @media (max-width: 991.98px) {
+                .technical-hero {
+                    padding-top: 100px !important;
+                    padding-bottom: 40px !important;
+                }
+            }
+        </style>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-30">
                 <div class="col-lg-8 mx-auto text-center">
                     <div class="hero-content fade-in">
-                        <div class="hero-icon mb-4">
-                            <i class="fas fa-pencil-alt fa-4x text-white-50"></i>
-                        </div>
                         <h1 class="display-4 fw-bold mb-4">Technical Writing & Blogs</h1>
-                        <p class="lead fs-4 mb-4">In-depth technical articles, how-to guides, and developer insights</p>
+                        <p class="lead mb-4 d-none d-lg-block">In-depth technical articles, how-to guides, and developer insights</p>
                         <div class="hero-divider mx-auto mb-4"></div>
                         <p class="mb-0">For hands-on code examples and sample applications, visit the <a href="./demos.html" class="text-white fw-bold text-decoration-underline">demos section</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center position-absolute end-0 top-0 bottom-0">
+                    <div class="hero-icon-large" style="opacity: 0.5;">
+                        <i class="fas fa-pencil-alt fa-8x text-white"></i>
                     </div>
                 </div>
             </div>

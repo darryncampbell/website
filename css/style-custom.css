@@ -487,12 +487,9 @@ h4
 
 /* Hero Section Styles */
 .demos-hero {
-    background: linear-gradient(135deg, #1abc9c 0%, #2c3e50 100%) !important;
+    background: linear-gradient(135deg, #6c63ff 0%, #4c54d2 50%, #2e3a87 100%);
     position: relative;
     overflow: hidden;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
 }
 
 .bg-gradient-primary {

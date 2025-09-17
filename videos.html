@@ -30,18 +30,28 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="videos-hero bg-gradient-primary text-white py-5">
-        <div class="container">
-            <div class="row align-items-center min-vh-40">
+    <section class="videos-hero bg-gradient-primary text-white" style="padding-top: 120px; padding-bottom: 80px;">
+        <style>
+            @media (max-width: 991.98px) {
+                .videos-hero {
+                    padding-top: 100px !important;
+                    padding-bottom: 40px !important;
+                }
+            }
+        </style>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-30">
                 <div class="col-lg-8 mx-auto text-center">
                     <div class="hero-content fade-in">
-                        <div class="hero-icon mb-4">
-                            <i class="fas fa-video fa-4x text-white-50"></i>
-                        </div>
                         <h1 class="display-4 fw-bold mb-4">Videos & Technical Content</h1>
-                        <p class="lead fs-4 mb-4">Technical videos and presentations</p>
+                        <p class="lead mb-4 d-none d-lg-block">Technical videos and presentations</p>
                         <div class="hero-divider mx-auto mb-4"></div>
                         <p class="mb-0">For detailed technical articles and blog posts, visit the <a href="./technical-writing.html" class="text-white fw-bold text-decoration-underline">technical writing section</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center position-absolute end-0 top-0 bottom-0">
+                    <div class="hero-icon-large" style="opacity: 0.5;">
+                        <i class="fas fa-video fa-8x text-white"></i>
                     </div>
                 </div>
             </div>
