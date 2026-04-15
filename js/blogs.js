@@ -1,3 +1,62 @@
+var blogs_livekit = [
+  {
+    "Type": "Blog",
+    "URL": "https://livekit.com/blog/understand-and-improve-agent-latency",
+    "Title": "Understand and Improve Voice Agent Latency",
+    "Description": "Details the potential sources of latency in your voice AI solution, and which you should address as a priority",
+    "Date": "April 2026",
+    "featureImg": "./assets/blogs/feature_img/understand-and-improve-agent-latency.png"
+  },
+  {
+    "Type": "Blog",
+    "URL": "https://livekit.com/blog/langchain-to-livekit",
+    "Title": "Bring your LangChain Agents to LiveKit",
+    "Description": "Connect your existing LangGraph or LangChain agent to a real-time voice pipeline using LiveKit's LLMAdapter",
+    "Date": "March 2026",
+    "featureImg": "./assets/blogs/feature_img/langchain-to-livekit.png"
+  },
+  {
+    "Type": "Blog",
+    "URL": "https://livekit.com/blog/no-observability-data-available",
+    "Title": "Why is my Agent insights data missing?",
+    "Description": "Troubleshooting steps if you don't see any Agent insights / Agent observability data for your session",
+    "Date": "March 2026",
+    "featureImg": "./assets/blogs/feature_img/no-observability-data-available.png"
+  },
+  {
+    "Type": "Blog",
+    "URL": "https://livekit.com/blog/checklist-for-regional-deployments",
+    "Title": "Checklist for Regional Deployments",
+    "Description": "What to consider if you need a region-specific deployment for regulatory or compliance reasons.",
+    "Date": "February 2026",
+    "featureImg": "./assets/blogs/feature_img/checklist-for-regional-deployments.png"
+  },
+  {
+    "Type": "Field Guide",
+    "URL": "https://livekit.com/field-guides/guide/homepage-agent-latency",
+    "Title": "How to match the latency of the homepage agent",
+    "Description": "Describes how we achieved the latency of our homepage agent.",
+    "Date": "February 2026",
+    "featureImg": "./assets/blogs/feature_img/homepage-agent-latency.png"
+  },
+  {
+    "Type": "Blog",
+    "URL": "https://livekit.com/blog/agent-logs",
+    "Title": "Where to find your Agent Logs",
+    "Description": "Describes how to obtain agent logs through the CLI, by forwarding to an external service, or using Observability",
+    "Date": "February 2026",
+    "featureImg": "./assets/blogs/feature_img/agent-logs.png"
+  },
+  {
+    "Type": "Field Guide",
+    "URL": "https://livekit.com/field-guides/guide/updating-turn-detector-model",
+    "Title": "Updating the Turn Detector Model",
+    "Description": "Explains how to update the LiveKit turn detector model for both Python and Node.js agents, as well how the framework downloads and stores the model data",
+    "Date": "February 2026",
+    "featureImg": "./assets/blogs/feature_img/updating-turn-detector-model.png"
+  }
+]
+
 var blogs = [
   {
     "Type": "Blog",

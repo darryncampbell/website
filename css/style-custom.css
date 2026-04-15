@@ -115,12 +115,14 @@ body {
 .speaking-image-container {
     position: relative;
     overflow: hidden;
-    height: 200px;
+    height: 240px;
+    background: #f8f9fa;
 }
 
 .speaking-image {
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -300,11 +302,12 @@ body {
 }
 
 .article-image-container {
-    height: 200px;
+    aspect-ratio: 1200 / 628;
     overflow: hidden;
 }
 
 .article-image {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -314,7 +317,7 @@ body {
     transform: scale(1.05);
 }
 
-.article-type-badge .badge {
+.article-actions .badge {
     font-size: 0.75rem;
     font-weight: 500;
 }
@@ -824,24 +827,24 @@ h4
 }
 
 /* Demos Section Styles - Match videos section */
-.pubnub-parent-section .company-logo-container {
+.demos-parent-section .company-logo-container {
     margin-bottom: 1.5rem;
 }
 
-.pubnub-parent-section .company-logo {
+.demos-parent-section .company-logo {
     height: 80px;
     width: auto;
     max-width: 200px;
     object-fit: contain;
 }
 
-.pubnub-parent-section .section-main-title {
+.demos-parent-section .section-main-title {
     color: #2c3e50;
     font-weight: 700;
     font-size: 2.5rem;
 }
 
-.pubnub-parent-section .section-divider {
+.demos-parent-section .section-divider {
     width: 80px;
     height: 3px;
     background: #1abc9c;
@@ -991,6 +994,20 @@ h4
     color: white;
 }
 
+/* LiveKit video card overrides — blue instead of red */
+.videos-grid-livekit .video-card:hover {
+    border-color: #012CF2 !important;
+}
+
+.videos-grid-livekit .video-btn-primary {
+    background: linear-gradient(135deg, #012CF2 0%, #0126D9 100%);
+}
+
+.videos-grid-livekit .video-btn-primary:hover {
+    background: linear-gradient(135deg, #0126D9 0%, #0121C1 100%);
+    box-shadow: 0 8px 20px rgba(1, 44, 242, 0.3);
+}
+
 /* Scroll Animation Classes - Removed for immediate visibility */
 
 /* Initial state for scroll animations */
@@ -1004,7 +1021,7 @@ html {
 }
 
 /* PubNub Parent Section Styling */
-.pubnub-parent-section {
+.demos-parent-section {
     background: transparent;
     border-radius: 0;
     padding: 20px 0;
@@ -1047,14 +1064,14 @@ html {
 }
 
 /* Adjust subsection titles within PubNub section */
-.pubnub-parent-section .section-title {
+.demos-parent-section .section-title {
     font-size: 2rem;
     color: #495057;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .pubnub-parent-section {
+    .demos-parent-section {
         padding: 20px 0;
         margin: 20px 0;
     }
@@ -1249,7 +1266,7 @@ html {
     }
     
     /* Reduce PubNub parent section padding on mobile */
-    .pubnub-parent-section {
+    .demos-parent-section {
         padding: 20px 0;
         margin: 20px 0;
     }

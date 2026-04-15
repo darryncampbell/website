@@ -149,6 +149,32 @@ function populateSpeaking(json, outputDiv) {
 
 var speakingEvents = [
     {
+        "date": "September 8, 2026",
+        "imgSrc": "./assets/img/speaking/agentcon_london_2026.png",
+        "title": "Build and Deploy a Voice Agent in 60 Minutes",
+        "userDate": "8th September 2026, 15:15 - 16:40 BST (GMT + 1)",
+        "location": "AgentCon London — Exhibition Annex",
+        "otherInfo": [
+            "Session duration: 1h 25min"
+        ],
+        "brief": "Think voice agents are complicated to build? Watch me prove you wrong.<br><br>Forget the tutorials that take hours and still leave you with a half-working prototype. In this live demo, I'm going from absolutely nothing to a fully deployed, production-ready voice agent with observability&mdash;all in 60 minutes. No slides, no hand-waving, just code.<br><br><strong>What you'll see:</strong><ul><li>Starting from an empty directory to deployed application</li><li>Integrating STT, LLM, and TTS in real-time</li><li>Building a functional web interface</li><li>Deploying to production infrastructure</li><li>Setting up observability and session replay</li></ul><strong>The stack:</strong><ul><li>LiveKit's Agent Builder for rapid development</li><li>Open source STT and TTS models</li><li>Cloud deployment with automatic scaling</li><li>Built-in observability for debugging</li></ul>This is the real deal: I'll be writing code, hitting bugs, debugging live, and showing you exactly how modern tools make voice AI accessible. You'll see the full development workflow, learn about the gotchas, and understand what &quot;production-ready&quot; actually means.<br><br>Bring your skepticism and your questions. By the end, you'll know exactly what it takes to ship a voice agent&mdash;and realize it's way simpler than you think.",
+        "linkButtons":
+            [
+                {
+                    "text": "Event Page",
+                    "link": "https://globalai.community/chapters/london/events/agentcon-london/"
+                },
+                {
+                    "text": "Slides",
+                    "link": ""
+                },
+                {
+                    "text": "Recording",
+                    "link": ""
+                }
+            ]
+    },
+    {
         "date": "June 25, 2024",
         "imgSrc": "./assets/img/speaking/real-time-data-summit-2024.png",
         "title": "Add Real-Time Features to your Mobile App",

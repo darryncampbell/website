@@ -67,6 +67,28 @@
     <section class="page-section py-5" id="technology">
         <div class="container">
 
+            <!-- LiveKit Articles Section -->
+            <div class="writing-section mb-5">
+                <div class="section-header text-center mb-5">
+                    <div class="company-logo-container mb-4">
+                        <img src="./assets/img/lk.png" alt="LiveKit Logo" class="company-logo">
+                    </div>
+                    <h2 class="section-main-title mb-3">LiveKit Technical Blogs</h2>
+                    <p class="lead text-muted">Open source framework and developer platform for multimodal AI agents</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <!-- LiveKit Articles Cards Section -->
+                <div class="mt-5 mb-5">
+                    <div id="livekit-articles-cards" class="row"></div>
+                <div class="table-responsive">
+                </div>
+
+
+
+
+            </div>
+
             <!-- PubNub Articles Section -->
             <div class="writing-section mb-5">
                 <div class="section-header text-center mb-5">
@@ -1863,6 +1885,47 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script>
+        // Function to populate LiveKit articles cards
+        function populateLiveKitArticlesCards() {
+            const data = blogs_livekit;
+            const container = document.getElementById('livekit-articles-cards');
+            let html = '';
+
+            data.forEach(article => {
+                const title = article.Title || 'LiveKit Article';
+                const description = article.Description || '';
+                const imageUrl = article.featureImg || './assets/img/lk.png';
+                const url = article.URL || '#';
+                const type = article.Type || 'Article';
+                const date = article.Date || '';
+                const linkText = 'Read Article';
+
+                html += `
+                <div class="col-lg-6 mb-4">
+                    <div class="article-card h-100 border rounded-3 shadow-sm overflow-hidden" onclick="window.open('${url}', '_blank')" style="cursor: pointer;">
+                        <div class="article-image-container position-relative">
+                            <img src="${imageUrl}" class="article-image w-100" alt="${title}" onerror="this.src='./assets/img/lk.png'">
+                        </div>
+                        <div class="article-content p-4 d-flex flex-column">
+                            <h5 class="article-title mb-3">${title}</h5>
+                            <p class="article-description text-muted mb-3 flex-grow-1">${description}</p>
+                            <div class="article-footer mt-auto">
+                                ${date ? `<small class="text-muted d-block mb-2"><i class="fas fa-calendar-alt me-2"></i>${date}</small>` : ''}
+                                <div class="article-actions d-flex gap-2 align-items-center">
+                                    <span class="btn btn-primary btn-sm">
+                                        <i class="fas fa-external-link-alt me-2"></i>${linkText}
+                                    </span>
+                                    <span class="badge bg-primary ms-auto">${type}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            });
+
+            container.innerHTML = html;
+        }
+
         // Function to populate PubNub articles cards
         function populatePubNubArticlesCards() {
             const data = blogs;
@@ -1884,19 +1947,17 @@
                     <div class="article-card h-100 border rounded-3 shadow-sm overflow-hidden" onclick="window.open('${url}', '_blank')" style="cursor: pointer;">
                         <div class="article-image-container position-relative">
                             <img src="${imageUrl}" class="article-image w-100" alt="${title}" onerror="this.src='./assets/img/pubnub.png'">
-                            <div class="article-type-badge position-absolute bottom-0 start-0 m-3">
-                                <span class="badge bg-primary">${type}</span>
-                            </div>
                         </div>
                         <div class="article-content p-4 d-flex flex-column">
                             <h5 class="article-title mb-3">${title}</h5>
                             <p class="article-description text-muted mb-3 flex-grow-1">${description}</p>
                             <div class="article-footer mt-auto">
                                 ${date ? `<small class="text-muted d-block mb-2"><i class="fas fa-calendar-alt me-2"></i>${date}</small>` : ''}
-                                <div class="article-actions d-flex gap-2">
+                                <div class="article-actions d-flex gap-2 align-items-center">
                                     <span class="btn btn-primary btn-sm">
                                         <i class="fas fa-external-link-alt me-2"></i>${linkText}
                                     </span>
+                                    <span class="badge bg-primary ms-auto">${type}</span>
                                 </div>
                             </div>
                         </div>
@@ -1930,19 +1991,17 @@
                             <div class="article-card h-100 border rounded-3 shadow-sm overflow-hidden" onclick="window.open('${url}', '_blank')" style="cursor: pointer;">
                                 <div class="article-image-container position-relative">
                                     <img src="${imageUrl}" class="article-image w-100" alt="${title}" onerror="this.src='./assets/img/android_robot.png'">
-                                    <div class="article-type-badge position-absolute top-0 start-0 m-3">
-                                        <span class="badge bg-success">${type}</span>
-                                    </div>
                                 </div>
                                 <div class="article-content p-4 d-flex flex-column">
                                     <h5 class="article-title mb-3">${title}</h5>
                                     <p class="article-description text-muted mb-3 flex-grow-1">${description}</p>
                                     <div class="article-footer mt-auto">
                                         ${date ? `<small class="text-muted d-block mb-2"><i class="fas fa-calendar-alt me-2"></i>${date}</small>` : ''}
-                                        <div class="article-actions d-flex gap-2">
+                                        <div class="article-actions d-flex gap-2 align-items-center">
                                             <span class="btn btn-primary btn-sm">
                                                 <i class="fas fa-external-link-alt me-2"></i>${linkText}
                                             </span>
+                                            <span class="badge bg-success ms-auto">${type}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1955,6 +2014,7 @@
 
         // Load cards when page loads
         document.addEventListener('DOMContentLoaded', function() {
+            populateLiveKitArticlesCards();
             populatePubNubArticlesCards();
             populateAndroidArticlesCards();
         });

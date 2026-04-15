@@ -143,31 +143,19 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>";
     }
     
-    // Make homepage sections clickable
-    var technicalWritingSection = document.getElementById('technology');
-    if (technicalWritingSection) {
-        technicalWritingSection.style.cursor = 'pointer';
-        technicalWritingSection.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = './technical-writing.html';
+    // Make homepage sections clickable (but don't hijack clicks on links inside them)
+    function makeSectionClickable(sectionId, href) {
+        var section = document.getElementById(sectionId);
+        if (!section) return;
+        section.style.cursor = 'pointer';
+        section.addEventListener('click', function(e) {
+            // Let links inside the section handle their own navigation
+            if (e.target.closest('a')) return;
+            window.location.href = href;
         });
     }
-    
-    var demosSection = document.getElementById('portfolio');
-    if (demosSection) {
-        demosSection.style.cursor = 'pointer';
-        demosSection.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = './demos.html';
-        });
-    }
-    
-    var speakingSection = document.getElementById('speaking');
-    if (speakingSection) {
-        speakingSection.style.cursor = 'pointer';
-        speakingSection.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = './speaking.html';
-        });
-    }
+
+    makeSectionClickable('technology', './technical-writing.html');
+    makeSectionClickable('portfolio', './demos.html');
+    makeSectionClickable('speaking', './speaking.html');
 });

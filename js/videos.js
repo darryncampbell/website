@@ -58,6 +58,16 @@ var videos = [
         "short": false,
         "editedIndependantly": false,
         "pubnub": true
+    },
+    {
+        "title": "Reduce the Latency of your Voice Agent",
+        "url": "https://www.youtube.com/watch?v=jnedfk5PL2A",
+        "thumbnail": "https://i.ytimg.com/vi/jnedfk5PL2A/maxresdefault.jpg",
+        "imageAlt": "Reduce the Latency of your Voice Agent",
+        "description": "Latency is one of the most common pain points when building voice agents, but it's rarely a simple fix.",
+        "short": false,
+        "editedIndependantly": false,
+        "livekit": true
     }
 ]
 
@@ -66,27 +76,29 @@ var videos = [
 
 function loadVideosVideoPage()
 {
-    loadVideosTable('videos-videopage-pubnub', true);
+    loadVideosTable('videos-videopage-livekit', 'livekit');
+    loadVideosTable('videos-videopage-pubnub', 'pubnub');
 }
 
-function loadVideosTable(targetTag, forPubNub)
+function loadVideosTable(targetTag, companyKey)
 {
     var tag = document.getElementById(targetTag);
+    if (!tag) return;
     var html = ""
 
     // Use CSS Grid instead of Bootstrap rows/columns
-    html += "<div class='videos-grid-container'>"
+    html += "<div class='videos-grid-container videos-grid-" + companyKey + "'>"
 
     for (var i = 0; i < videos.length; i++)
     {
-        if (videos[i].pubnub == forPubNub)
+        if (videos[i][companyKey] == true)
         {
             html += createVideoPanelHeader()
             html += createVideoPanelContent(videos[i].title, videos[i].url, videos[i].thumbnail, videos[i].imageAlt, videos[i].description, videos[i].short, videos[i].editedIndependantly)
             html += createVideoPanelFooter()
         }
     }
-    
+
     html += "</div>"
     tag.innerHTML = html;
 
