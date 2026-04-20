@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/realtime-vs-cascade",
+    "Title": "Pipeline vs. Realtime - Which is the better Voice Agent Architecture?",
+    "Description": "Comparing realtime and pipeline voice agent architectures — the trade-offs around latency, emotion, cost, and how to choose between them.",
+    "Date": "April 2026",
+    "featureImg": "./assets/blogs/feature_img/realtime-vs-cascade.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/understand-and-improve-agent-latency",
     "Title": "Understand and Improve Voice Agent Latency",
     "Description": "Details the potential sources of latency in your voice AI solution, and which you should address as a priority",
