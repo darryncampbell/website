@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/verify-sip-caller-identity",
+    "Title": "Layered Caller Verification for LiveKit SIP Calls",
+    "Description": "Caller ID alone isn't enough to trust who's on the line — how to layer trunk filters, dispatch rules, and agent-side verification to know who's calling your LiveKit voice agent.",
+    "Date": "April 2026",
+    "featureImg": "./assets/blogs/feature_img/verify-sip-caller-identity.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/realtime-vs-cascade",
     "Title": "Pipeline vs. Realtime - Which is the better Voice Agent Architecture?",
     "Description": "Comparing realtime and pipeline voice agent architectures — the trade-offs around latency, emotion, cost, and how to choose between them.",
