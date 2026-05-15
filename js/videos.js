@@ -66,7 +66,17 @@ var videos = [
         "imageAlt": "Reduce the Latency of your Voice Agent",
         "description": "Latency is one of the most common pain points when building voice agents, but it's rarely a simple fix.",
         "short": false,
-        "editedIndependantly": false,
+        "editedIndependantly": true,
+        "livekit": true
+    },
+    {
+        "title": "Give Your LangChain Agent a Voice",
+        "url": "https://www.youtube.com/watch?v=3ovBewQbrkc",
+        "thumbnail": "https://i.ytimg.com/vi/3ovBewQbrkc/maxresdefault.jpg",
+        "imageAlt": "Give Your LangChain Agent a Voice",
+        "description": "Already have a LangChain agent? Learn how to give it a voice using LiveKit's LangChain plugin without rewriting your existing agent.",
+        "short": false,
+        "editedIndependantly": true,
         "livekit": true
     }
 ]
