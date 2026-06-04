@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/audio-quality",
+    "Title": "Measuring LiveKit audio quality with video and screen share enabled",
+    "Description": "A hands-on look at how LiveKit audio behaves when video and screen share are added to a session.",
+    "Date": "May 2026",
+    "featureImg": "./assets/blogs/feature_img/audio-quality.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/verify-sip-caller-identity",
     "Title": "Layered Caller Verification for LiveKit SIP Calls",
     "Description": "Caller ID alone isn't enough to trust who's on the line — how to layer trunk filters, dispatch rules, and agent-side verification to know who's calling your LiveKit voice agent.",
