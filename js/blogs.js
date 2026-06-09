@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/noise-cancellation",
+    "Title": "LiveKit noise cancellation: what it is and how it works",
+    "Description": "How noise cancellation works in LiveKit, where it runs, the different models available, and what it costs.",
+    "Date": "June 2026",
+    "featureImg": "./assets/blogs/feature_img/noise-cancellation.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/audio-quality",
     "Title": "Measuring LiveKit audio quality with video and screen share enabled",
     "Description": "A hands-on look at how LiveKit audio behaves when video and screen share are added to a session.",
