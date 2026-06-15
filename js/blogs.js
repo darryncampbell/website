@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/livekit-cloud-vs-self-host",
+    "Title": "Should you choose LiveKit Cloud, or self-host?",
+    "Description": "A technical look at when to self-host the open-source LiveKit stack and when to build on LiveKit Cloud. Covers operational scope, reliability, cost, and the capabilities that only exist on a managed platform.",
+    "Date": "June 2026",
+    "featureImg": "./assets/blogs/feature_img/livekit-cloud-vs-self-host.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/noise-cancellation",
     "Title": "LiveKit noise cancellation: what it is and how it works",
     "Description": "How noise cancellation works in LiveKit, where it runs, the different models available, and what it costs.",
