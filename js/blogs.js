@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/turn-detection-and-interruption-handling",
+    "Title": "Configuring Turn Detection and Interruptions in LiveKit Agents",
+    "Description": "A practical guide to configuring turn detection, endpointing, and interruptions in LiveKit voice agents.",
+    "Date": "June 2026",
+    "featureImg": "./assets/blogs/feature_img/turn-detection-and-interruption-handling.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/configuring-livekit-agents-at-dispatch",
     "Title": "Configuring LiveKit Agents at Dispatch with Metadata",
     "Description": "How to reuse one generic LiveKit agent to deliver a tailored experience per session by passing configuration in dispatch metadata.",
