@@ -1,0 +1,124 @@
+export const metadata = /** @satisfies {import('../types').BlogPostMetadata} */ ({
+  title: 'Should you choose LiveKit Cloud, or self-host?',
+  slug: 'livekit-cloud-vs-self-host',
+  publishedAt: '2026-06-15T16:00:00.000Z',
+  authors: [{ name: 'Darryn Campbell', slug: 'darryn-campbell' }],
+  excerpt:
+    'A technical look at when to self-host the open-source LiveKit stack and when to build on LiveKit Cloud. Covers operational scope, reliability, cost, and the capabilities that only exist on a managed platform.',
+  featuredImage: null,
+  tags: ['guide'],
+});
+
+If you're building on LiveKit, one of the most consequential decisions you'll make is whether to self-host the open-source stack or run on LiveKit Cloud. There's no one-size-fits-all answer, and both approaches are equally valid. This post walks you through the differences, similarities, and tradeoffs between the two.
+
+> This post discusses self-hosted LiveKit Server, not [self-hosted agents](https://docs.livekit.io/deploy/custom/deployments/).
+
+## What is the difference exactly?
+
+LiveKit open source isn't a single binary; it's a set of components that work together:
+
+| Component | Purpose |
+|---|---|
+| **[LiveKit Server](https://docs.livekit.io/reference/internals/livekit-sfu/)** | The SFU that handles media routing |
+| **[Agents framework](https://docs.livekit.io/agents/)** | Where your agent code runs |
+| **[SIP](https://docs.livekit.io/telephony/)** | Telephony |
+| **[Egress](https://docs.livekit.io/transport/media/ingress-egress/egress/)** | Recording and streaming |
+| **[Ingress](https://docs.livekit.io/transport/media/ingress-egress/ingress/)** | RTMP/WHIP/SRT |
+
+Whichever path you choose, the components, APIs, and SDKs are the same, so your client and agent code stays portable; only the connection endpoint to the server changes.
+
+The real choice is who runs those components. You can self-host them, on infrastructure you own, and you get full control over the stack, your network, and your data. In return, you take on three layers of work:
+
+- **The services themselves:** running and scaling each one.
+- **The infrastructure around them:** a load balancer with TLS, certificate management, TURN, and Redis for multi-node coordination.
+- **Ongoing operations:** monitoring, patching, capacity planning, and incident response.
+
+Or you can let LiveKit Cloud run everything as a managed service, which takes that operational burden off your plate.
+
+But LiveKit Cloud is more than a hosted version of the open-source components. It also bundles extra services that aren't part of open source, such as optional managed agent hosting, built-in inference, native telephony, enhanced noise cancellation, and a global mesh network. Those are covered in detail later; the point here is that LiveKit Cloud isn't only about who runs your infrastructure: it's also about the available capabilities.
+
+## Why self-hosting can be a great choice
+
+Although LiveKit Cloud comes with additional features, the open-source LiveKit stack is a complete, end-to-end solution for voice AI, realtime media, Egress, Ingress, and SIP telephony. The server scales easily to many thousands of concurrent sessions, and plenty of companies self-host LiveKit at scale in production.
+
+Self-hosting tends to be the right call when you need maximum control over infrastructure and networking, or when you have security and compliance requirements you'd rather satisfy entirely within your own boundary. It suits teams that already have mature DevOps, observability, and on-call processes, and that would rather customize the stack for their domain than work within the managed platform's defaults. It's also likely the better choice if all of the following apply: your traffic is steady and predictable, you prefer fixed compute costs to usage-based billing, and you already run agent compute at scale with latency and reliability you're happy with.
+
+There's also a control argument unrelated to cost. Some highly technical teams self-host from day one to avoid outsourcing a core part of their system, or to keep their commitment low while they evaluate.
+
+## What you only get on LiveKit Cloud
+
+> See also: A full [LiveKit Cloud vs. self-hosted comparison](https://docs.livekit.io/intro/cloud/#comparing-livekit-cloud-to-self-hosted).
+
+A number of capabilities exist only in LiveKit Cloud, not because they're paywalled versions of open-source features, but because, in most cases, they can only be delivered as part of a distributed platform. If a feature depends on a global network of servers, elastic pools of managed compute, or backend services that LiveKit runs for you, it can't ship inside a binary you run yourself.
+
+### Agents
+
+**[Managed agent hosting](https://docs.livekit.io/deploy/agents/).** LiveKit Cloud runs your agent code for you: deployment, autoscaling, lifecycle management, isolation, and rolling updates that don't interrupt active calls.
+
+**[Built-in inference (LiveKit Inference)](https://docs.livekit.io/agents/models/).** Access to LLM, STT, and TTS models without managing keys or accounts for each provider. Switching providers is trivial too, whether you're trying the latest models or testing an alternative.
+
+**[Enhanced noise cancellation](https://docs.livekit.io/transport/media/noise-cancellation/).** Managed noise-cancellation and voice-isolation models (Krisp and ai-coustics), tuned and updated for you, with no license keys to manage. For conversational agents, cleaner input also improves transcription accuracy, which means fewer retries and a better user experience.
+
+**[Adaptive interruption handling](https://docs.livekit.io/agents/logic/turns/adaptive-interruption-handling/).** Cloud-deployed agents have access to a context-aware model that distinguishes an intentional interruption from a brief "mm-hmm." It's the difference between an agent that trips over every back-channel and one that feels natural.
+
+**[Agent Builder](https://docs.livekit.io/agents/start/builder/).** A purpose-built environment to design, test, and iterate on agents, with live preview.
+
+**[Agent Observability](https://docs.livekit.io/deploy/observability/).** Built-in, per-session insight into agent behavior: turn-by-turn transcripts, traces of each pipeline stage, runtime logs, audio recordings, and per-turn latency, all in one replayable timeline.
+
+### Telephony
+
+**[Native telephony (LiveKit Phone Numbers)](https://docs.livekit.io/telephony/start/phone-numbers/).** Provision phone numbers and connect PSTN calls directly into LiveKit rooms without standing up your own SIP trunks. You can still bring an external SIP trunk if you prefer.
+
+**[Call noise cancellation](https://docs.livekit.io/telephony/#noise-cancellation-for-calls).** Krisp noise cancellation applied at the SIP trunk for inbound and outbound calls, so audio is cleaned up before it ever reaches your room.
+
+### Global infrastructure
+
+**[Global mesh ("multi-home")](https://docs.livekit.io/intro/cloud/).** LiveKit Cloud runs on a global mesh where each user connects to the nearest edge, rooms have no hard participant ceiling, and a single room can span multiple servers.
+
+**Operational guarantees.** The production essentials: an uptime SLA, region pinning for data residency, access token revocation, SOC 2 Type II and HIPAA on higher tiers, an Analytics API on the Scale plan, and a managed dashboard.
+
+## Reliability and failure modes
+
+Reliability comes down to a simple question: when something breaks, how much breaks along with it?
+
+With a self-hosted single-server setup, the answer is "a lot." If that server goes down, every call on it drops and users reconnect from scratch, which takes several seconds and resets the session. If the whole data center has a problem, everyone is affected at once.
+
+LiveKit Cloud's global network is designed so failures stay small and contained. If one server has a problem, only the people on it are affected, and they're reconnected to another server in seconds without losing their session. If an entire region has trouble, traffic reroutes automatically.
+
+## Cost comparison
+
+Most developers' intuition for hosting costs comes from stateless web services. A request arrives, a server handles it in milliseconds, and the instance is immediately free for the next one. That model makes a few things cheap: you autoscale on request rate, scale down to almost nothing when traffic dries up, and run on commodity instances.
+
+Voice AI breaks every one of those assumptions. A call isn't a request; it's a long-running, stateful session that requires a media pipeline for the entire conversation, often several minutes at a time. Capacity is measured in concurrent sessions rather than requests per second, so you provision for peak concurrency and pay for the idle headroom in between. The work is CPU and memory intensive, and can add GPU pressure on top, depending on your architecture.
+
+Ideally you'd scale ahead of demand, but you can't predict it, so you keep pre-warmed resources on standby to absorb the initial spike while you ramp up to real demand. A web app can absorb a cold start without much impact on the user, since the worst case is one slow request. A voice caller, by contrast, is left waiting in silence at the start of the call, so pre-warmed resources are always required.
+
+
+| Consideration | Self-hosting | LiveKit Cloud |
+|---|---|---|
+| **Billing model** | Fixed: you pay for capacity whether or not calls flow | Usage-based: you pay for what you use (participant-minutes and bandwidth) |
+| **Idle and burst capacity** | You over-provision for spikes, paying for idle headroom | Scales with demand automatically |
+| **Engineering cost** | Dedicated engineering resource | Handled by LiveKit |
+| **Tooling and overhead** | Monitoring, bandwidth, storage, certificates, on-call | Included |
+| **Opportunity cost** | Engineers operating infrastructure aren't building product | Team stays on the product |
+| **Where it wins** | Steady, predictable, high-volume traffic | Variable or bursty traffic, fast launch, lean teams |
+
+## Self-hosting, or LiveKit Cloud?
+
+This isn't a one-way door. Because the code is open source and portable, you can move between models without a rewrite. Some teams start by self-hosting and move to LiveKit Cloud once they'd rather not manage infrastructure; others go the other way, starting on LiveKit Cloud to launch quickly, then moving to self-hosting later. Either way, teams report that the transition is a fairly light lift.
+
+**Choose self-hosting if:**
+
+- You need maximum control over infrastructure, networking, or data residency.
+- You have compliance requirements you'd rather satisfy within your own boundary.
+- You already have mature DevOps, observability, and on-call processes.
+- You already run agent compute at scale with latency and reliability you're happy with.
+- Your traffic is steady and predictable, and you prefer fixed costs.
+
+**Choose LiveKit Cloud if:**
+
+- You're launching voice agents and want the fastest path to production.
+- You'd rather spend engineering effort on your product than on infrastructure.
+- You want the global mesh, managed hosting, and failover without building them.
+- You want built-in inference, telephony, enhanced noise cancellation, and Cloud-only agent models like adaptive interruption handling.
+- You value built-in observability and insight into agent behavior from day one.

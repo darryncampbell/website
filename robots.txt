@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /assets/blogs/20260615_livekit-cloud-vs-self-host.mdx
+Disallow: /assets/blogs/20260212_updating-the-turn-detector-model.pdf
+Disallow: /assets/blogs/20260212_updating-the-turn-detector-model.md
+Disallow: /assets/blogs/20260220_homepage-agent-latency.mdx
+Disallow: /assets/blogs/20260220_homepage-agent-latency.pdf

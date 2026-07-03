@@ -87,14 +87,14 @@ var blogs_livekit = [
     "Date": "February 2026",
     "featureImg": "./assets/blogs/feature_img/checklist-for-regional-deployments.png"
   },
-  {
-    "Type": "Field Guide",
-    "URL": "https://livekit.com/field-guides/guide/homepage-agent-latency",
-    "Title": "How to match the latency of the homepage agent",
-    "Description": "Describes how we achieved the latency of our homepage agent.",
-    "Date": "February 2026",
-    "featureImg": "./assets/blogs/feature_img/homepage-agent-latency.png"
-  },
+  // {
+  //   "Type": "Field Guide",
+  //   "URL": "https://livekit.com/field-guides/guide/homepage-agent-latency",
+  //   "Title": "How to match the latency of the homepage agent",
+  //   "Description": "Describes how we achieved the latency of our homepage agent.",
+  //   "Date": "February 2026",
+  //   "featureImg": "./assets/blogs/feature_img/homepage-agent-latency.png"
+  // },
   {
     "Type": "Blog",
     "URL": "https://livekit.com/blog/agent-logs",
@@ -103,14 +103,14 @@ var blogs_livekit = [
     "Date": "February 2026",
     "featureImg": "./assets/blogs/feature_img/agent-logs.png"
   },
-  {
-    "Type": "Field Guide",
-    "URL": "https://livekit.com/field-guides/guide/updating-turn-detector-model",
-    "Title": "Updating the Turn Detector Model",
-    "Description": "Explains how to update the LiveKit turn detector model for both Python and Node.js agents, as well how the framework downloads and stores the model data",
-    "Date": "February 2026",
-    "featureImg": "./assets/blogs/feature_img/updating-turn-detector-model.png"
-  }
+  // {
+  //   "Type": "Field Guide",
+  //   "URL": "https://livekit.com/field-guides/guide/updating-turn-detector-model",
+  //   "Title": "Updating the Turn Detector Model",
+  //   "Description": "Explains how to update the LiveKit turn detector model for both Python and Node.js agents, as well how the framework downloads and stores the model data",
+  //   "Date": "February 2026",
+  //   "featureImg": "./assets/blogs/feature_img/updating-turn-detector-model.png"
+  // }
 ]
 
 var blogs = [
