@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/keeping-your-agent-conversation-on-track",
+    "Title": "Build a Voice Agent That Won't Go Off Script",
+    "Description": "Keep a voice agent in character under pressure with structured prompts, code-level enforcement, and continual validation.",
+    "Date": "July 2026",
+    "featureImg": "./assets/blogs/feature_img/keeping-your-agent-conversation-on-track.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/turn-detection-and-interruption-handling",
     "Title": "Configuring Turn Detection and Interruptions in LiveKit Agents",
     "Description": "A practical guide to configuring turn detection, endpointing, and interruptions in LiveKit voice agents.",
