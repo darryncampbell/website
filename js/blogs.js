@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/diagnosing-blocked-event-loops",
+    "Title": "Diagnosing Blocked Event Loops in LiveKit Agents",
+    "Description": "A practical checklist for diagnosing and fixing blocking code in LiveKit voice agents, covering slow joins, mid-call freezes, dropped calls, and missing transcripts.",
+    "Date": "July 2026",
+    "featureImg": "./assets/blogs/feature_img/diagnosing-blocked-event-loops.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/keeping-your-agent-conversation-on-track",
     "Title": "Build a Voice Agent That Won't Go Off Script",
     "Description": "Keep a voice agent in character under pressure with structured prompts, code-level enforcement, and continual validation.",
