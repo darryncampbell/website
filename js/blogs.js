@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/agent-join-latency",
+    "Title": "Why is my agent slow to join a room?",
+    "Description": "How to detect if your agent is slow to join a room, and fix it.",
+    "Date": "August 2026",
+    "featureImg": "./assets/blogs/feature_img/agent-join-latency.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/diagnosing-blocked-event-loops",
     "Title": "Diagnosing Blocked Event Loops in LiveKit Agents",
     "Description": "A practical checklist for diagnosing and fixing blocking code in LiveKit voice agents, covering slow joins, mid-call freezes, dropped calls, and missing transcripts.",
