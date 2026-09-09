@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/inference-is-slower-than-realtime",
+    "Title": "What does \"inference is slower than realtime\" mean?",
+    "Description": "What to do if you see \"inference is slower than realtime\" in your agent logs.",
+    "Date": "September 2026",
+    "featureImg": "./assets/blogs/feature_img/inference-is-slower-than-realtime.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/short-utterances",
     "Title": "Debugging short utterances (\"yes\", \"ok\") in voice agents",
     "Description": "How to debug issues where short user utterances lead to agent silence.",
