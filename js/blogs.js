@@ -1,6 +1,14 @@
 var blogs_livekit = [
   {
     "Type": "Blog",
+    "URL": "https://livekit.com/blog/troubleshooting-egress",
+    "Title": "Troubleshooting Egress",
+    "Description": "Diagnosing issues with LiveKit Egress, and how to fix them.",
+    "Date": "October 2026",
+    "featureImg": "./assets/blogs/feature_img/troubleshooting-egress.png"
+  },
+  {
+    "Type": "Blog",
     "URL": "https://livekit.com/blog/inference-is-slower-than-realtime",
     "Title": "What does \"inference is slower than realtime\" mean?",
     "Description": "What to do if you see \"inference is slower than realtime\" in your agent logs.",
