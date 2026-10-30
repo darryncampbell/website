@@ -1,5 +1,13 @@
 var blogs_livekit = [
   {
+    "Type": "GitHub",
+    "URL": "https://github.com/darryncampbell/LiveKit-Kamailio-Static-IP",
+    "Title": "Connecting LiveKit Cloud SIP to IP-whitelisting carriers with a static-IP Kamailio proxy",
+    "Description": "How to use Kamailio and rtpengine on a static-IP server to connect LiveKit Cloud SIP to carriers that only accept a single whitelisted IP.",
+    "Date": "October 2026",
+    "featureImg": "./assets/blogs/feature_img/livekit-kamailio-static-ip.png"
+  },
+  {
     "Type": "Blog",
     "URL": "https://livekit.com/blog/troubleshooting-egress",
     "Title": "Troubleshooting Egress",
